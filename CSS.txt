@@ -1226,7 +1226,8 @@ div{
 </style>
 
 57)cursor-property-
- 1)default 2)auto
+ 1)default
+ 2)auto
  3)all-scroll
  4)none
  5)text
