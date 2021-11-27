@@ -21,7 +21,8 @@
  1)integer-12,-12,12.5;
  2)float/double
  3)string
- 4)Boolean 5)object
+ 4)Boolean
+ 5)object
  6)resource
  7)NULL
 
@@ -78,7 +79,8 @@ myname;
 
 7)comment in php-
   1)single line comment
-  2)multiline comments
+  2)multiline comments
+
  1) singleline comment
 start with //
 start with #
@@ -1835,7 +1837,8 @@ echo display (). "<br>" ;
 
  1)$GLOBALS
  2)$_SERVER
- 3)$_REQUEST 4)$_POST
+ 3)$_REQUEST
+ 4)$_POST
  5)$_GET
  6)$_FILES
  7)$_ENV
