@@ -1,0 +1,1981 @@
+                                CSS ALL TAG(CASCADING STYLE SHEET)
+
+1)selectors eliment-{property1: property1-value; ......}
+      
+        ex- p/h1{color:red; font-size:50px;}
+
+2)way of inserting CSS-
+          1)external style sheet
+                   p{color:red; font-size:50px;}                 
+                   h{color:green; font-size:50px;}
+                        <link type="stylesheet" href=".css">
+               *file save=  .css*
+ 
+          2)internal style sheet/embedded style sheet
+                      <style type="text/css">
+                               p{color:red; font-size:50px;}                 
+                               h{color:green; font-size:50px;}
+                     </style>
+               *file save=   .html*
+
+          3)inline style
+                  <p style="color:red; font-size:50px;">budhesh</p>
+                  <h1 style="color:green; font-size:2px;">katariya</h1>
+               *file save=   .html
+
+3)comment-  css comment start with/*,end with */
+                               <style>
+                               #budheshshows{   
+                              /*hello i am comment*/
+                                    color:red; font-size:50px;
+                                   }
+                              </style>
+                        <body>  <p id="budheshshows">mr.budhesh ahir</p>  </body>
+
+4)id selecter in -  <style>
+                            #budheshshows{   
+                          
+                                    color:red; font-size:50px;
+                                   }
+                           </style>
+                        <body>  <p id="budheshshows">mr.budhesh ahir</p>  </body>
+
+5)class selecter/universal style class-<style>
+                                                      .name{color:red; font-size:50px;}
+                                                </style>
+                                              <body> <p class="name"> budhesh<//p></body>
+
+6)element specific style class-<style>
+                                 p.name{color:red font-size:50px;}
+                               </style>
+                              <body><p class="name"> my name is budhesh </p></body>
+
+7)use two class in combine-<style>
+                                 p.name{color:red;;}
+                                 p.low{font-size:50px;}
+                                  .all{text-align:center;}
+                               </style>
+                              <body>
+                              <p class="name low"> my name is budhesh </p>
+                              <p class="name all"> my name is budhesh </p>
+                              <h2 class="all"> my name is budhesh </p>
+                              </body>
+
+8)grouping selecter-  <style>
+                            p,h2{color:yellow; font-size:50px;}
+                           </style>
+                          <body>
+                          <p> my name is budhesh </p>
+                          <p > my name is budhesh </p>
+                          <h2 > my name is budhesh </p>
+                          </body> 
+
+9)background property- body{background-color:value;} OR
+                          P{background-color:value;}                          *[HEX value=#FFOOOOO|RGB VALUE=(240,230,210)]
+                  1)background-color
+                  2)background-image
+                  3)background-repeat
+                  4)background-position
+                  5)background-attachment
+                  6)background-clip
+                  7)background-size
+                  8)background-origin
+                  9)background
+
+  1)background-color-<style>
+                               body{baclground-color:yellow;}
+                               p{background-color:red;}
+                               h2{background-color:green;}
+                               </style>
+                              <body>
+                              <p> my name is budhesh </p>
+                              <p> my name is budhesh </p>
+                              <h2> my name is budhesh </p>
+                              </body>
+  2)background-image-<style>
+                               body{baclground-image:url();}
+                             
+                               </style>
+                              <body>
+                              <p> my name is budhesh </p><br><br><br>
+                              <p> my name is budhesh </p><br><br>
+                              <h2> my name is budhesh </p>
+                              </body>
+  3)background-repeat property-<style>                                               
+                               body{baclground-image:url();}
+                                body{baclground-repeat:repeat-x}  ---horizontal image
+                                 body{baclground-repeat:repeat-y} ---vertical image
+                                 body{baclground-repeat:no-repeat} ---only one image
+                               </style>
+                              <body>
+                              <p> my name is budhesh </p><br><br><br>
+                              <p> my name is budhesh </p><br><br>
+                              <h2> my name is budhesh </p>
+                              </body>
+
+  4)background-position property-<style>                     [value=left top/center top/right top/center left/center right/center center/left bottum/center bottum/right bottum/x%y%]
+                               body{baclground-image:url();}
+                               body{background-repeat:no-repeat;}
+                               body{background-position:center center}
+                               </style>
+                              <body>
+                              <p> my name is budhesh </p><br><br><br>
+                              <p> my name is budhesh </p><br><br>
+                              <h2> my name is budhesh </p>
+                              </body>
+
+  5)background-attachment property-<style>                               *[by difault scroll]
+                               body{baclground-image:url();}
+                              body{background-repeat:no-repeat;}
+                               body{background-position:right top;}
+                               body{background-attachment:fixed;}
+                               </style>
+                              <body>
+                              <p> my name is budhesh </p><br><br><br>
+                              <p> my name is budhesh </p><br><br>
+                              <h2> my name is budhesh </p>
+                              </body>
+
+  6)background-shorthand property-<style>                              
+                               body {baclground:url() no-repeat right top fixed;}
+                               </style>
+                              <body>
+                              <p> my name is budhesh </p><br><br><br>
+                              <p> my name is budhesh </p><br><br>
+                              <h2> my name is budhesh </p>
+                              </body>
+
+  7)background-size property-<style>                              
+                               body{baclground-image:url();}
+                               body{background-repeat:no-repeat;}
+                               body{background-position:right top;}
+                               body{background-attachment:fixed;}
+                               body{background-size:440px;}
+                               </style>
+                              <body>
+                              <p> my name is budhesh </p><br><br><br>
+                              <p> my name is budhesh </p><br><br>
+                              <h2> my name is budhesh </p>
+                              </body>
+
+  8)background-origin property-                                  *[border-box/padding-box/content-box]
+                          <style> 
+                           p {border: 8px solid yellow;
+                              padding:50px;
+                              background-image:url(RAVI.jpg);
+                              background-repeat:no-repeat;
+                              background-position:center center;
+                              background-origin:content-box;
+                          }
+                             
+                            </style>
+                              <body>
+                              <p> my name is budhesh </p><br><br><br>
+                              <p> my name is budhesh </p><br><br>
+                              <h2> my name is budhesh </p>
+                              </body>
+ 
+ 9)background-clip property-<style>                            *[border-box/padding-box/content-box]
+                                  p{
+                            border:6px dotted-black;
+                            padding:50px;
+                            background-color:yellow;
+                            background-clip:content-box;
+                                    }  
+                           <body>
+                             <p>       my name is budhesh my name is budhesh my name is budhesh my name is budhesh my name is budhesh my name is budhesh vmy name is budhesh my name is                                budhesh my name is budhesh my name is budhesh my name is budhesh my name is budhesh my name is budhesh my name is budhesh 
+                           </p>
+                          </body> 
+
+10)multiple background image-
+
+ <style>
+    body{background-image:url(RAVI.jpg),url(budhesh.jpg);}
+    body{background-position:right center,left center;}
+    body{background-size:100px,200px;}
+    body{background-repeat:no-repeat,no-repeat;}
+</style>
+<body>
+ <p>my name is budhesh 
+ my name is budhesh 
+ my name is budhesh 
+ my name is budhesh 
+ my name is budhesh 
+ my name is budhesh 
+ my name is budhesh 
+ </p>
+</body>
+
+11)background full image-
+
+<style>
+    body{background:url(RAVI.jpg) no-repeat fixed center;
+       background-size:cover;
+    }
+    </style>
+
+12)text property in css-
+
+                  1)color
+                  2)direction
+                  3)text-align
+                  4)letter-spacing
+                  5)line-hight
+                  6)text-decoration
+                  7)text-indent
+                  8)text-shadow
+                  9)text-transform
+                 10)vertical-align
+                 11)white-space
+                 12)word-spacing
+                 13)text-align-last
+                 14)text-overflow
+                 15)word-break
+                 16)word-wrap
+
+ 1)color-
+
+<style>
+    h1{color:cyan;}
+    p{color:darkcyan;}
+</style>
+ 
+ 2)direction-     [LTR-LEFT TO RIGHT/RTL-RIGHT TO LEFT]
+ 
+<style>
+    h1{direction:rtf;}
+    p{direction:rtf;}
+</style>
+
+ 3)align-
+
+<style>
+   h1{text-align:center;}
+   p{text-align:center;}
+</style>
+
+ 4)letter-spacing-
+<style>
+  h1{letter-spacing:50px;}
+  p{letter-spacing:10px;}
+</style>
+
+ 5)line-height-
+<style>
+  p{line-hight:40px;}
+</style>
+
+ 6)text-decoration-   [value=underline/overline/line-through]
+<style>
+  p{text-decoration:underline;}
+</style>
+
+ 7)text-indent-   
+<style>
+p{text-indent:50px/-50px;}
+</style>
+
+ 8)text-shadow-     [value=h-shadow(horizontal) v-shadow(vertical) blur-radius color]
+<style>
+p{text-shadow:2px 2px 5px red;}
+</style>
+
+ 9)text-transform-   [lowewrcase=all letter are small/uppercase=all lletter are capital/capitalize=first element are capital/none]
+<style>
+h1{text-transform:uppercase;}
+</style>
+
+ 10)vertical-align-   [value=baseline/sub/super/top/text-top/middle/bottom/text-bottom/]
+<style>
+ .super{vertical-align:super;}
+ .sub{vertical-align:sub;}
+</style>
+<body>
+   <p>(a+b)<span class="super">2</span></p>
+   <p>H<span class="sub">2</span>o</p>
+</body>
+
+ 11)white-space-     [property=normal/pre/nowrap/pre-line/pre-wrap]
+<style>
+  p{white-space:wrap;}
+</style>
+
+ 12)word-spacing-
+<style>
+p{word-spacing:20px;}
+</style>
+
+ 13)text-align-last-
+<style>
+p{text-align:justify; text-align-last:center;}
+</style>
+
+ 14)word-wrap-         [property=breack-word/normal/inherit/initial/unset]
+<style>
+p{ width:200px;
+  border:2px solid black;
+  word-wrap:break-word;
+}
+</style>
+
+ 15)word-break-     [property=normal/breack-all/keep-all]
+<style>
+  p{ width:200px;
+  border:2px solid black;
+  word-break:break-all;
+</style>
+
+
+13)font property-
+  1)font-family
+  2)font-size
+  3)font-stretch
+  4)font-style
+  5)font-variant
+  6)font-weight
+  7)fontshorthand property
+
+ 1)font-family
+<style>
+p{font-family:Arial,serif,"times new roman";}
+</style>
+
+ 2)font-size-
+<style>
+p{font-size:50px;}
+</style>
+
+ 3)font-stretch-   [property=noraml/wider/narrower/ultra-condensed/extra-condensed/condenssed/semi-condensed/semi-expanded/expended/extra-expended/ultra-expended]
+<style>
+p{font-family:serif;
+font-stretch:condensed;}
+</style>
+
+ 4)font-style-   [property=italic/normal/oblique]
+<style>
+ p{font-style:italic;}
+</style>
+
+ 5)font-variant-    [property=small-caps/normal]
+<style>
+ p{font-variant:small-caps;}
+</style>
+
+ 6)font-weight-   [normal/bond/bolder/lighter/number]
+<style>
+p{font-weight:bold;}
+</style>
+
+ 7)font shorthand property-
+<style>
+p{font:bold 30px serif;}
+</style>
+
+14)list property-
+   1)list-style-type
+   2)list-style-image
+   3)list-style-position
+   4)list-style-shorthand property
+
+ 1)list-style-type-
+<style>
+ul/ol{list-style-type:square/lower-alpha;}
+</style>
+
+ 2)list-style-image-
+<style>
+ul{list-style-image:url("RAVI.jpg");
+}
+</style>
+
+ 3)list-style-position-    [property=inside/outside/inherit/initial/unset]
+<style>
+ul{list-style-position:inside;}
+</style>
+ 
+ 4)list-style-shorthand property-
+<style>
+ul{list-style:square inside;}
+</style>
+
+15)border style-    [property=hidden/dotted/dashed/solid/double/groove/ridge/inset/outset]
+<style>
+p{border-style:dotted;}
+</style>
+
+16)border-width property-
+<style>
+p{border-style:solid; border-width:20px;}
+</style>
+
+17)border-color-
+<style>
+p{border-style:solid; border-width:20px; border-color:yellow;}
+</style>
+
+18)border-shorthand property-
+<style>
+p{border:10px solid blue;}
+</style>
+
+19)table property-
+   1)border
+   2)border-collapse
+   3)border-spacing
+   4)caption-side
+   5)empty-cell
+   6)table-layout
+
+ 1)border-
+<style>
+    table{border: 2px solid yellow;}
+    th{border:2px solid red;}
+    td{border:2px solid green;}
+</style>
+
+ 2)border-collapse-    [property=collapse/separate]
+<style>
+    table{border: 2px solid yellow;}
+    th{border:2px solid red;}
+    td{border:2px solid green;}
+    table{border-collapse: collapse;}
+</style>
+
+ 3)border-spacing-
+<style>
+    table{border: 2px solid yellow;}
+    th{border:2px solid red;}
+    td{border:2px solid green;}
+    table{border-collapse:seprate;}
+    table{border-spacing: 10px 20px;}
+</style>
+
+ 4)caption-side-            [property=bottom/top/inherit/intial]
+<style>
+    table{border: 2px solid yellow;}
+    th{border:2px solid red;}
+    td{border:2px solid green;}
+    caption{caption-side:bottom;}
+</style>
+
+ 5)empty-cell-     [property=hide/show/initial/inherit]
+<style>
+    table{border: 2px solid yellow;}
+    th{border:2px solid red;}
+    td{border:2px solid green;}
+    table{border-collapse: separate;}
+    table{empty-cells: hide;}
+</style>
+
+ 6)table-layout-    [property=fixed/auto]
+<style>
+    table{border: 2px solid yellow;
+    table-layout:fixed;}
+    td{border:2px solid green;}
+</style>
+
+20)height/width in table-
+<style>
+    table{border: 2px solid yellow;
+    width:100%; }
+    th{border:2px solid red; height:50px;}
+    td{border:2px solid green; height:30px;}
+</style>
+
+21)table padding-
+<style>
+    table{border: 2px solid yellow;
+    border-collapse:collapse;}
+    th{border:2px solid red;}
+    td{border:2px solid green;}
+    td,th{padding:10px;}
+</style>
+
+22)table color-
+<style>
+    table{border: 2px solid yellow;
+    border-collapse:collapse;
+    background-color:yellow;}
+    th{border:2px solid red; background-color: grey;}
+    td{border:2px solid green;}
+</style>
+
+23)display property-
+  1)inline
+  2)block
+  3))flex
+  4)inline-block
+  5)inline-flex
+  6)inline-table
+  7)list-item
+  8)run-in
+  9)tabel
+ 10)table-row-group
+ 11)table-caption
+ 12)table-columb-group
+ 13)table-header-group
+ 14)tabel-footer-group
+ 15)tabel-cell
+ 16)tabel-columb
+ 17)table-row
+ 18)none
+
+ 1)inline or block or inline-block or none-
+ 
+block is created new line in our web page
+inline is not creat a new line
+
+<style>
+ p{display:inline;
+width:100px;}
+</style>
+
+<style>
+ p{display:block;}
+</style>
+
+<style>
+p{display:inline-block;
+   width:100px;}
+
+<style>
+p{display:none;}=[value is not show in browser]
+</style>
+
+24)visibility-
+
+     1)visible(by default)
+     2)collapse
+     3)hidden
+ 2)collapse property-
+<style>
+    table{border: 2px solid yellow;}
+    th{border:2px solid red;}
+    td{border:2px solid green;}
+    caption{caption-side:top;}
+    tr.name{visibility:collapse;}
+</style>
+<tr class="name"></tr>
+
+ 3)hidden property
+<style>
+    p{border: 2px solid black;}
+    p.bk{visibility:hidden;}
+</style>
+<p class="bk"></p>
+
+25)difference between display none or visibility hidden-
+<style>
+  p,h1,h2,h3{border:solid black;}
+  p.none{display:none;}
+  h2.hidden{visibility:hidden;}
+</style>
+<body>
+    <p> 1 budhesh</p>
+    <p class="none"> 2 ramesh</p>
+    <p> 3 suresh</p>
+    <h1> 4 yasin</h1>
+    <h2 class="hidden"> 5 yakub</h2>
+    <h3> 6 jump</h3>
+</body>
+
+26)link-
+  1)a:link
+  2)a:visible
+  3)a:hover
+  4)a:active
+
+27)left/right/top/bottom-  [property=auto/length]
+<style>
+img{
+     position:fixed;
+     left:50px;
+     bottom:50px
+     or
+     right:50px;
+     top:50px;
+  }
+<img src=".jpg"></img>*
+</style>
+
+28)position property-   [value=static/fixed/relative/absolute left,right.top,bottom]
+  1)static value-
+<style>
+  img{
+    position:static;
+  }
+</style>
+<body>
+<img src="rohan.jpg"></img>
+<p></p>
+
+ 2)fixed value-
+<style>
+  img{
+    position:fixed;
+   top:200px;
+    right:200px;
+  }
+</style>
+<body>
+<img src="rohan.jpg"></img> 
+
+
+ 3)relative value-
+<style>
+    div{
+        position:relative;
+        background-color:  yellow;
+        height:400px;
+        width:400px;
+    }
+    h1{
+        position:relative;
+        top:200px;
+    }
+</style>
+<body>
+<div>
+    <h1>www.youtube.com</h1>
+</div>
+
+ 4)absolute value-
+<style>
+    div{
+        position:fixed;
+        background-color:  yellow;
+        height:400px;
+        width:400px;
+    }
+  h1{
+  
+        position:absolute;
+        top:200px;
+    }
+</style>
+<body>
+<div>
+    <h1>www.youtube.com</h1>
+</div>
+
+29)z-index (element layer)-
+<style>
+   div{
+       position: fixed;
+       height:5000px;
+       width:4000px;
+       background-color: green;                                                              29 point samjvano baki chee
+   } 
+   img{
+       position:relative;
+   }
+   h1{
+       position: relative;
+      top:200px;
+      left:800px;
+      z-index: 20;
+      color:indigo;
+   }
+</style>
+
+30)overflow property-   [property=visible(default)/scroll/auto/hidden]
+ 1)visible property-
+<style>
+    p{
+        height: 200px;
+        width:200px;
+        border:3px solid yellow;
+        overflow: visible;
+    }
+   
+</style>
+
+ 2)hidden property-
+<style>
+    p{
+        height: 200px;
+        width:200px;
+        border:3px solid yellow;
+        overflow:hidden;
+    }
+   
+</style>
+<body>
+
+ 3)scroll property-
+<style>
+    p{
+        height: 200px;
+        width:200px;
+        border:3px solid yellow;
+        overflow:scroll;
+    }
+   
+</style>
+<body>
+
+4)auto property-
+<style>
+    p{
+        height: 200px;
+        width:200px;
+        border:3px solid yellow;
+        overflow:auto;
+    }
+   
+</style>
+<body>
+
+31)float and clear property-   [value-right/left/none]
+  1)float property
+<style>
+   img{
+       float:left;
+       margin-right: 10px;
+   }
+</style>
+<body>
+<img src="rohan.jpg"></img>
+
+ 2)clear property-         [value-right/left/none/both]
+
+   1)clear right/left value-
+<style>
+            img{
+                float:left;
+                margin-right: 10px;
+            }
+            p{
+                clear:left/right;
+            }
+        </style>
+        <body>
+            <img src="rohan.jpg"></img>
+  
+   2)clear both value-
+<style>
+         #no{
+             float:left;
+           margin-right:10px;
+         }
+         #yes{
+             float:right;
+             margin-left:10px;
+         }
+        p {
+               clear:both;
+         }
+        </style>
+        <body>
+           <img id="yes" src="rohan.jpg"></img>
+            <img id="no" src="RAVI.jpg"></img>
+
+32)div and span element-
+   1)div-
+<style>
+ div{
+    color:red; 
+}
+</style>
+<body>
+  <div> budhesh </div>
+</body>
+  
+ 2)span-
+<style>
+   span{
+        color:red;
+          }
+</style>
+<body>
+    <p> budhhesh <span> katariya </span></p>
+</body>
+
+33)!important declaration in css-
+<style>
+  #name .nn{
+              color:red;
+             }
+  p{
+     color:green; !important;
+    }
+</style>
+<body>
+<div id="name">
+<p class="nn">budhesh </p>
+</div>
+</body>
+
+      [   priority level in css selecter
+            1)id selecter
+            2)class selecter
+            3)element selecter  ]
+
+34)universal selecter-(*-start is universal selecter)-
+<style>
+  *{color:green;}
+</style>
+<body>
+ <div id="name">
+    <p>my name is budhesh </p>
+    <h1> rahul </h1>
+    <a href="#">click here</a>
+  <div>
+    <p> my sir namme is katariya </p>
+    <h2> katariya </h2>
+  </div>
+</div>
+</body>
+
+35)child selecter-(>-this symbol is  child selecter)
+<style>
+               #name >p{
+                     color:hotpink;
+               }
+        </style>
+        <body>
+            <div id="name">
+                <p>budhesh name is unique</p>
+                <h1>you are right boy</h1>
+                <p>sorry i am just joke </p>
+                <div>
+                    <p>ramu or shamu are two brother</p>
+                    <h5>yeh boy </h5>
+                </div>
+            </div>
+
+
+36)adjacent selecter-(+ this symbol is adjacent selecter)
+<style>
+              #name h1 +p{
+                  color: hotpink;
+              }
+        </style>
+        <body>
+            <div id="name">
+                <p>budhesh name is unique</p>
+                <h1>you are right boy</h1>
+                <p>sorry i am just joke </p>
+                <div>
+                    <p>ramu or shamu are two brother</p>
+                    <h1>yeh boy </h1>
+                    <p>ramu bhai </p>
+                </div>
+            </div>
+
+37)sibling selecter-(~ this symbol is sibling selecter)
+  <style>
+          p ~ h5{
+                color:hotpink;
+            }
+        </style>
+        <body>
+           <div>
+               <p>budhesh</p>
+           </div>
+           <p>ramuesh</p>
+           <h5>suruesh</h5>
+        </body>
+
+38)pseudo-class-(syntax= selecter:pseudo-class{property:value;})
+    1):link
+    2):visted
+    3):hover
+    4):active
+    5):focus
+    6):checked
+    7):first-child
+    8):first-of-type
+    9):nth-child(n)
+
+ 7)first and last child-
+ <style>
+            div p:first-child{
+                  color:hotpink;
+              }
+              div p:last-child{
+                  color:indianred;
+              }
+        </style>
+
+ 8)first -of-type and last- of-type-
+<title> css all tag </title>
+        <style>
+            div p:first-of-type{
+                  color:hotpink;
+              }
+              div p:last-of-type{
+                  color:green;
+              }
+        </style>
+
+ 9)nth child-     [even/odd/3n+2/ value in :nth(value)]
+<style>
+  ul li:nth-child(even){
+       color:red;
+  }
+  ul li:nth-child(odd){
+         color:green;
+  }
+</style>
+
+39)content property-   [syntax-p::after/before{content:""}]
+content value-
+ 1)normal(default)
+ 2)none
+ 3)counter
+ 4)attr(atribute)
+ 5)string
+ 6)open-quote
+ 7)close-quote
+ 8)no-open-quote
+ 9)no-close-quote
+ 10)url(path in url)
+
+ 5)string value-
+<style>
+     p::after{content:"true"}
+</style>
+
+ 6/7)open/close quote-
+<style>
+    p::before{content:open-quote;}
+     p::after{content:close-quote;}
+</style>
+
+ 8/9)no-open/close-quote-
+<style>
+    p::before{content:no-open-quote;}
+     p::after{content:no-close-quote;}
+</style>
+
+ 10)url value-
+<style>
+    p::before{content:url(don.jpg);} 
+</style>
+
+40)pseudo element- [syntax-selecter::pseudo-element{property:value;}]
+pseudo element-
+ 1)::first-letter
+ 2)::first-line
+ 3)::selection
+ 4)::before
+ 5)::after
+
+ 1/2)first-letter value-
+<style>
+    p::first-letter{color:rosybrown;}
+</style>
+
+ 2)first-line value-
+<style>
+    p::first-line{color:rosybrown;}
+</style>
+
+ 3)selection value-
+<style>
+p::selection{color:red;}
+</style>
+
+ 4/5)before and after value-
+<style>
+    p::before{content:"css para start=";
+       color:green;
+       }
+       p::after{content:"=css para finish";
+       color:red;
+       }
+</style>
+
+41)margin property-
+five margin property
+ 1)margin-left
+ 2)margin-right
+ 3)margin-bottom
+ 4)margin-top
+ 5)margin
+
+ 5)margine all property-
+<style>
+      p{margin-left:10px;}
+      p{margin-right:10px;}
+      p{margiin-bottom:10px;}
+      p{margin-top:10px;}
+      p{margine:10px 10px 10px 10px;}
+</style>
+
+42)padding property-
+ five padding property
+ 1)padding-left
+ 2)padding-right
+ 3)padding-top
+ 4)padding-bottom
+ 5)padding
+<style>
+      p{padding-top:10px;}
+      p{padding-right:10px;}
+      p{padding_bottom:10px;}
+      p{padding-left:10px;}
+      p{padding:10px 10px  10px 10px 10px;}
+</style>
+
+43)width and height-
+<style>
+p{
+   width:100px;
+   height:100px;
+}
+</style>
+
+44)min width or max width-
+<style>
+ p{
+  min-width:100px;
+  max-width:110px;
+  background-color: chartreuse;
+ }
+
+45)min height or max height-
+<style>
+ p{
+        max-height:100px;
+        min-height:50px;
+  background-color: chartreuse;
+ }
+  
+</style>
+
+46)opacity with image-[opacity value is=0.0-1]
+<style>
+    img{opacity:0.5;}
+    div{
+        width:100px;
+        height:30px;
+        background-color: chartreuse;
+    }
+    div:hover{opacity:0.5;
+
+    }
+</style>
+
+47)opacity with text-
+<style>
+    div{
+        width:80px;
+        height:30px;
+       background-color:rgba(186,165,52,0.3);
+    }
+</style>
+
+48)
+  1)border-left-style
+  2)border-left-width
+  3)border-left-color
+  4)border-left-
+
+ )border-left-
+<style>
+   div{
+       border-left-style:solid;
+       border-left-color:chartreuse;
+       border-left-width:2px;
+       border-left:solid chartreuse 2px;
+   }
+</style>
+
+49)
+ 1)border-right-style
+ 2)border-right-color
+ 3)border-right-width
+ 4)border-right
+
+ )border-right-
+<style>
+ div{
+     border-right-style:dotted;
+     border-right-color:red;
+     border-right-width:2px;
+     border-right:solid red 2px;
+ }
+</style>
+
+50)
+ 1)border-top-style
+ 2)border-top-color
+ 3)border-top-width
+ 4)border-top
+
+)border-top-
+<style>
+ div{
+     border-top-style:dotted;
+     border-top-color:red;
+     border-top-width:2px;
+     border-top:solid red 2px;
+ }
+</style>
+
+51)
+ 1)border-bottom-style
+ 2)border-bottom-color
+ 3)border-bottom-width
+ 4)border-bottom
+
+)border-bottom-
+<style>
+ div{
+     border-bottom-style:dotted;
+     border-bottom-color:red;
+     border-bottom-width:2px;
+     border-bottom:solid red 2px;
+ }
+</style>
+
+52)border-radius with image-
+<style>
+   img{
+       height:100px;
+       width:100px;
+       border-radius:20px;
+   }
+   </style>
+
+53)border radius in css-
+   1)border-top-left-radius
+   2)border-top-right-radius
+   3)border-bottom-left-radius
+   4)border-bottom-right-radius
+   5)border-radius
+
+)border-radius-
+<style>
+      div{
+          border:solid green;
+          border-top-left-radius:10px;
+          border-top-right-radius:10px;
+          border-bottom-left-radius:10px;
+          border-bottom-right-radius:10px;
+          border-radius:10px 10px 10px 10px;
+      }
+   </style>
+
+54)box-shadow-[h-shadow/v-shadow/blur/color]
+<style>
+     div{
+         border:solid red;
+         height:300px;
+         width:200px;
+         background-color: royalblue;
+         box-shadow:50px 40px 10px green,40px 30px 5px yellow;
+     }
+   </style>
+
+55)box-shadow in image-
+<style>
+    img{
+         height:300px;
+         width:200px;
+         box-shadow:50px 40px 10px yellow;
+     }
+     (orr)
+
+     img:hover{
+         box-shadow:40px 40px green;
+     }
+   </style>
+
+56)transition in css-
+  propertey-
+ 1)transition-timing-property
+ 2)transition-property
+ 3)transition-duration
+ 4)transition-delay
+ 5)transition
+
+ 1)transition-timing-property-  [value-ease/linear/ease-in/ease-out/ease-in-out/step-start/step-end/steps(int,start,end)/cubic-bezier(n,n,n,n)]
+ 2)transition-porperty-             [value-none/all/property]
+ 3)transition-duration-     []
+ 4)transition-delay-
+ 5)transition-    
+[syntax-{transition:{transition-porperty,transition-duration,transition-timing-property,transition-delay}]
+
+ )transition-
+<style>
+div{
+    width:100px;
+    height:100px;
+    background-color:pink;
+}
+div:hover{
+          height: 200px;
+          width:200px;
+          background-color: chartreuse;
+}
+div{
+    transition-property:all;
+    transition-duration: 3s;
+    transition-delay:4s;
+    transition-timing-function: ease;
+}
+</style>
+   (orrrrr)
+<stryle>
+     div{
+          transition:ease,4s,all,3s;
+        }
+</style>
+
+57)cursor-property-
+ 1)default 2)auto
+ 3)all-scroll
+ 4)none
+ 5)text
+ 6)url
+ 7)alias
+ 8)pointer
+ 9)wait
+ 10)no-drop
+ 11)help
+ 12)move 
+ 13)not-allowed 
+
+<style>
+    div{
+        width:100px;
+        height:200px;
+        background-color: chartreuse;
+    }
+    div:hover{
+        cursor:not-allowed;
+    }
+</style> 
+
+58)text-decoration-
+ 1)text-decoration-line
+ 2)text-decoration-color
+ 3)text-decoration-style
+ 4)text-decoration-[line/style/color follow this syntax]
+
+)text-decoration-
+<style>
+    h1{
+        width:100px;
+        height:200px;
+      text-decoration-line:underline ;
+      text-decoration-style: dashed;
+      text-decoration-color: chartreuse;
+    }
+</style>
+
+59)outline in css-
+ 1)outline-color
+ 2)outline-style
+ 3)outline-width
+ 4)outline
+ 
+)outline
+<style>
+    h1{
+       outline-style:dashed ;
+       outline-color:blue;
+       outline-width:10px;
+    }
+</style>
+
+
+60)outline-offset-
+<style>
+    h1{
+        border: solid chartreuse;
+       outline-style:dashed ;
+       outline-color:blue;
+       outline-width:10px;
+       outline-offset: 8px;
+    }
+</style>
+
+61)columns in css-
+ 1)column-count
+ 2)column-width
+ 3)columns:{200px 2;}
+
+)columns-
+<style>
+    div{
+        column-width:100px;
+        column-count:4;
+    }
+</style>
+
+62)column rule-
+ 1)column-rule-stylexxxxxxxx`
+ 2)column-rule-width
+ 3)column-rule-color
+ 4)column-rule-shorthand [column-rule:width/style/color]
+
+)column-
+<style>
+    div{
+       columns:3;
+       column-rule-style: dashed;
+       column-rule-width: 10px;
+       column-rule-color: chartreuse;
+    }
+</style>
+
+63)column-gap-
+<style>
+    div{
+       columns:3;
+       column-rule:3px dotted red;
+       column-gap: 50px;
+    }
+
+64)column-span-
+<style>
+    div{
+        columns:3;
+    }
+    p{
+        column-span:all;
+    }
+</style>
+
+65)filter is css- [styntax-p{filter:value()}]
+   value- 
+ 1)none
+ 2)blur(px)
+ 3)brightness(%)
+ 4)contrast(%)
+ 5)drop-shadow(h/v/blur/color)
+ 6)grayscale(%)
+ 7)hue-rotate(degree)
+ 8)invert(%)
+ 9)opacity(%)
+ 10)saturate(%)
+ 11)sepia(%)
+ 12)url()
+ 
+all value=
+<style>
+     img{
+         filter:blur(10px);
+         filter:brightness(200%);
+         filter:contrast(50%);
+         filter:drop-shadow(10px 20px black);
+         filter:grayscale(50%);
+         filter:hue-rotate(180);
+         filter:invert(60%);
+         filter:opacity(0.6);
+         filter:saturate(60%)
+         filter:sepia(70%)
+         
+     }
+</style>
+
+66)box-model in css-
+<style>
+   div{
+       height:300px;
+       width:200px;
+       margin:5px;
+       padding:5px;
+       border:2px solid red;
+   }
+</style>
+
+67)box-sizing property-[two value in box-sizing=box-border/box-content]
+box-border are include value of padding and border
+content box are not include value og padding border and margin
+
+<style>
+   div{
+       box-sizing:border-box;
+       height:300px;
+       width:200px;
+       margin:5px;
+       padding:5px;
+       border:2px solid red;
+   }
+</style>
+
+68)attribute  selecter-
+
+ 1) [syntax=selecter[attribute]{css;}]
+    <style>
+   div[class]{
+      color: pink;
+   }
+</style>
+
+ 2)[syntax=selecter[atribute="value"]{css}]
+<style>
+   div[class="same"]{
+      color: pink;
+   }
+</style>
+ 
+ 3)[syntax=[attribute~="value"]{css}]
+<style>
+  [class~="same"]{
+      color:red;
+  }
+</style>
+ 
+ 4)[syntax=[class |=""]{css};]
+<style>
+  [class|="same"]{
+      color:red;
+  }
+</style>
+
+ 5)[syntax=attribute ^="value"]{css};] -start value with same
+<style>
+  [class^="same"]{
+      color:red;
+  }
+</style>
+ 
+ 6)[syntax=attribute $="value"]{css;}]-end value with same
+<style>
+  [class$="same"]{
+      color:red;
+  }
+</style>
+ 
+ 7)[syntax=atribute *="value"]{css;}]
+<style>
+  [class*="sa"]{
+      color:red;
+  }
+</style>
+
+69)flexbox(flexible box)-
+   prperty-
+ 1)display
+ 2)flex-direction
+ 3)justify-content
+ 4)align-item
+ 5)flex-wrap
+ 6)align-content
+ 7)flex-flow
+ 8)order
+ 9)align-self
+10)flex
+
+ 1)display property-[display value=flex/inline flex]
+
+ 2)flex-direction- [ value=row/row-reverse/column/column-reverse]
+  syntax=div{flex-direction:row-revese;}
+<style>
+    div{
+         border:2px solid black;
+         background-color: cornflowerblue;
+         display:flex;
+         flex-direction:column-reverse;
+    }
+    .AB{
+        text-align:center;
+        margin: 3px;
+        padding:3px;
+        border:2px;
+    }
+    #firstname{
+        background-color: crimson;
+    }
+    #secondname{
+               background-color: cyan;
+    }
+    #thirdname{
+        background-color: darkblue;
+    }
+    #fourthname{
+        background-color: darkred;
+    }
+    
+</style>
+
+ 3)justify-content- [flex-start(default)/flex-end/center/space-between/space-around]
+  syntax=div{justify-content:center;}
+<style>
+    div{
+         border:2px solid black;
+         background-color: cornflowerblue;
+         display:flex;
+        justify-content:space-around;
+    }
+    .AB{
+        text-align:center;
+        margin: 3px;
+        padding:3px;
+        border:2px;
+    }
+    #firstname{
+        background-color: crimson;
+    }
+    #secondname{
+               background-color: cyan;
+    }
+    #thirdname{
+        background-color: darkblue;
+    }
+    #fourthname{
+        background-color: darkred;
+    }
+    
+</style>
+
+ 4)align-items- [stretch(default)/center/flex-start/flex-end/baseline]
+<style>
+    div{
+         border:2px solid black;
+         height:200px;
+         background-color: cornflowerblue;
+         display:flex;
+       
+        align-items:flex-end;
+    }
+    .AB{
+        text-align:center;
+        margin: 3px;
+        padding:3px;
+        border:2px;
+       
+    }
+    #firstname{
+        background-color: crimson;
+    }
+    #secondname{
+               background-color: cyan;
+    }
+    #thirdname{
+        background-color: darkblue;
+    }
+    #fourthname{
+        background-color: darkred;
+    }
+    
+</style>
+
+ 5)felx-wrap- [wrap(default)/wrap-reverse/nowrap]
+<style>
+    div{
+         border:2px solid black;
+         height:200px;
+         background-color: cornflowerblue;
+         display:flex;
+         flex-wrap:nowrap;
+       
+       
+    }
+    .AB{
+        text-align:center;
+        margin: 3px;
+        padding:3px;
+        border:2px;
+       
+    }
+    #firstname{
+        background-color: crimson;
+    }
+    #secondname{
+               background-color: cyan;
+    }
+    #thirdname{
+        background-color: darkblue;
+    }
+    #fourthname{
+        background-color: darkred;
+    }
+    
+</style>
+
+ 6)align-content- [stretch(default)/center/flex-start/flex-end/space-between/space-around]
+<style>
+    #name{
+         border:2px solid black;
+        height:200px;
+         background-color: cornflowerblue;
+         display:flex;
+         flex-wrap:wrap;
+        align-content:flex-start;
+       
+       
+    }
+    .AB{
+        text-align:center;
+        margin: 3px;
+        padding:3px;
+        border:2px;
+        height:30px;
+      
+       
+       
+    }
+    #firstname{
+        background-color: crimson;
+    }
+    #secondname{
+               background-color: cyan;
+    }
+    #thirdname{
+        background-color: darkblue;
+    }
+    #fourthname{
+        background-color: darkred;
+    }
+    
+</style>
+
+ 7)flex-flow(shorthand)
+syntax=selecter{flex-flow:flex-direction flex-wrap;}
+<style>
+   div{
+         border:2px solid black;
+         background-color: cornflowerblue;
+         display:flex;
+        flex-flow:row-reverse nowrap;
+       
+       
+    }
+    .AB{
+        text-align:center;
+        margin: 3px;
+        padding:3px;
+        border:2px;
+        height:30px;
+      
+       
+       
+    }
+    #firstname{
+        background-color: crimson;
+    }
+    #secondname{
+               background-color: cyan;
+    }
+    #thirdname{
+        background-color: darkblue;
+    }
+    #fourthname{
+        background-color: darkred;
+    }
+    
+</style>
+ 
+70)order property-
+syntax=div{order:1;}
+<style>
+    div{
+          border:2px solid black;
+          display:flex;
+     }
+     .AB{
+         text-align:center;
+         margin: 3px;
+         padding:3px;
+         border:2px;
+         height:30px;
+       
+        
+        
+     }
+     #firstname{
+         background-color: crimson;
+         order:2;
+     }
+     #secondname{
+                background-color: cyan;
+                order:1;
+     }
+     #thirdname{
+         background-color: darkblue;
+         order:-1;
+     }
+     #fourthname{
+         background-color: darkred;
+     }
+     #fivename{
+         background-color: deeppink;
+     }
+</style>
+
+71)align-self- [[auto(default)/stretch/center/flex-start/flex-end/baseline]
+<style>
+    #name{
+          border:2px solid black;
+          height:200px;
+          display:flex;
+          align-items: flex-end;
+     }
+     .AB{
+         text-align:center;
+         margin: 3px;
+         padding:3px;
+         border:2px;
+         height:30px;
+       
+        
+        
+     }
+     #firstname{
+         background-color: crimson;
+         align-self:center;
+        
+     }
+     #secondname{
+                background-color: cyan;
+               
+     }
+     #thirdname{
+         background-color: darkblue;
+        
+     }
+     #fourthname{
+         background-color: darkred;
+         align-self: center;
+     }
+     #fivename{
+         background-color: deeppink;
+     }
+     
+ </style>
+
+72)flex-grow-
+<style>
+    #name{
+          border:2px solid black;
+          height:200px;
+          width:400px;
+          display:flex;
+         
+     }
+     .AB{
+         text-align:center;
+         margin: 3px;
+         padding:3px;
+         border:2px;
+         height:30px;
+       
+        
+        
+     }
+     #firstname{
+         background-color: crimson;
+         flex-grow:1;
+        
+        
+     }
+     #secondname{
+                background-color: cyan;
+               
+     }
+     #thirdname{
+         background-color: darkblue;
+         flex-grow: 1;
+        
+     }
+     #fourthname{
+         background-color: darkred;
+        
+     }
+     #fivename{
+         background-color: deeppink;
+     }
+     
+
+73)flex-shrink property-
+<style>
+    #name{
+          border:2px solid black;
+          height:200px;
+          width:300px;
+          display:flex;
+         
+     }
+     .AB{
+         text-align:center;
+         margin: 3px;
+         padding:3px;
+         border:2px;
+         height:30px;
+       
+        
+        
+     }
+     #firstname{
+         background-color: crimson;
+        
+        
+        
+     }
+     #secondname{
+                background-color: cyan;
+                flex-shrink:2;
+               
+     }
+     #thirdname{
+         background-color: darkblue;
+     
+     }
+     #fourthname{
+         background-color: darkred;
+        
+     }
+     #fivename{
+         background-color: deeppink;
+     }
+     
+ </style>
+
+74)flex in css-
+syntax=div{flex: flex-grow flex-shrink flex-basis;}
+
+<style>
+    #name{
+          border:2px solid black;
+          height:200px;
+          width:300px;
+          display:flex;
+         
+     }
+     .AB{
+         text-align:center;
+         margin: 3px;
+         padding:3px;
+         border:2px;
+         height:30px;
+       
+        
+        
+     }
+     #firstname{
+         background-color: crimson;
+         flex:1 2;
+        
+        
+        
+     }
+     #secondname{
+                background-color: cyan;
+                flex-shrink:2;
+               
+     }
+     #thirdname{
+         background-color: darkblue;
+     
+     }
+     #fourthname{
+         background-color: darkred;
+        
+     }
+     #fivename{
+         background-color: deeppink;
+     }
+     
+ </style>
+
+75)media-query-
+syntax= @media not | only mediatype and(expressions/media features){css ;}
+@media screen and (min-width:480px;){
+body{background-color:green;}
+}
+@media(480px){
+body{background color:;}
+}
+media type value=[all/print/screen/speech/]
+
+
+1) And
+   @media (min-width: 800px;){css;}
+   @media screen and (min-width:800px;)and (orientation:landscap){css}
+ 
+2) Or(comma)
+   @media (min-width:800px;),(orientation:landscape) {css}
+
+3) And
+   @media not all and (min-width:800px;){css}
+   @media not(all and (min-width:800px;)){css}
+   @media (not all) and (min-width:500px;){css}
+
+   @media not screen and (color),print and (color){css}
+   @media(not(screen and (color))),print and (color) {css}
+
+ *MEDIA FEATURES*
+1)any-hover
+2)any-pointer
+3)aspect-ratio
+4)color
+5)color-index
+6)grid
+7)height
+8)hover
+9)inverted-colors
+10)light-level
+11)max-aspect-ratio
+12)max-color
+13)max-color-index
+14)scan
+15)scripting
+16)max-resolution
+17)max-height
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+

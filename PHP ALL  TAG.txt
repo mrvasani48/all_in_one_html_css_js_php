@@ -1,0 +1,2837 @@
+               PHP ALL TAG
+
+1)php syntax- <?php
+                    php code ;
+                  ?>
+
+2)variable in php-
+   $num=25.5;
+   $name="budhesh katariya";
+   $roll="555";
+-variable start with $
+-start with letter or underscore(_)
+-not start with number
+
+ <?php
+  $num=25.25;
+  echo $num;
+?>
+
+3)internal data type-
+ 1)integer-12,-12,12.5;
+ 2)float/double
+ 3)string
+ 4)Boolean 5)object
+ 6)resource
+ 7)NULL
+
+4)echo statement-
+syntax- echo "budhesh katariya";
+        echo 'budhesh';
+        echo 25.5;
+        echo ("budhesh");
+        echo "budhesh","katariya";
+        echo "budhesh"."katariya";
+
+ -echo with html-
+echo "<b>budhesh</b>"
+echo "<b>"."budhesh"."</b>";
+
+ -echo with variable-
+$value=10;
+echo $value;
+
+<?php
+$value1=10;
+$value2=20;
+$sum=($value1+$value2);
+$name="budhesh".;
+echo "value 1 is:" . $value1;
+echo "total:".$sum;
+echo $name;
+?>
+
+$name="budhesh";
+echo $name;
+
+5)print statement-
+<?php
+$value1=10; 
+$value2=20;
+$sum=($velue1+$value2);
+$name="budhesh";
+print "value 1 is:" . $value1;
+print "total:".$sum;
+print $name;
+?>
+
+6)here document-
+syntax-echo <<<token
+
+<?php
+echo <<<myname
+   hello 
+   my name is budhesh katariya
+   i am 20 year old man.
+myname;
+?>
+
+7)comment in php-
+  1)single line comment
+  2)multiline comments
+ 1) singleline comment
+start with //
+start with #
+
+<?php
+echo "single line comment in php";
+//hello this is single line comment
+
+?>
+
+ 2)multiline comments
+start with-/*   */
+
+<?php
+echo "multiline comment in php";
+/*hello this is multiline comment*/
+
+?>
+
+8)string interpolation-
+<?php
+$num=20;
+$name="budhesh";
+$name1="budh";
+echo "value is: $num";
+echo "value is: ".$num;
+echo "$name katariya";
+echo "{$name1}esh";
+echo 'mango prize is $two';
+echo "$value mango prize \$two";
+?>
+
+9)constant-
+syntax-define("constant_variable",value,case-insensitive);
+
+<?php
+define ("pi", 3.1415);
+define ("site", "budheshshows");
+echo pi;
+echo site;
+?>
+
+10)math oparater/arithmatic operation-
+
+<?php
+$value1=4;
+$value2=6;
+echo $value1+$value2. "<br>";
+echo $value1-$value2. "<br>";
+echo $value1*$value2. "<br>";
+echo $value1%$value2. "<br>";
+?>
+
+11)math function-
+sin
+cos
+tan
+cot
+sqrt(square root)
+etc..
+
+<?php
+   $num=49;
+  echo sqrt($num)."<br>";
+  echo sqrt(64)."<br>";
+  echo sin(90)."<br>";
+  echo tan(45)."<br>";
+?>
+
+12)assignment operation-
+equale assignment oparation
+=
+<?php
+$budhesh=$ramesh=$suresh=30 ;
+echo $budhesh. "<br>";
+echo $ramesh. "<br>" ;
+echo $suresh. "<br>" ;
+?>
+
+combined assignment operation
+
+ +=
+ -=
+ *=
+ %=
+
+
+<?php
+$k=20
+$k +=10;
+echo $k."<br>";
+?>
+
+13)if statement and nested if statement-
+
+syntax= 1)if(condition/expressioon)
+                       statement;
+
+        2) if(condition/expressioon):
+             block of statement;
+           endif;
+
+        3) if(condition/expressioon)
+              {
+                 block of statement;
+                }
+
+3)<?php
+  if(5<4)
+  {
+      echo "it is  true <br>";
+  }
+  echo "budhesh" ;
+?>
+
+2)<?php
+  if(6>5):
+    echo "true<br>";
+  endif;
+  echo "hello";
+?>
+
+ x)nested if statement-
+             
+syntax-if(condition):
+          block of statement;
+       if(condition):
+          block of statement;
+       endif;
+       endif;
+
+
+<?php
+  if(6>5):
+    echo "true <br>";
+    if(5>3):
+        echo "it is true <br>";
+    endif;
+  endif;
+  if(10>60):
+  echo"it is true <br>";
+  endif;
+  echo "hello <br>";
+?>
+
+ x)
+  <?php
+   if(10>2)
+{
+  echo "true";
+ if(10>5)
+{
+  echo "true";
+ }
+}
+?>
+
+14)if else statement and nested else statement-
+
+xx)if else statement-
+  syantax- if(condition)
+              {block of the statement;
+              }
+          else
+           {block of the statemen;
+             }
+yy)synatax-if(comndition):
+             block of the statement;
+         else:
+              block of the statement;
+        endif;
+
+ xx)
+
+<?php
+if(10>5)
+{
+    echo "it is true <br>";
+}
+    else
+    {
+        echo "it is false <br>";
+    }
+?>
+
+ yy)
+
+<?php
+  if(10>5):
+    echo "true <br>";
+  else:
+    echo "false <br>";
+  endif;
+?>
+
+ zz)nested if else statement-
+
+ synatx-if(condition1)
+     {
+        block1..;}
+    if(codition2)
+     {
+      block..;}
+   else{
+      block..; 
+      }
+else{
+  block...;    
+  }
+   
+  }
+
+ yy)syntax- if(condition1):
+             block;
+         if(condition2):
+           block2;
+         else:
+           block2;
+        endif;
+        else:
+        block1;
+        endif;
+
+yy)
+<?php
+ if(20>10):
+    echo "true <br>";
+    if(20<15):
+        echo "it is true <br>";
+    else:
+        echo "it is false <br>";
+    endif;
+else:
+    echo "false <br>";
+endif;
+?>
+
+15)relational operation-    [true value is=1,false val ue is="empty string"]
+
+<(less)
+>(greter)
+==(equal)
+<=(less equal)
+>=(greter equal)
+!=(not equal to)
+
+<?php
+  echo 5<6;
+?>
+out put value is 1
+   (or)
+
+<?php
+ if(10==5)
+ {
+     echo "true <br>";
+ }
+ else{
+     echo "false <br>";
+ }
+?>
+
+16)single/doublle/triple equal-
+=
+==
+===
+
+<?php
+ $num1=10;
+ $num2=10;
+ echo $num1 == $num2 ;
+ echo $num1 === $num2 ;
+?>
+out put value is 1
+
+ xx)use if statement
+<?php
+ $num1=10;
+ $num2=10;
+if($num1 == $num2)
+{
+echo "it is true <br>";
+}
+$num1=20;
+ $num2=20;
+if($num1 === $num2)
+{
+echo "it is true <br>";
+}
+?>
+
+17)not equale and not identical operator-
+
+!=
+<>
+!==
+
+<?php
+ $num1=10;
+ $num2=20;
+ echo $num1 != $num2 ."<br>";
+ echo $num1 !== $num2 ."<br>";
+ echo $num1 <> $num2 ."<br>";
+?>
+
+18)spaceship- [output value= -1,0,1]
+
+<=>
+<?php
+ $num1=10;
+ $num2=20;
+ echo $num1 <=> $num2."<br>" ;
+ $num3=10;
+ $num4=10;
+ echo $num3 <=> $num4."<br>" ;
+ $num5=30;
+ $num6=20;
+ echo $num5<=> $num6."<br>" ;
+
+?>
+
+19)logical operator-
+
+&&(logical AND)=all condition are true then output=true
+||(logical OR)=all conditon are false then output false
+! (logical NOT)=false=true,true=false
+and(logical AND)
+or(logical OR) 
+xor(logical OR)=all condition are true/false then output=false
+
+<?php
+ if( ! (10<5))
+   {
+       echo "true <br>";
+   }
+   else{
+       echo "false <br>";
+   }
+  
+ if((10>5) && (10<5))
+   {
+       echo "true <br>";
+   }
+   else{
+       echo "false <br>";
+   }
+   if((10>5) || (10<5))
+   {
+       echo "true <br>";
+   }
+   else{
+       echo "false <br>";
+   }
+   if((10>5) xor (10<5))
+   {
+       echo "true <br>";
+   }
+   else{
+       echo "false <br>";
+   }
+?>
+   
+
+
+20)increament or decrement operator-
+
+ ++$a
+ $a++
+ --$a
+ $a--
+
+)increment-
+<?php
+$a=3;
+$b=5;
+echo $a."<br>" ;
+echo $a++. "<br>" ;
+echo $a. "<br>" ;
+echo $b."<br>" ;
+echo ++$b."<br>" ;
+echo $b. "<br>" ;
+?>
+
+)decrement-
+<?php
+$a=5;
+$b=4;
+echo $a . "<br>" ;
+echo $a--."<br>" ;
+echo $a ."<br>" ;
+echo $b."<br>" ;
+echo --$b. "<br>" ;
+echo $b."<br>" ;
+
+21)string operator-
+ 1). concatenation
+ 2).= combined concatenation
+
+ 1). concatenation
+<?php
+$name1="budhesh";
+$name2="katariya";
+echo $name1 . $name2 . "<br>" ;
+echo
+?>
+
+ 2).= combined concatenation
+<?php
+$name1="budhesh";
+$name2="katariya";
+$name3="hello";
+$name3 .="word"; //$name3=$name3 . "hello"
+echo $name3;
+?>
+
+22)operator precedence-
+ first priority-
+ left [
+ right **
+ rigth ++--
+ left !
+ left */%
+ left +-
+ left << >>
+ left &
+ left |
+ left &&
+ left ||
+ left ??
+ left ?:
+ left and
+ left xor
+ left or
+
+23)elseif statement-
+
+ syntax-if (condition1)
+            {statement1;
+            }
+        elseif(condition2)
+            {statement2;
+            }
+        elseif(condition3)
+            {statement3;
+             }
+        else
+             statment;
+
+or synatax-if (condition1):
+             statement1;
+             
+        elseif(condition2):
+            statement2;
+   
+        elseif(condition3):
+            statement3;
+         else:
+             statement;
+         endif;
+
+type 1= <?php
+ if (50<40)
+ {
+     echo "it is true <br>";
+ }
+ elseif (50>60)
+ {
+     echo "it is true";
+ }
+ else
+ {
+     echo "all value are  false";
+ }
+?>
+ 
+type 2=<?php
+ if (50<40):
+    echo "value is true";
+    elseif (50>20):
+        echo "value is true";
+    else:
+        echo "all value are false";
+    endif;
+?>
+
+24)switch statement-
+
+syntax- switch(expresion)
+           {
+         case expresion 1:
+             block of statement 1;
+         break;
+         case expresion 2:
+             block of statement 2;
+         break;
+         default:
+            defaults  block of  statements
+           }
+
+syntax- switch(expresion):
+           
+         case expresion 1:
+             block of statement 1;
+         break;
+         case expresion 2:
+             block of statement 2;
+         break;
+         default:
+            defaults  block of  statements
+           endswitch;
+
+<?php
+$price=30;
+switch ($price) 
+{
+   case 10:
+    echo "roll number ten";
+    break;
+
+    case 15:
+        echo "roll number fiftin";
+        break;
+
+    case 20:
+        echo "roll number twenty";
+        break;
+
+    case 30:
+         echo "roll number thirtin";
+         break;
+               
+    default:
+         echo "all number are here";
+
+}
+?>
+
+                or)
+
+<?php
+$price=30;
+switch ($price):
+    case 15:
+        echo "value is 15";
+        break;
+
+    case 20:
+        echo "value is 20";
+        break;
+
+    case 30:
+        echo  "value is 30";
+        break;
+
+    default:
+         echo "all valu e here";
+    endswitch;
+?>
+   
+25)while loop-
+
+syntax-initialization;
+        while(condition)
+      {
+       block of the statement;
+       increment/decrement;
+      }
+
+syntax-initialization;
+        while(condition):
+      
+       block of the statement;
+       increment/decrement;
+      endwhile;
+
+<?php
+$value=10;
+while($value <= 20)
+{
+    echo "hello my value is :$value <br>";
+    $value++;
+}
+echo "thank you so much" ;
+
+?>
+
+    (OR)
+
+<?php
+$value=10;
+while($value <= 20):
+    echo "my value is:$value.<br>";
+    $value++;
+endwhile;
+?>
+
+26)while if statement-
+ <?php
+ $value=1;
+ while(TRUE)
+ {
+     echo "hello give me value please: $value <br>" ;
+     $value++;
+     if($value == 5)
+     break;
+ }
+ echo "bas kar bhai";
+?>
+
+27)nested while loop-
+
+syntax-while(condition)
+           {
+               statement;
+               while (condition)
+           {
+               statement;
+           }
+           
+           }
+
+<?php
+ $value=1;
+ while ($value <=3)
+ {
+     echo "hello value is: $value . <br>" ;
+     $value++;
+     $num=1;
+     while($num <=4)
+     {
+         echo "give me value:$num. <br>" ;
+         $num++;
+     }
+ }
+?>
+
+        (OR)
+
+<?php
+ $value=1;
+ while ($value <=3):
+ 
+     echo "hello value is: $value . <br>" ;
+     $value++;
+     $num=1;
+     while($num <=4):
+     
+         echo " val:$num. <br>" ;
+         $num++;
+     endwhile;
+
+    endwhile;
+ 
+?>
+
+28)do while loop-
+
+syntax-initialization;
+          do
+        {
+          block of the statement;
+          increamment/decreament
+        }
+          while(condition);
+
+
+<?php
+ $num=1;
+ do
+ {
+     echo "give me value:$num . <br>";
+     $num++;
+ }
+ while(($num<=5));
+?>
+
+29))nested do while loop-
+
+syntax-   initialization;
+          do
+       {
+           block of the statement;
+          increamment/decreament
+         initialization;
+          do
+        {
+          block of the statement;
+          increamment/decreament
+        }
+          while(condition);
+
+
+        }
+        while (condition);
+
+
+<?php
+   $num=1;
+   do{
+       echo "give me value:$num <br>";
+       $num++;
+       $val=1;
+       do{
+           echo "sure<br>";
+           $val++;
+       }
+       while($val<=3);
+   }
+   while($num<=2);
+?>
+
+30)for loop-
+
+syntax-for (initialization; test condition;  increamment/decreament)
+          {
+            block of the statement;
+          }
+  or
+
+syntax-for (initialization; test condition;  increamment/decreament):
+          
+            block of the statement;
+          endfor;
+
+<?php
+ for ($num=1; $num<=5;$num++)
+ {
+     echo "hello give me value: $num <br>";
+ }
+?>
+
+   (OR)
+
+<?php
+ for ($num=1; $num<=5;$num++):
+ 
+     echo "hello give me value: $num <br>";
+endfor;
+?>
+
+31)nested for loop-
+
+syntax-for (initialization; test condition;  increamment/decreament)
+          {
+               block of the statement;
+            (initialization; test condition;  increamment/decreament)
+            {block of the statement;
+          }
+         }
+
+<?php
+  for($num=1; $num<=3; $num++)
+  {
+      echo "give me value : $num <br>" ;
+      for($val=1; $val<=2; $val++)
+      {
+          echo "val:$val <br>";
+      }
+  }
+?>
+
+32)break and continue statement-
+ 
+ 1)break statement-
+ 
+ <?php
+for ($num=1; $num<=5; $num++) 
+{
+    echo "heloo my name is :$num <br>" ;
+if($num == 2)
+break;
+}
+?>
+
+ 2)continue statement-[this statement means skip over if condition value]
+ 
+ <?php
+for ($num=1; $num <= 5; $num++)
+{
+    if ($num == 4)
+    continue;
+    echo "give me value : $num <br>" ;
+}
+?>
+
+33)array and its type in php-
+   1)nummeric/index array -start with [0]
+   2)associative array ["rahul"]
+   3)multidimensional array
+
+ 1)nummeric/index array 
+
+ syntax-$array_name[]=value; or
+       -$array_name[]=value;
+
+ *note-by default arrayy start with 0
+
+<?php
+ $name [] = "budhesh";
+ echo  $name [0]."<br>" ;
+ $num []=20;
+ echo $num [0]."<br>";
+ $val []="ramesh";
+ $val []="suresh";
+ $val []="manav";
+ $val []="raghav";
+ echo  $val [3]. "<br>";
+?>
+
+syntax- $array_name=array("value1" ,"value2",.......);
+
+ *note-by default function array start with 0
+
+<?php
+$name = array("ram","rahul","ramu","kaka");
+echo $name[3]. "<br>" ;
+
+ 2)associative array-[""]-this array use a string
+
+ syntax-$array_name["key"]=value; or
+
+array functon use syntax- $array_name=array ("key"=>"value1", "key"=>"value",.....);
+
+<?php
+ $fees["budhesh"]=100;
+ $fees["rahul"]=200;
+ $fees["ram"] =300;
+ echo $fees ["budhesh"]."<br>";
+
+ $roll =array ("budhesh"=>100,"rahul"=>200,"ram"=>300);
+ echo $roll["rahul"];
+
+?>
+
+ 3)multidimensional array-
+
+   (1)syntax of numeric array- $name = array (
+                         array (value1)
+                         array (value2)
+                         array (value3)
+                          );
+ (or)
+
+$name [0][]="value";
+$name [0][]="value";
+$name [0][]="value";
+
+$name [1][]="value";
+$name1[1][]="value";
+$name [1][]="value";
+
+$name [2][]="value";
+$name [2][]="value";
+$name [2][]="value";
+
+
+<?php 
+$name = array(
+              array ("budhesh","php",10),
+              array ("rakesh","css", 60),
+              array ("suresh","html",50)
+);
+   echo $name [1][1] ;
+   /*
+$name [0][]= "budhesh";
+$name [0][]= "php";
+$name [0][]= 10;
+
+$name [1][]= "rahul";
+$name [1][]= "css";
+$name [1][]= "40";
+
+$name [2][]= "suresh";
+$name [2][]= "html";
+$name [2][]= "50";
+
+echo $name [2][2] ;
+*/
+
+?>
+
+
+   (2)syntax of associative array-$name = array (
+                                         "value1"=>array("key"=>"value")
+                                         "value2"=>array("key"=>"value")
+                                         "value3"=>array("key"=>"value")
+                                          );
+
+<?php
+$name = array (
+      "budhesh" => array ("php"=>10,"css"=>20,"html"=>30),
+      "rakesh" => array ("php"=>40,"css"=>60,"html"=>80),
+      "suresh" => array ("php"=>100,"css"=>200,"html"=>300)
+                );
+ echo $name ["budhesh"]["html"];
+
+ /*
+ $name ["budhesh"]["php"] =10;
+ $name ["budhesh"]["css"] =20;
+ $name ["budhesh"]["html"] =30; 
+ 
+ $name ["rakesh"]["php"] =40;
+ $name ["rakesh"]["css"] =60;
+ $name ["rakesh"]["html"] =80; 
+
+ $name ["suresh"]["php"] =100;
+ $name ["suresh"]["css"] =200;
+ $name ["suresh"]["html"] =300; 
+
+   */
+
+?>
+
+
+
+34)array function-
+
+syntax- $array_name=array("value1" ,"value2",.......);
+
+ *note-by default function array start with 0
+
+<?php
+$name = array("ram","rahul","ramu","kaka");
+echo $name[3]. "<br>" ;
+
+?>
+
+35)double arrow operation-
+ 
+ =>-use operator
+
+syntax- $array_name =array(1=> "value1","value2",....) or
+        $array_name = array(1=> "value1",2=> "value2",....)
+
+<?php
+$name = array ( 1=>"rahul", 2=>"ram", 4=>"kaka", 5=>"mama");
+echo $name [5];
+
+?>
+
+36)modifying array element-
+
+<?php
+ $name[0]="rahul";
+ $name[1]="sohil";
+ $name[2]="ram";
+ $name[3]="rakesh";
+
+echo $name[2]."<br>";
+$name[2]="budhesh";
+echo $name[2]."<br>";
+?>
+
+37)deleting array element using unset function-
+
+<?php
+$name [0]="budhesh";
+$name [1]="katariya";
+$name [2]="suresh";
+$name [3]="rakesh";
+unset($name [1]);
+echo $name [1];
+
+?>
+
+38)copy an array in array-
+
+use assiment(=) element to copy array
+<?php
+$name [0]="budhesh";
+$name [1]="katariya";
+$name [2]="suresh";
+$name [3]="rakesh";
+$student = $name;
+echo $student [2];
+?>
+
+39)count function-
+ 
+syntax-count (array,mode);
+     mode default value is 0
+
+<?php
+$name [0]="budhesh";
+$name [1]="ramesh";
+$name [2]="rakesh";
+$name [3]="kashyap";
+$name [4]="dhruv";
+echo count($name);
+
+?>
+
+40)for loop with numeric array-
+
+<?php
+  $name=array ("budhesh","ram","suresh","raghav","ravi");
+  for ($m=0; $m<=4; $m++)
+  {
+      echo $name[$m]."<br>";
+  }
+?>
+
+41)array_key function-
+
+syntax-array_keys(array, value, strict)
+
+<?php
+  $price=array("banana"=>100,"mango"=>200,"pioneapple"=>250,"watermelon"=>300);
+  $keys = array_keys($price);
+  echo $keys[2];
+?>
+
+42)for loop in associate array-
+
+<?php
+ $name=array("budhesh"=>100,  "suresh"=>200, "rakesh"=>300, "ravi"=>500);
+ $keys=array_keys($name);
+ for($i=0; $i<count($keys); $i++)
+ {
+    echo $keys [$i]."=". $name[$keys [$i]]."<br>";
+ }
+ 
+?>
+
+43)foreach loop with numeric array-
+
+syntax-foreach($array_name as $value)
+                                {
+                                block of the statemeent;
+                                 } or
+
+      -foreach($array_name as $key=>$value){
+                         block of the statement;
+                   }
+
+<?php
+ $name =array("budhesh","ramesh","suresh","raghav");
+ foreach($name as $value)
+ {
+     echo $value."<br>";
+ }
+?>
+
+use a key function to show all name and value-
+
+<?php
+ $name =array("budhesh","ramesh","suresh","raghav");
+ foreach($name as $key => $value)
+ {
+     echo $key."=". $value."<br>";
+ }
+?>
+
+44)foreach loop with associative array-
+
+<?php
+ $name=array ("budhesh"=>100,"ramesh"=>200,"rakesh"=>300);
+ foreach($name as $key => $value)
+ {
+     echo $key."=". $value."<br>";
+ }
+?>
+
+45)while loop with numeric array-
+
+<?php
+$name =array("budhesh","ramesh","suresh");
+$x=0;
+while($x<count($name))
+{
+    echo $name[$x]."<br>";
+    $x++;
+}
+?>
+
+
+46)while loop with associative array-
+
+<?php
+$name =array("budhesh"=>100,"ramesh"=>200, "suresh"=>300);
+$keys=array_keys($name);
+$x=0;
+while($x<count($keys))
+{
+    echo $name[$keys[$x]]."<br>";
+     $x++;
+}
+
+?>
+
+47)print_r() function-
+
+syntax-print_r($array_name,bool_return)
+
+   *note-by default boolean value is false;
+ 
+ $results=print_r($array_name,true) ;
+ echo $results;
+
+<?php
+$name = array ("budhesh","ramesh", "suresh", "rakesh");
+print_r($name);
+?>
+
+          
+
+<?php
+$name = array ("budhesh","ramesh", "suresh", "rakesh");
+$results = print_r($name, true);
+echo $results;
+
+
+
+?>
+
+48)array operater-
+
+ 1) $a + $b    union
+ 2) $a == $b   equality
+ 3) $a === $b  identity
+ 4) $a != $b   inequality
+ 5) $a <> $b   inequality
+ 6) $a !== $b  non-identity
+
+ 1)$a + $b    union-
+
+<?php
+$a = array ("budhesh"=>100, "rakesh"=>200, "suresh"=>300);
+$b = array ("budhesh"=>"name","rakesh"=>"student", "katariya"=>"sirname", "rajesh"=>"man");
+$result=$a + $b ;
+print_r($result);
+
+?>    (or)
+
+ $b + $a
+
+<?php
+$a = array ("budhesh"=>100, "rakesh"=>200, "suresh"=>300);
+$b = array ("budhesh"=>"name","rakesh"=>"student", "katariya"=>"sirname", "rajesh"=>"man");
+$result= $b + $a  ;
+print_r($result);
+
+?>
+
+  2) $a == $b   equality-[key and value are same then output value true=1]
+                  (order doesn't metter)
+
+<?php
+$a = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$b = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$c = array ("budhesh"=>"php", "suresh"=>"css", "rakesh"=>"html");
+$result = $a == $b;
+echo $result."<br>" ;
+if ($a == $c):
+    echo "this value is true.<br>";
+else:
+    echo "this value is false.<br>";
+endif;
+?>
+
+  3) $a === $b  identity-(order metter)
+
+<?php
+$a = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$b = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$c = array ("budhesh"=>"php", "suresh"=>"css", "rakesh"=>"html");
+$result = $a === $b;
+echo $result."<br>" ;
+if ($a === $c):
+    echo "this value is true.<br>";
+else:
+    echo "this value is false.<br>";
+endif;
+?>
+
+  4) $a != $b   inequality-(order doesn't metter)
+
+<?php
+$a = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$b = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$c = array ("budhesh"=>"200", "rakesh"=>"1000", "suresh"=>"500");
+$result = $a != $b;
+echo $result."<br>" ;
+if ($a != $c):
+    echo "this value is true.<br>";
+else:
+    echo "this value is false.<br>";
+endif;
+?>
+
+  5) $a <> $b   inequality-(order doesn't metter)
+
+<?php
+$a = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$b = array ("budhesh"=>200, "suresh"=>400, "rakesh"=>1000);
+$c = array ("budhesh"=>"200", "rakesh"=>"1000", "suresh"=>"500");
+$result = $a <> $b;
+echo $result."<br>" ;
+if ($a <> $c):
+    echo "this value is true.<br>";
+else:
+    echo "this value is false.<br>";
+endif;
+?>
+
+  6) $a !== $b  non-identity-(order metter)
+
+<?php
+$a = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$b = array ("budhesh"=>200, "suresh"=>500, "rakesh"=>1000);
+$c = array ("budhesh"=>"200", "rakesh"=>"1000", "suresh"=>"500");
+$result = $a !== $b;
+echo $result."<br>" ;
+if ($a !== $c):
+    echo "this value is true.<br>";
+else:
+    echo "this value is false.<br>";
+endif;
+?>
+
+49)foreach loop with multi diamantion array-                                                         *** multidimensional array *** 
+                                                                                                      *check string function**   **passing array to function**
+
+50)string-
+<?php
+ echo  "budhesh  katariya " ;
+?>
+
+51)access character in string-
+
+ <?php
+ $name = "budhesh" ;
+ echo $name [6] ;
+
+?>
+
+52)escape sequence -
+
+\n- new line
+\r- return carriage 
+\t- horizontal tab
+\v- vertical tab 
+\e- escape
+\f- form feed
+\\- backslash
+\$- dollar sign
+\"- double quote
+
+ <?php
+      echo "budhesh \n katariya. <br>" ;
+      echo "budhesh \r katariya. <br>" ;
+      echo "budhesh \t katariya. <br>" ;
+      echo "budhesh \v katariya. <br>" ;
+      echo "budhesh \e katariya. <br>" ;
+      echo "budhesh \f katariya. <br>" ;
+      echo "budhesh \\ katariya. <br>" ;
+      echo "budhesh \$ katariya. <br>" ;
+
+?>
+
+53)heredoc and nowdoc-
+
+ here doc-
+ echo <<<TOKEN
+TOKEN;
+
+ nowdoc-
+ echo <<<'TOKEN'
+TOKEN;
+
+<?php
+echo <<<BUDHESH
+Hello my name is here doc
+i am 20 year old man 
+thankyu so much
+BUDHESH."<br>" ;
+
+echo <<<'BUDHESH'
+Hello my name is now doc
+i am 20 year old man 
+thankyu so much
+BUDHESH."<br>" ;
+
+?>
+
+54)string function- 
+ 
+ 1) strlen(string length)-
+
+<?php
+  $name = "my name is budhesh katariya" ;
+  echo  strlen ($name)."<br>" ;
+  echo strlen ("budhesh katariya") ;
+
+?>
+
+ 2) strtoupper(string to upper)-
+
+<?php
+$name= "hello my name is budhesh katariya  thankyou so much" ;
+echo strtoupper($name) ;
+?>
+
+ 3) strtolower(string to lower)-
+
+<?php
+$name = "HELLO MY NAME IS BUDHESH KATARIYA THANKYOU SO MUCH" ;
+echo strtolower($name) ;
+?>
+
+55)formatting string-
+   
+  1)printf()-this function output a formatted string
+  2)sprintf()-this function return a formatted string
+
+ 1)printf ()-
+
+ syntax-printf("format_string", arg1,arg2,...);
+ format spacifier- %d,%s,%f;
+
+ <?php
+ $a = 50;
+ $b = 200000;
+ printf("i have %d mobile and total price is %d",$a,$b)
+
+?>
+
+
+56)type spacifier-
+ % -percantag character
+ b -binary number
+ c -ASCII value
+ d -integer
+ e -scientific notation(12e+2)
+ E -uppercase letter(12E+2)
+ f -float
+ F -floting point number
+ g -shorted of%e and %f
+ G -shorted of %E and %F
+ o -octal number
+ s -string
+ u -unsigned decimal number
+ x -hexadecimal number(lowercase)
+ X -hexadecimal number(uppercase)
+
+ integer-d,u,c,o,X,b
+ double-f,F,g,G,e,E
+ string-S
+ 
+<?php
+$w = 456 ;
+printf ("%b <br>" , $w) ;
+printf ("%f <br> " , $w) ;
+printf ("%d <br>" , $w) ;
+printf ("%x <br>" , $w) ;
+printf ("%e <br>" , $w) ;
+
+?>
+
+
+57)position specifiers-
+
+syntax-printf(%1\$d,value) ;
+
+<?php
+$a = 25 ;
+$b = 15 ;
+$c = 6 ;
+$d = 10 ;
+printf("hello %1\$d, hi %2\$d, by %3\$d, in %4\$d", $a , $b , $c, $d) ;or
+printf("hello %1\$d, hi %1\$d, by %3\$d, in %4\$d", $a , $b , $c, $d) ;
+?>
+
+58)sign spacifier-
+ sign (-or+)
+
+<?php
+printf ("%d <br>", 10);
+printf ("%d <br>",-10);
+printf ("%d <br>", +10);
+printf ("%+d", 10) ; 
+?>
+
+59)width spacifier-
+
+ by default value start with right
+ syntax-printf ("%width value d",value);
+
+<?php
+print "<pre>";
+printf("%10d <br>", 256);
+printf("%10d <br>", 00000256);
+printf("%10d <br>", 2560000000);
+printf("%-10d <br>", 25256);
+print "</pre>" ;
+
+?>
+
+60)padding spacifier-
+
+  by default value start with right
+ syntax-<padding spacifier><width><type specifier>
+ syntax-printf ("%08d",1256);
+        printf ("%'*8d",222);
+        printf ("%'#-8s","budhesh");
+        
+<?php
+print "<pre>" ;
+ printf ("%08d <br>",1234);
+ printf ("%08d <br>",12342256);
+ printf ("%'*8d <br>",12334);
+ printf ("%'*-8d <br>",12334);
+print "</pre>" ;
+?>
+
+61)alignment spacifier-
+
+ by default value start with right
+ alignment (- or +)
+
+<?php
+print "<pre>" ;
+   printf("%8s <br>","budhesh");
+   printf("%-8s <br>","budhesh");
+print "</pre>";
+
+?>
+
+62)precision specifier-
+
+ syntax-printf ("%f",425);
+
+<?php
+printf ("%f <br>", 222) ;
+printf ("%.2f <br>",222) ;
+printf ("%08.2f <br>", 222) ;
+printf ("%.4s <br>","budhesh");
+printf ("%'*8.2s <br>","budhesh");
+?>
+
+
+  2)sprintf()-this function return a formatted string
+
+ syntax-sprintf ("%d",value);
+        echo sprintf ("%d",value);
+
+<?php
+ $display = sprintf ("hello pls give me %d \$ and i gave a %d \$",20,40) ;
+ echo $display ;
+?>   (or)
+
+<?php
+  echo sprintf ("hello pls give me %d \$ and i gave a %d \$",20,40) ;
+
+?>
+
+63)function in php-
+  
+ important of function
+ 1)easy to debug
+ 2)reusability
+ 3)no code repetition
+ 4)easy to handle codes
+ 
+64)creating and calling a function-
+
+ *creating a function-
+
+syntax-function function_name ()
+           {
+               block of the statement;             
+             }
+  
+  *calling function-
+ syntax-function_name();
+
+<?php 
+function display ()
+{
+    echo "my name is budhesh katariya" ;
+}
+display () ;
+?>
+
+65)how to function call work-
+
+<?php 
+echo "my name: <br>" ;
+display ();
+echo "my sirname: <br>" ;
+name ();
+function display ()
+{
+    echo "budhesh <br>" ;
+}
+function name()
+{
+    echo " katariya <br>" ;
+}
+
+?>
+
+66)function with parameter-
+
+ syntax-function function _name (para..1,para..2)
+        {
+         block of the statement;
+        }
+
+ call funnction with parameter-
+
+  syntax-function_name (arg..1,arg..2);
+
+<?php
+function display ($name1,$name2)
+{
+    echo "my first name is $name1 and second name is $name2,thankyou" ;
+}
+display ("budhesh","ravi <br>");
+display ("sorry","i am realy sorry") ;
+?>
+
+67)default arguments-
+
+  syntax- function function_name (para..1,para..2,para..3="value")
+         {
+           block of the statement:
+          }
+         function_name (arg..1,arg..2);
+
+
+<?php
+function display ($name,$sirname,$money="1000")
+{
+   echo "hello my name is $name,sirname is $sirname and i have $money \$ <br>" ;
+}
+ display ("budhesh","katariya");
+ display ("ramesh","raman","500");
+?>
+
+ *NULL value in default argument-
+
+<?php
+function name ($value,$address=NULL)
+ {
+     echo "give me $value \$ and my adress is $address <br>" ;
+ }
+ name ("500");
+?>
+    (or)
+
+<?php
+ function yahoo ($name , $price,$address=NULL)
+ {
+     if($address == NULL)
+     {
+         echo "this data not found" ;
+     }
+     else
+     {
+         echo "my name is $name ,my price is $price <br>";
+     }
+ }
+ yahoo ("banana","50","india") ;
+?>
+
+68)return statement-
+
+ syntax-  syntax-function function _name (para..1,para..2)
+        {
+         return (variable or expresion);
+        }
+          echo function_name();
+
+<?php
+ function add ($a,$b)
+ {
+     echo "addtion value of the argument: ";
+     $sum = $a + $b ;
+     return($sum);
+ }
+  echo add (5,5);
+?>
+
+69)type diclaration-
+  1)scaler type diclaration:
+  2)return type diclaration:
+
+ valid type:
+ 1-class
+ 2-self
+ 3-array
+ 4-callable
+ 5-int
+ 6-float
+ 7-string
+ 8-bool
+ 9-iterable
+
+ 1)scaler type diclaration-
+   1-coercive(default)
+   2-strict
+
+    1-coercive(default)-
+   
+<?php
+function add (int $a,int $b)
+{
+    echo gettype ($a). "<br>" ;
+    echo gettype ($b). "<br>" ;
+
+    return ($a + $b);
+}
+echo add (2.4,"20");
+?>
+
+    2-strict-
+
+ syntax- declare (strict_types=1);
+
+<?php
+declare(strict_types = 1);
+function add (string $a, string $b)
+{
+    echo  gettype ($a). "<br>";
+    echo gettype ($b). "<br>";
+    return ($a . $b);
+}
+echo add ("hello","5");
+?>
+
+ 2)return type diclaration:
+    1-coercive(default)
+    2-strict
+
+  1-coercive(default)-
+
+<?php
+// this is a coersive mode 
+function sub (int $a , int $b):float
+{
+    echo gettype ($a). "<br>" ;
+    echo gettype ($b). "<br>" ;
+    return ($a - $b);
+}
+$name = sub (10, 5) ;
+echo gettype ($name). "<br>" ;
+echo $name ;
+?>
+
+ 2-strict mode-
+
+<?php
+declare(strict_types=1);
+function sub (int $a , int $b):int
+{
+    echo gettype ($a).  "<br>" ;
+    echo gettype ($b).  "<br>" ;
+    return ($a - $b);
+}
+$name = sub (10, 5) ;
+echo gettype ($name). "<br>" ;
+echo $name ;
+?>
+
+70)pass by value -
+
+<?php
+$x = 10; 
+function name($b)
+{
+   echo  "hello plls give me value of b = $b <br>" ;
+   $b = 5 ;
+   echo "hello pls give me value of b =$b <br>" ;
+}
+name ($x);
+?>
+
+71)pass by reference-
+
+ syntax- function function_name (&$a)
+                          {
+                           block of the statement
+                              }
+
+<?php 
+$n = 10 ;
+function name (&$r)
+{
+    echo "give me value of the r = $r <br>" ;
+    $r = 20 ;
+    echo "give me value  of the r = $r <br>" ;
+}
+name ($n);
+ echo "give me value of the r = $n" ;
+?>
+
+72)passing array to function-                      **********************************
+
+73)returning array to function-                    **********************************
+
+                  
+
+74)types of the variable-
+
+ 1)local variable
+ 2)global variable
+ 3)static variable
+
+ 1)local  variable-
+
+ <?php
+ function display ()
+ {
+     $a  = 20 ;
+     echo "pls give me  value of the a = $a \$" ;
+ }
+ display () ;
+ 
+?>
+
+ 2)global variable-
+
+ <?php
+$n = 20 ;
+function display ()
+{
+    global $n ;
+    echo "value of the globle function = $n <br>" ;
+}
+display ();
+echo "value of the globle function = $n" ;
+?>
+
+ 3)static variable-
+
+ <?php
+function display ()
+{
+   static $b = 1;
+  $b++ ;
+  return $b ;
+}
+echo display (). "<br>" ;
+echo display (). "<br>" ;
+echo display (). "<br>" ;
+echo display (). "<br>" ;
+echo display (). "<br>" ;
+echo display (). "<br>" ;
+
+?>
+
+75)super globals variable-
+
+ 1)$GLOBALS
+ 2)$_SERVER
+ 3)$_REQUEST 4)$_POST
+ 5)$_GET
+ 6)$_FILES
+ 7)$_ENV
+ 8)$_COOKIE
+ 9)$_SESSION
+
+  1)$GLOBALS-
+
+<?php
+$n = 10 ;
+$b = 20 ;
+function display ()
+{
+    echo  $GLOBALS['n']. "<br>";
+    echo  $GLOBALS['b']. "<br>";
+}
+display ();
+?>
+
+76)conditional function-
+
+ syntax-
+         if (expression)
+           {
+              function function_name()
+            {
+                   block of the statement;
+              }
+           }
+         function_name ();
+
+<?php
+if (TRUE)
+{
+    function display ()
+    {
+       echo "hello my name is conditional function" ;
+    }
+}
+display ();
+?>
+
+77)calling function with condition-
+
+ syntax-
+         if (expression)
+           {
+              function function_name()
+            {
+                   block of the statement;
+              }
+           }
+           if (expresion)
+          {
+         function_name ();
+             }
+
+<?php
+if (TRUE)
+{
+    function display ()
+    {
+        echo "calling with condition function" ;
+    }
+}
+if (TRUE)
+{
+    display () ;
+}
+?>
+
+78)variable function-
+
+<?php
+ function first ()
+ {
+   echo "my name is budhesh <br>" ;
+ }
+ function sec ()
+ {
+     echo "my name is rakesh <br>" ;
+ }
+ function third ()
+ {
+     echo "my name is rahul" ;
+ }
+first ();
+sec() ;
+third (); 
+             (or)
+$f_variable = "first";
+$f_variable ();
+
+?>
+
+79)nesting of function-
+
+ syntax-function function_name1
+             {
+                block of the statement 1 ;
+                function function_name2
+             {
+                block of the statement 2 ;
+             }
+           } 
+       function_name1 ;
+       function_name2;
+
+<?php
+function display ()
+{
+    echo "pls give me outer value <br>";
+    function name ()
+    {
+        echo "pls give me inner value <br>" ;
+    }
+}
+display ();
+name ();
+?>
+
+80)recursive function-
+
+<?php
+function recursive ($a) 
+{
+  if($a<=10)
+  {
+      echo $a ."<br>";
+      recursive ($a + 1) ;
+  }
+}
+recursive (1) ;
+?>
+
+81)returning error from function using die-
+
+syntax- die ("massage")z
+ this die error function is stop of the program then our condition is false
+
+<?php
+function display ($a)
+{
+    if ($a <= 10)
+    {
+        echo "hello my name is true <br>" ;
+        return TRUE;
+    }
+    else
+    {
+       return FALSE;
+    }
+}
+display (11) or
+die ("pls enter a vadil number") ;
+echo  "helloo" ; 
+?>
+
+82)anonymous function-
+
+ *can be stored in a variable
+ *can be returned in a function
+ *can be pass in a function
+
+ syntax-function ()
+             {
+               block of the statement; 
+             };
+
+  *can be stored in a variable*
+
+ <?php
+  $n = function ()
+  {
+      echo "hello my name is enonymous function <br>" ;
+  };
+  $n () ;
+?>          (or)
+
+ <?php
+  $x = 30 ;
+  $n = function ($y)
+  {
+      echo "hello my name is enonymous function = $y <br>" ;
+  };
+  $n ($x) ;
+?>           (or)
+
+<?php
+$x = 30 ;
+$w = 10 ;
+  $n = function ($y) use ($w)
+  {
+      echo "hello my name is enonymous function = $y $w <br>" ;
+  };
+  $n ($x) ;
+?>
+
+
+83)passing anonymous function as argument-
+
+<?php
+ function display($name)
+{
+    return $name ();
+}
+ echo  display (function ()
+{
+      return "budhesh katariya" ;
+});
+?>
+
+84)returning anonymous function-
+
+<?php
+function display ()
+{
+ return function ()
+    {
+        return "hello my name is budhesh" ;
+    };
+}
+$v = display ();
+ echo $v() ;
+?>                   (or)
+
+
+<?php
+function display ($name)
+{
+ return function () use ($name)
+    {
+        return " $name = hello my name is budhesh" ;
+    };
+}
+$v = display ("full name ");
+ echo $v() ;
+?>
+
+85)file handling-
+
+ 1)opening file
+ 2)reading file
+ 3)writing file
+ 4)closing file
+
+  1)opening file-
+
+ syntax-fopen(filename,mode,include_path,context)
+   *mode value 
+
+  'r'  reading  mode
+  'r+' reading and writing file
+  'w'  writing only/new file create
+  'w+' reading and writing file
+  'a'  writing only/new file create
+  'a+' reading and writing file
+  'c/c+'
+  'x/x+'
+  'e'
+
+<?php
+$open_file = fopen ("first.php","r") or die ("this file not found");
+if ($open_file)
+{
+    echo "this file is open" ;
+}
+else 
+{
+    echo "file not found" ;
+}
+?>
+
+ 2)reading file-
+      *fgets () function
+      *while loop
+      *feof ()function
+   syntax-feof ($file_name) ;
+
+ <?php
+$file_name = fopen ("budhesh.txt","r") ;
+while (!feof ($file_name))
+{
+   $data = fgets ($file_name) ;
+   echo $data . "<br>" ;
+}
+?>
+
+      *fgets () function
+ 
+   syntax-fgets ($file_handle,length) ;
+ 
+ <?php
+$file_name = fopen ("budhesh.txt","r") ;
+echo fgets ($file_name) ;
+?>
+ 3)writing file-
+
+ syntax-fwrite (file,string,length);
+
+<?php 
+$data = fopen ("budhesh.txt","a") ;
+fwrite ($data , "world id wide") ;
+?>
+
+ 4)closing file-
+
+ syntax-fclose (file_hnadle) ;
+
+<?php
+$file = fopen ("budhesh.txt","r") ;
+while (!feof ($file))
+{
+    $data = fgets ($file) ;
+    echo $data. "<br>";
+}
+ fclose ($file) ;
+?>
+
+
+
+86)reading from a file character by character-
+
+ syntax- fgetc ($file_handle);
+
+ <?php
+$file = fopen ("budhesh.txt","r") ;
+while ($char = fgets ($file))
+{
+   print "<pre>" ;
+    echo $char ;
+    print "</pre>" ;
+}
+
+?>
+
+87)readinng a whole file -
+
+ syntax - file_get_contents (file_name,include path,context,offset,maxlen);
+
+ syntax-str_replace (search,replace,string,count) ;
+     count = ketlu replace thayu  te mate ($i)
+
+<?php
+ $data = file_get_contents ("budhesh.txt") ;
+ echo $data ;
+ $name = str_replace ("\n","<br />",$data,$i) ;
+ echo $name  ;
+?>
+
+88)reading  a file into an array- 
+
+  syntax-file (filename , include_path,context) ;
+
+<?php
+$data = file ("budhesh.txt") ;
+foreach ($data as $name)
+{
+    echo $name ."<br>" ;
+}
+?>    (or)
+
+<?php
+$data = file ("budhesh.txt") ;
+echo $data [0]. "<br>";
+echo $data [1]. "<br>";
+echo $data [2]. "<br>";
+?>   
+            (or)
+
+<?php
+$data = file ("budhesh.txt") ;
+print_r ($data) ;
+?>
+
+89)checking  if a file exists-
+
+  syntax-file_exists(file_name) ;
+
+<?php
+$data = file_exists ("budhesh.txt") ;
+echo $data ;
+
+?>       (or)
+
+
+<?php
+$data = "budhesh.txt" ;
+if (file_exists($data))
+{
+    echo "\$data is found" ;
+}
+else
+{
+    echo "\$data is not found" ;
+}
+
+?>
+
+90)file size -
+
+ syntax-filesize () ;
+
+<?php
+   $data = filesize("budhesh.txt") ;
+   echo $data ;
+?>
+
+91)reading binary reads-
+
+ syntax-fread (filename,length) ;
+
+<?php
+$handle = fopen ("budhesh.txt","rb") ;
+$data = fread ($handle ,filesize("budhesh.txt")) ;
+echo $data ;
+
+?>
+
+92)geting file info-
+
+ syntax- stat (filename) ;
+
+1) dev - device number
+2) ino - inode number
+3) mode - inode protection mode
+4) nlink - number of link
+5) uid -  userid owner
+6) gid - groupid of number
+7)rdev - device type,if inode device
+8) size - size in byte 
+9) atime - time of last access 
+10) mtime - time of last modification 
+11) ctime - time of lastincode change 
+12) blksize - blocksize of file sytem IO
+13) blocks - number of 512-byte blocks allocated
+
+<?php
+$data = stat ("budhesh.txt") ;
+echo $data [7] ;
+
+?>
+
+93)copy file-
+
+ syntax - copy (source_file,desination_file) ;
+
+<?php
+copy ("budhesh.txt","katariya.txt") ;
+
+?>    (or)
+
+<?php
+if (copy ("budhesh.txt","katariya.txt")) 
+{
+    echo "file is copied" ;
+}
+else 
+{
+    echo "file is not copied" ;
+}
+
+?>
+
+94)delete a file -
+
+ syntax-unlink (file_name) ;
+
+<?php
+unlink ("katariya.txt") ;
+
+?>
+     (or)
+
+<?php
+if (unlink ("ktm.txt")) 
+{
+    echo "file is deleted" ;
+}
+else
+{
+    echo "file is not deleted" ;
+}
+
+?>
+
+95)appending to files-
+
+ <?php
+$data = fopen ("budhesh.txt","a") ;
+fwrite ($data, " budhesh") ;
+?>
+
+96)writing a file all at once - 
+
+ syntax-file_put_contents (file_name , data,flag,context)
+
+    flag- FILE_APPEND,FILE_USE_INCLUDE_PATH,
+
+<?php
+file_put_contents ("budhesh.txt"," THANKS BUDDY",FILE_APPEND) ;
+?>
+
+  (or)
+
+<?php
+if (file_put_contents ("budhesh.txt"," THANKS BUDDY",FILE_APPEND)==TRUE )
+{
+    echo "success" ;
+}
+else
+{
+    echo "sorry not found thi data" ;
+}
+?>
+
+97)html/css/js inside php-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $name = "budhesh kataroya" ;
+          echo "<h2> budhesh katariya  $name</h2> <br>" ;
+          echo "<input type= 'text' value = 'budhesh katariya'> <br>" ;
+          echo "<h2 style= color:blue;> my name is color </h2> <br>";
+
+   ?>
+</body>
+</html>
+
+98)php inside html/css-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP indise html</title>
+</head>
+<body>
+    <h1>budhesh katariya </h1>
+    <?php $m = "budhesh shows" ;?>
+    <p style = "color:red;" ><?php echo $m ;?></p>
+</body>
+</html>
+
+99)form tag in php-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "budhesh.txt" >
+
+     name : <input type = "text" name ="name" ><br>
+    password:  <input type = "password" name= "pass" ><br>
+    submite: <input type = "button" value="submite" ><br>
+
+    </form>
+</body>
+</html>
+
+100)$_GET, $_POST AND $_REQUEST-
+
+  $_GET METHOD-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="first.php" method="GET">
+        <input type="text" value="budhesh katariya" name="full name">
+        <input type="password" name="pass">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+
+ $_POST METHOD-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="first.php" method="POST">
+      FULL NAME"  <input type="text" value="budhesh katariya" name="full">
+      PASS:  <input type="password" name="pass">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+
+ $_REQUEST METHOD-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="first.php" method="POST">
+      FULL NAME:  <input type="text" value="budhesh katariya" name="full">
+      PASS:  <input type="password" name="pass">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+
+101)handle text field -
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="first.php" method="POST">
+        full name:<input type="text" name="full">
+        submit:<input type="submit" value="submit">
+
+    </form>
+</body>
+</html>
+
+102)handle password field-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+     if ($_REQUEST["pass"] == "124816")
+     {
+         echo "your password is correct:" . $_REQUEST["pass"];
+     }
+     else
+     {
+         echo "sorry password is incorrect:".$_REQUEST["pass"] ;
+     }
+  ?>
+</body>
+</html>
+
+103)isset function-
+
+<?php
+ $n = "budhesh" ;
+ if (isset($n))
+ {
+     echo "data is here" ;
+ }
+ else
+ {
+    echo "data is not here" ;
+ }
+?>
+
+104)handle checkbox-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+  if (isset($_REQUEST ["number1"]))
+  {
+       echo $_REQUEST ["number1"]."<br>" ;
+    }
+    if (isset($_REQUEST ["number2"]))
+  {
+       echo $_REQUEST ["number2"]."<br>"  ;
+    }
+    if (isset($_REQUEST ["number3"]))
+  {
+       echo $_REQUEST ["number3"]."<br>"  ;
+    }
+    if (isset($_REQUEST ["number4"]))
+  {
+       echo $_REQUEST ["number4"]."<br>"  ;
+    }
+  ?>
+</body>
+</html>
+
+105)handle radio button-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+  if(isset($_REQUEST ["good"]))
+  {
+   echo "this data is here:". $_REQUEST ["good"];
+  }
+  else
+  {
+      echo "sorry you have not select gender" ;
+  }
+  ?>
+</body>
+</html>
+
+106)handle listbox-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+  if (isset($_REQUEST["location"]))
+  {
+      foreach ($_REQUEST["location"] as $city)
+      {
+          echo $city. "<br>" ;
+      }
+  }
+  ?>
+</body>
+</html>
+
+107)handle text area-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+    $short= $_REQUEST ["family"] ;
+    echo str_replace ("\n" , "<br>" , $short) ;
+  ?>
+</body>
+</html>
+
+108)handle date-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+   $new_date = date ('d-m-Y', strtotime ($_REQUEST["bb"])) ;
+   echo $new_date ;
+  ?>
+</body>
+</html>
+
+109)handle files- ********************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+     echo $_FILES["loop"]["name"]. "<br>" ;
+     echo $_FILES ["loop"]["type"]. "<br>" ;
+     echo $_FILES ["loop"]["tmp_name"]. "<br>" ;
+     echo $_FILES ["loop"]["error"]. "<br>" ;
+     echo $_FILES ["loop"]["size"]. "<br>" ;
+  ?>
+</body>
+</html>
+
+110)retrieve form date at once-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+    echo $_REQUEST ["N"]. "<br>" ;
+    echo $_REQUEST ["YY"]. "<br>" ;
+    echo $_REQUEST ["locat"]. "<br>" ;
+  ?>
+</body>
+</html>
+
+111)form validation-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>YOUR DATA IS SAVE</h1>
+  <?php
+  if (strlen ($_POST ["name"])<=6)
+  {
+    echo "pls enter a valid a charachter<more then 6 charachter  " ;
+  }
+  else
+  {
+    echo "your data is  save" ;
+  }
+  ?>
+</body>
+</html>
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+  
+
+
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+     
+   
+          
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+

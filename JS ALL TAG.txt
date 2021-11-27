@@ -1,0 +1,3793 @@
+                                             JAVA SCRIPT ALL TAG
+
+
+1)document.write() function-
+
+ <body>
+    <script>
+        document.write("hello budhesh <br> ") ;
+        var name="budhesh" ;
+        document.write (name ) ;
+        document.write (4+2) ;
+    </script>
+ </body>
+
+2)window.alert() function-
+
+ <body>
+    <script>
+        window.alert ("this is error function") ;
+         var name="budhesh" ;
+        window.alert (name) ;
+        window.alert (10+10) ;
+    </script>
+</body>
+
+3)variables-
+
+ <body>
+    <script>
+        var $name="yahoo is site " ;
+        document.write ($name) ;
+        var _name="i am boy" ;
+        document.write (_name) ;
+    </script>
+</body>
+
+4)data type-
+ 
+ 1)primitive data type-
+     1-string
+     2-number
+     3-boolean
+     4-undefined
+     5-Null
+
+ 2)non-primitive data type-
+     1-object
+     2-array
+     3-regExp
+
+5)declaring and initializing variable-
+
+ <body>
+  <script>
+
+      var roll ;
+      document.write (roll) ;
+
+      var roll=" budhesh " ;
+      document.write (roll) ;
+
+      var roll="true" ;
+      document.write (roll) ;
+
+      var roll="false" ;
+      document.write (roll) ;
+
+      var price=121.1 ;
+      document.write (price) ;
+
+      var x=10,y=20,z=30 ;
+      document.write (x+y+z) ;
+
+     var yahoo="budhesh" ;
+     var yahoo="katariya" ;
+     document.write(yahoo) ;
+
+  </script>
+
+6)javascript operator-
+
+  1)arithmetic operator
+  2)comparison (relational) operation
+  3)logical operation
+  4)bitwise operator  5)assignment operator
+
+  1)arithmetic operator-
+
+ <body>
+    <script>
+        var x = 40;
+        var y = 20;
+
+        document.write(x + y); (adition)
+
+        document.write(x - y); (subtract)
+
+        document.write(x * y); (multiple)
+
+        document.write(x / y); (division)
+
+        x++;
+        document.write(x);     (increment)
+
+        y--;
+        document.write(y);     (decrement)
+    </script>
+</body>
+ 
+  2)comparison (relational) operation-
+
+ <body>
+    <script>
+          var $price=10>20 ;
+        document.write ($price) ;
+
+        var $price=10<20 ;
+        document.write ( $price) ;
+
+        var $price=10<=20 ;
+        document.write ($price) ;
+
+        var $price=10>=20 ;
+        document.write ($price) ;
+
+        var $price=10 == 20 ;
+        document.write ($price) ;
+
+        var $price=10 === 20 ;
+        document.write ($price) ;
+
+        var $price=10!=20 ;
+        document.write ($price) ;
+
+        var $price=10 === 10 ;
+        document.write ($price) ;
+
+        var $price=10 === "10" ;
+        document.write ($price) ;
+
+
+    </script>
+
+  3)logical operation-
+
+ <body>
+    <script>
+        var $price= 5>3 && 5<10 ;
+        document.write ($price) ;       (logical and)
+
+        var $price= 5<3 && 5<10 ;
+        document.write ($price) ;
+
+        var $price= 5>3 || 5<10 ;
+        document.write ($price) ;       (logical or)
+
+        var $price= 5<3 && 5>10 ;
+        document.write ($price) ;
+
+        var $price= ! (5>2) ;
+        document.write ($price) ;      (logical not)
+
+        var $price= ! (5<2) ;
+        document.write ($price) ;
+    </script>
+</body>
+
+  4)bitwise operator-
+
+ << -shift the  bits to left 
+ >> -shift the bits to right
+ ~  -bitwise inversion NOT
+ &  -bitwise logical AND
+ |  -bitwise logical OR
+ ^  -bitwise exclusive XOR
+ 
+ <body>
+    <script>
+        var x = 4;
+        var y = 5;
+        var z = x & y;
+        document.write(z);
+
+        var z = x | y;
+        document.write(z);
+
+        var z = x ^ y;
+        document.write(z);
+
+        var a=~5 ;
+        document.write (a) ;
+    </script>
+</body>
+
+  5)assignment operator-
+
+   =
+  +=
+  -=
+  *=
+  /=
+  %=
+  <<=
+  >>=
+  >>>=
+  &=
+  ^=
+  |=
+
+ <body>
+    <Script>
+        var m = 20 ;
+         m += 10 ;
+        document.write(m) ;
+
+        var m=20 ;
+        m -=10 ;
+        document.write(m) ;
+
+        var m=20 ;
+        m *=10 ;
+        document.write(m) ;
+
+        var m=20 ;
+        m %=10 ;
+        document.write(m) ;
+
+
+        var m=20 ;
+        m /=10 ;
+        document.write(m) ;
+
+        var m=20 ;
+        m &=10 ;
+        document.write(m) ;
+
+        var m=20 ;
+        m ^=10 ;
+        document.write(m) ;
+
+        var m=20 ;
+        m |=10 ;
+        document.write(m) ;
+
+        </Script>
+
+</body>
+
+7)prompt () method getting input from user-
+
+  syntax-prompt ("enter your name:","default text") ;
+
+ <body>
+    <script>
+        var m= prompt ("enetr your name: ","BUDHESH") ;
+        document.write(m) ;
+
+        var n=prompt ("enetr your age:") ;
+        document.write (n) ;
+    </script>
+</body>
+
+8)if statements-
+
+ syntax- if (condition)
+          {
+            block of the statement ;
+          }
+
+ <body>
+    <script>
+        var m=10  ;
+        if (m == 10)
+        {
+            document.write ("this is a true condition <br>") ;
+        }
+
+        if (5>2 && 5<20)
+        {
+            document.write ("and condition is right <br>") ;
+        }
+
+        if (5>2 && 5>20)
+        {
+            document.write ("and condition is right <br>") ;
+        }
+
+        if (5>2 || 5<20)
+        {
+            document.write ("or condition is right <br>") ;
+        }
+
+        if (5<2 || 5>20)
+        {
+            document.write ("or condition is right <br>") ;
+        }
+
+        var x = prompt("enter your roll numebr: ") ;
+        if (x == 50)
+        {
+            document.write ("NAME: budhesh") ;
+        }
+    </script>
+
+9)if else statement-
+
+ syntax- if (condition)
+            {block of the statement;
+            }
+         else {
+            block of the statement:}
+
+ <body>
+    <script>
+        var x = 20;
+        if (x == 20) {
+            document.write("your enter value is right <br>");
+
+        }
+        else {
+            document.write("enter value is false");
+        }
+
+        var m=prompt ("enter your value: ")
+        if (m ==20)
+        {
+            document.write ("NAME: budhesh");
+        }
+        else
+        {
+            document.write ("sorry this number data is not found") ;
+        }
+    </script>
+</body>
+
+10)else if statement-
+
+ syntax-if (condition)
+           {
+               block of the staement ;
+            }
+        else if (condition)
+           {
+               block of the staement ;
+            }
+        else if (condition)
+           {
+               block of the staement ;
+            }
+          else
+           {
+               block of the staement ;
+            }
+
+   <body>
+    <script>
+    var x = 20 ;
+    if (x == 10)
+    {
+      document.write ("enter your value is right") ;
+    }
+    else if (x ==15) 
+    {
+        document.write ("enter your value is currect") ;
+    }
+    else if (x ==20) 
+    {
+        document.write ("enter your value is left") ;
+    }
+    else
+    {
+        document.write ("your enter value is false") ;
+    }
+    </script>
+
+11)switch statement-
+
+ syntax-switch (expresion)
+          {
+             case expresion 1:
+             block of the statement ;
+             break ;
+    
+             case expresion 2 :
+             block of the statement ;
+             break ;
+
+             case expresion 3 :
+             block of the statement ;
+             break ;
+
+             default:
+                     defaullt block of the staement ;
+          }
+
+ <body>
+    <script>
+        var x = 20;
+        switch (x) {
+            case 10:
+                document.write("this vallue is right");
+                break;
+
+            case 20:
+                document.write("true");
+                break;
+
+            case 30:
+                document.write("nice number")
+                break;
+
+            default:
+                document.write("sorry this data not found");
+                break;
+        }
+    </script>
+
+12)for loop-
+
+ syntax-for (initialization's,test condition,increment/decrement)
+          {
+             block of the statement ;
+          }
+
+ <body>
+    <script>
+        for (x=0 ;x <6 ; x++)
+        {
+            document.write (x + "<br>" ) ;
+        }
+    </script>
+</body>
+
+     (or)
+
+  <script>
+        for (i=0 ; ; i++)
+        {
+            if (i == 2)
+            {
+                break ;
+            }
+            document.write (i + "<br>") ;
+        }
+    </script>
+
+13)nested for loop-
+
+ syntax- for (initialization's,test condition,increment/decrement)
+          {
+             block of the statement ;
+
+             for(initialization's,test condition,increment/decrement)
+          {
+             block of the statement ;
+          }
+
+  <body>
+    <script>
+        for (i=0 ; i<5 ; i++)
+        {
+            document.write ("<b>outer loop:</b> " + i + "<br>" )
+            for (x=0 ; x <4; x++)
+            {
+                document.write ("inner loop "+ x + "<br>" ) ;
+            }
+        }
+    </script>
+</body>
+
+14)while loop-
+
+ syntax- initialization
+           while (test condition)
+          {
+           block of the statement ;
+           increment of decrement ;
+          }
+
+  <body>
+    <script>
+        var x =0 ;
+        while (x <5 )
+          {
+              document.write ("outer value is: " + x + "<br>") ;
+              x ++ ;
+          }
+
+    </script>
+
+                          (or)
+    <script>
+ var x =0 ;
+        while (x <5 )
+          {
+              document.write ("if staement value: " + x + "<br>") ;
+              x ++ ;
+
+              if (x==4)
+              {
+                  break ;
+              }
+            }
+    </script>
+</body>
+
+15)nested while loop-
+
+ syntax-  initialization 1
+           while (test condition 1)
+          {
+           block of the statement ;
+           increment of decrement ;
+ 
+             initialization 2
+           while (test condition 2)
+              {
+                  block of the statement ;
+                 increment of decrement ;
+                }
+          }
+
+
+  <body>
+    <script>
+        var x =0 ;
+        while (x<5)
+        {
+            document.write ("<b>outer loop value:</b> " + x + "<br>")
+            x++ ;
+            var m=0 ;
+            while (m<3)
+            {
+                document.write ("inner loop  value: " + m + "<br>") ;
+                 m++ ;
+            }
+        }
+    </script>
+
+16)do while loop-
+
+ syntax- initialization
+          do
+           {
+               block of the statement ;
+               increment of decrement ;
+             }
+           while (condition) ;
+
+ <body>
+    <script>
+        var x=0 ;
+        do {
+            document.write ("outer loop value is : " + x + "<br>") ;
+            x++ ;
+        }
+        while (x < 6) ;
+    </script>
+</body>
+
+                         (or)
+
+  <script>
+    var x=0 ;
+    do {
+
+        if (x==3)
+        {
+            break ;
+        }
+        document.write ("outer loop value is : " + x + "<br>") ;
+        x++ ;
+    }
+    while (true) ;
+</script>
+</body>
+
+17)nested do while loop-
+
+ syntax-initialization 1
+          do
+           {
+               block of the statement 1 ;
+               increment of decrement 1 ;
+
+               initialization 2
+          do
+           {
+               block of the statement 2 ;
+               increment of decrement 2 ;
+             }
+           while (condition 2) ;
+
+             }
+           while (condition 1) ;
+
+  <body>
+    <script>
+        var x= 0 ;
+        do {
+            document.write ("<b>outer loop value is:</b> " + x + "<br>") ;
+            x++ ;
+            var l=0 ;
+            do {
+                document.write ("inner loop value is: "+ l + "<br>")
+                l++ ;
+            }
+            while (l <3) ;
+        }
+        while (x < 5) ;
+    </script>
+</body>
+
+18)break and continue -
+
+ break is stop loop
+ continue is skip value
+
+ ** break **:
+
+ <body>
+    <script>
+         for (x=0 ; x<5 ; x++)
+         {
+             if (x==3)
+             {
+                 break ;
+             }
+             document.write ("vallue is :" + x + "<br>") ;
+         }
+    </script><br>
+ </body>
+ 
+
+ ** continue **:
+ 
+  <body>
+  <script>
+    for (x=0 ; x<5 ; x++)
+    {
+        if (x==3)
+        {
+           continue ;
+        }
+        document.write ("vallue is :" + x + "<br>") ;
+    }
+  </script>   
+ </body>
+   
+19)function-
+
+ type of function-
+
+ 1) library or built in function-
+   ex-valueOf(),write(),alert ()etc.
+
+ 2) user-defined function-
+
+ 
+20)how to creating and calling function-
+
+  **creating function**-
+  
+ syntax- function function_name()
+            {
+                 block of the statement ;/body of the function ;
+             }
+
+  **calling function**-
+    
+  syntax- function_name () ;
+
+
+<body>
+    <script>
+        function display()
+        {
+            document.write("hello budhesh") ;
+        }
+        display() ;
+    </script>
+</body>
+
+21)fucntion with parameter-
+
+ syntax- function function_name (para1,para2,....)
+             {
+                block of the statement ;
+             }
+           function_name (arg1,arg2,......) ;
+
+  <body>
+    <script>
+        function display ($m ,$n)
+        {
+            document.write ("my name is: "+ $m +"<br>") ;
+            document.write ("my age is: " +$n +"<br>") ;
+        }
+        display ("budhesh",20)
+    </script>
+</body>
+
+22)argument object-
+
+  1)length function of argument object
+  2)callee function of argument object
+
+ syntax-function function_name(para1,para2,...)
+            {
+              document.write (argument[0]/argument[1]) ;
+          }
+        function_name(arg1,arg2,...) ;
+
+ <body>
+    <script>
+        function display(name1,name2)
+        {
+           // document.write (name1,name2) ;
+
+            arguments[0]="rahul" ;
+            document.write(arguments[0] + " "+ arguments[1] +"<br>") ;
+            
+            document.write (arguments.length + "<br>") ;  /*length is  argument property
+                                                           and show over number of argument */
+
+            for (i=0; i<arguments.length; i++)
+            {
+                document.write (arguments[i]+ " " + "<br>") ;
+            }               
+            
+            document.write (arguments.callee) ;    //callee id second property of argument object
+        }
+   display("budhesh","katariya","ramesh") ;
+    </script>
+   </body>
+
+23)too many function argument-
+
+ <body>
+    <script>
+        function disp(name1,name2)
+        {
+              document.write ( "first value is:" + arguments[2] + " "+ "second value is: "+ arguments[3]) ;
+        }
+        disp ("budhesh","rakesh",20,40) ;
+    </script>
+</body>
+
+24)default parameter-
+
+ syntax-function function_name (name1,name2,name3="default value")
+                {block of the statement;
+                  }
+             function_name (arg1,arg2,) ;
+
+  <body>
+        <script>
+               function display (name1,name2,name3="rahul")
+               {
+                   document.write (name1 + " " + name2 + " " + name3) ;
+               }
+               display ("budhesh","ramu","rakesh") ;
+        </script><br>
+       
+            
+    <script>
+           function display (name1,name2="rahul",name3)
+           {
+               document.write (name1 + " " + name2 + " " + name3) ;
+           }
+           display ("budhesh") ;
+    </script> <br>
+ 
+ 
+    <script>             //null default value
+              
+               function display (name1,name2,name3="null")
+               {
+                   document.write (name1 + " " + name2 + " " + name3) ;
+               }
+               display ("budhesh","ramu") ;
+    </script>
+
+     <script>          //array 
+
+           function display (name, a= ["budhesh","rahul"])
+           {
+               document.write ("my name is : "+ name + " and my age is: " +a[0] + a[1]) ;
+           }
+           display ("rahul",[20,40])
+    </script>
+      
+25)rest parameter-
+
+ syntax-function function_name (...para)
+               {
+                    block of the statement ;
+               }
+            function_name (arg) ;
+
+  <body>
+    <script>
+                 //rest parameter
+       function display (b,...nums)
+       {
+           document.write (b + "<br>",...nums) ;
+          
+       }
+      display (10,20,30,40,50) ;
+   </script> 
+ </body>
+ 
+    <script>
+       function disp (a, ...name)
+       {
+           document.write (a + "<br>" , ...name[2]) ;
+       }
+       disp (10,20,30,40,50,60) ;
+   </script>
+
+26)rest vs argument-
+
+ <body>
+    <script>
+        //rest parameter
+
+        function restshow (a,...name)
+        {
+            console.log (a +"<br>") ;
+            console.log (...name) ;
+        }
+        display (10,20,30,40,50) ;
+
+       //argument object
+
+       function show (b)
+       {
+           console.log (b+"<br>") ;
+           console.log (arguments) ;
+       }
+       display (10,20,30,40,50) ;
+    </script>
+</body>
+
+27)return statement-
+
+ syntax- function function_name (para1,para2,..)
+             {
+            
+               return (variable or expresion) ;
+             }
+           block of the  statement ( function_name (arg1,arg2) ) ;
+
+ <body>
+    <script>
+        function display (a,b)
+        {
+            return (a+b);
+        }
+      var x = display (20,30) ;
+      document.write (display (20,30)) ;  
+    </script>
+</body>
+
+28)variable scope-
+
+ 1)globle-out side of the function
+ 2)local-inside of the function
+
+ 
+  1)globle-out side of the function-
+ 
+ <body>
+    <script>
+        //globle scope
+        //globle variable are use of outside and inside
+
+        var x =20 ;
+        function display (n)
+        {
+            document.write (x + n + "<br>");  //inside
+        }
+        display (10) ;
+        document.write (x +"<br>") ;      //outside
+
+        if (true)
+        {
+            document.write (x) ; //out side use if statement
+        }
+        
+    </script>
+</body>
+
+  2)local-inside of the function-
+
+ <body>
+    <script>
+
+        //local variable
+
+        function name(m) {
+            var z = 10;
+            document.write(m + z + "<br>");     //inside
+        }
+        name(50);
+
+                              //we write without var it is globle variable
+
+        function nevy (l)
+        {
+            k = "hello i am local variable it is true or false" ;
+            document.write (k ,+ " " + l) ;
+        }
+        nevy ("false") ;
+
+    </script>
+</body>
+
+29)block scope-
+
+ <body>
+    <script >
+                //block scope
+    if (true)
+     {
+       var k= 50 ;    //this is local variable
+       document.write (k + "<br>") ;
+     }
+  document.write (k + "<br>") ; //block scope is use of inner side and outer side in java script
+
+    </script>
+</body>
+
+30)variable hoisting-
+
+ <body>
+  <script>
+       var  a=20 ;
+       document.write (a) ;
+            /*java script read 
+            var=a ;
+            a=20 ;
+            */
+
+            var x =40 ;
+            document.write (x + " " +y) ;
+            var y=40 ;
+             /*java script read 
+            var=x ;
+            var= y ;
+            document.write (x + " " +y) ;
+            y=20 ;
+            */
+         </script>
+</body>
+
+31)clouser function-
+
+  1)local scope
+  2)outer function - (inner function also acces outer funcition but outer function not acces inner function)
+  3)globle scope
+
+
+ <body>
+    <script>
+        //globle variable
+
+        var p =20 ;
+        function display (x)
+        {
+            document.write (p + x + "<br>") ;
+        }
+        display (40) ;
+
+        //local variable
+
+        function disp (m)
+        {
+            var x =10 ;
+            document.write (m + x +"<br>") ;
+
+        }
+        disp (50) ;
+
+       // outer function and inner function
+
+       function name ()
+       {
+           var h =20 ;
+           document.write (h +"<br>") ;
+           function now ()
+           {
+                 var g =40 ;
+                 document.write (g +"<br>") ; //inner function acces the outer function
+                 document.write (h +"<br>") ;
+           }
+           now ();
+       }
+       name () ;
+    </script>
+
+32)function expresion-
+
+  syntax- var x = function function_name ()
+                                 {block of the statement ;}
+                                function_name () ;
+
+  <body>
+    <script>
+        //function expresion
+        var x = function display ()
+        {
+            document.write ("hello this is function expression") ;
+        }
+       x () ;
+    </script>
+</body>
+
+33)anonymouse function-
+
+   1*can be  stored in a variable
+   2*can be returned in a function
+   3*can be pass in a function
+
+  syntax- var x = function()
+         {
+           block of the statement ;
+         };
+      x () ;
+
+ 
+   1)store anonymouse function in variable-
+
+ <body>
+    <script>
+        var disp= function ()
+        {
+            document.write ("this is a varible anonymouse") ;
+        } ;
+        disp() ;
+    </script>
+</body>
+
+  2)passing anonymouse function as argument-
+
+ <body>
+    <script>
+         function display(x)
+         {
+             return x() ;
+         }
+         document.write( display(function ()
+         {
+             return "budhesh" ;
+         })) ;
+             </script>
+</body> 
+ 
+
+  3)returning anonymouse function-
+ 
+  <body>
+    <script>
+        function disp (x)
+        {
+            return function (y)
+            {
+                return (x + y) ;
+            };
+        }
+        var nn= disp (20) ;
+        document.write(nn (20) );
+       
+    </script>
+ </body>
+
+34)arrow function- (this function is same anonymouse function)
+
+  syntax- () => {statements} ;
+
+  <body>
+    <script>
+        //function keyword
+
+        function display ()
+        {
+            document.write ("budhesh katariya<br>") ;
+        }
+        display ();
+
+        //anonymouse function
+
+        var x = function ()
+        {
+            document.write ("hello i am anony mouse function <br>") ;
+        } ;
+        x () ;
+
+        //arrow function
+
+        var x= () => {
+            document.write ("hello i am arrow function<br>");
+        };
+        x () ;
+
+        //arrow function with parameter
+ 
+        var x= (z,x) => {
+            document.write ("hello i am arrow function: "+ z , x + "<br>" );
+        };
+        x (50,100) ;
+
+          //arrow function with  default parameter
+
+          
+        var x= (z,x=20) => {
+            document.write ( z , x + "<br>" );
+        };
+        x (50) ;
+
+        //arrow function with rest parameter
+
+        var n = (a,b,...name)=>
+        {
+           document.write (a,b,name + "<br>") ;
+        } ;
+        n (10,20,30,40,50,60,70) ;
+
+        //arrow function with many input
+
+        var x=() => {
+            document.write ("hello ") ;
+            document.write ("i am budhesh <br>") ;
+        } ;
+        x (0);
+
+        //arrow function with return function
+
+        var x= n => n ;          //direct write  what we want to print ;
+        document.write (x(20 + "<br>")) ;
+
+        // //arrow function with return function
+
+        var x= n => {return n} ;
+        document.write (50) ;
+        
+    </script>
+</body> 
+
+35)immediately invoked function expression[IIFE]-
+
+ syntax-(function () { document.write () ; } ()) ;
+
+ <body>
+    <script>
+        //immediately invoked function expression[IIFE]- (IIFE)
+
+        (function () { document.write ("hlw budddy i am budhesh <br>") ;} ()) ;
+
+        //IIFE function with parameter
+
+        ( function (a,b) { document.write ("hello "+ a + "  and hello " + b);} (10,20));
+        
+    </script>
+</body>
+
+36)typeof operator-
+
+ syntax-typeof (operand) ;
+
+ <body>
+
+    <script>
+      var x =20 ;
+      var z ="hellp"
+      var e =11.2050 ;
+      
+      document.write (typeof(x)+ "<br>") ;
+      document.write (typeof(z)+ "<br>") ;
+      document.write (typeof(e)+ "<br>") ;
+     
+      </script>
+    
+</body>
+
+37)undefined-
+
+ <body>
+    <script>
+
+        //not give varible value then out-put is undefined
+        var x ;
+        document.write (x) ;
+
+    </script>
+</body>
+
+38)null- [null type is object]
+
+ <body>
+    <script>
+        var x =null ;
+        document.write (x + "<br>") ;
+        document.write (typeof (x)) ;
+    </script>
+</body>
+
+39)var,let,const (constant)-
+
+ <body>
+    <script>
+
+           //var ,let ,const keyword
+
+           var f=10 ; //value store in object
+           let l=40 ;
+           const c=110 ;   //do not change const value
+
+           document.write (f +"<br>") ;
+
+           document.write (l +"<br>") ;
+
+           document.write (c +"<br>") ;
+
+           //var with function 
+
+            function var1 ()
+            {
+                var x =60 ;
+                if (true)
+                {
+                    var x=66 ;
+                    document.write (x + "<br>") ;
+                }
+                document.write (x + "<br>") ;
+            }
+            var1() ;
+
+             //let with function 
+
+             function let1 ()
+             {
+                 let a=100 ;
+                 if (true)
+                 {
+                     let a=200 ;
+                     document.write (a +"<br>") ;
+                 }
+                 document.write (a) ;
+             }
+             let1 () ;
+             
+    </script>
+</body>
+
+40)object oriented programming (OOP)-
+
+ 1)encapsulation -data ne class sathe privat karvo
+ 2)abstractions - work hide
+ 3)inheritance - data transfer karvo one divice to other device  jo same hoy to
+ 4)polymorphism -
+
+41)object-
+
+ structure - var object_name= {
+                        budhesh ; //property
+                        suresh ;
+                        ram ;
+                  all name: function (){return (budhesh + suresh + ram) ;   //method
+                      } ;
+
+ type of the object -
+
+ 1)user defined object-
+ 2)native object- 
+ (string / numebr / boolean / function / date / object / array / math / )
+ 3)host object-
+ 4)document object-
+
+42)object declaration and initializations' of object-
+
+ 1)using object literal-
+
+ syntax of object declaration - var object_name {};
+
+ syntax of the declaration and initialization- var object_name = {key1:value1,key2:value2....n} ;
+
+ 
+ <body>
+    <script>
+             //declaration of the object
+
+             var fees= {} ;
+             fees["budhesh shyam"]=100 ;
+             fees["rahul"]=200;
+             fees["ramesh"]=300 ;
+             document.write (fees["rahul"]) ;
+             document.write(fees["budhesh shyam"]) ;
+
+             //function with return object
+              
+             var fees= {} ;
+             fees["budhesh"]=100 ;
+             fees["rahul"]=200;
+             fees["ramesh"]=300 ;
+             fees["total"]= function () {return (100 + 200 + 300) ;} 
+             document.write (fees["total"]()) ;
+
+              //declaration and initialization of the object
+
+              var fees = {
+                   budhesh:100,
+                   rahul:200 ,
+                   shyam:300 
+
+              // or var fees = { budhesh:100, rahul:200 , shyam:300 } ;
+
+              } ;
+              
+              document.write (fees["budhesh"]) ;
+              document.write (fees["rahul"]) ;
+              document.write (fees["shyam"]) ;
+
+
+              //declaration and initialization of the object with funnction method
+
+              var fees={katariya:700,total: function (){return (100 + 800) ;} } ;
+              document.write (fees["total"]()) ;
+     
+    </script>
+</body>
+
+ 2)using object construction-
+
+ syntax-var object_name = new Objects() ;
+ 
+ <body>
+    <script>
+        //using constructor object
+
+        var fees = new Object () ;
+          
+        fees["budhesh"]=200 ;
+        fees["rahul"]=400 ;
+        fees["shyam"]=500 ;
+        document.write (fees["budhesh"]) ;
+
+         //using constructor object with function
+
+         var fees = new Object () ;
+          
+          fees["budhesh"]=200 ;
+          fees["rahul"]=400 ;
+          fees["total"]= function () { return (200 + 400) ;} ;
+          document.write (fees["total"]()) ;
+
+    </script>
+</body>
+
+43)accesing object property's -
+
+ syntax- object_name["property_name"]
+
+ <body>
+    <script>
+       var fees={budhesh:100 , rahul:500, "raju ram":800} ;
+       
+       document.write(fees["rahul"] );
+
+       document.write(fees.rahul );
+
+       document.write(fees["raju ram"]) ;
+
+
+    </script>
+</body>
+
+44)accesing method-
+
+ syntax- object_name["property_name"]();
+
+ 
+ <body>
+    <script>
+        var fees = {budhesh:500 , ram:400,total:function (){return(500 + 400) ;}};
+
+        document.write (fees["total"]()) ;
+    </script>
+</body>
+
+45)adding properties /methods-
+
+ syntax-object_name ["property_name"]=value ;
+
+ <body>
+    <script>
+            //adding property
+
+        var x ={budhesh:100,suresh:200};
+
+        document.write (x["budhesh"] + " " + x["suresh"] +"<br>");
+         x["rakesh"]=500;
+
+         document.write (x["budhesh"] + " " + x["suresh"] + " " + x["rakesh"]+"<br>");
+
+       
+
+        //adding method
+
+         x["newf"]=function(){};
+
+         console.log (x);
+
+    </script>
+</body>
+
+46)deleting property-
+
+ syntax-delete object_name["property_name"];
+
+ <body>
+    <script>
+        var x={budhesh:500,suresh:400,rakesh:800};
+        document.write(x["budhesh"] + x["suresh"] + x["rakesh"]);
+        delete x["suresh"];
+        console.log(x);
+    </script>
+</body>
+
+47)factory function-
+ <body>
+    <script>
+
+      function cars(){
+          return {
+              model:"yamaha",
+              price:450000,
+              voranti: "two year"
+          } ;
+      }
+      var swift=cars();
+      document.write(swift["model"]+ "  " + swift["price"]+ " "+swift["voranti"] + "<br>");
+
+      //factory function with parammeter
+
+      function cars(model_no)
+      {
+          return {
+              model:model_no,
+              price:50000000 ,
+              voranti: "two year"
+          };
+      }
+      var nokia=cars(1232);
+      var samsung=cars(45800);
+      document.write(nokia["model"]+ " " +nokia["price"]+ " " + nokia["voranti"]+ "<br>");
+      document.write(samsung["model"]+ " " +samsung["price"]+ " " + samsung["voranti"]);
+
+    </script>
+</body>
+
+48)constructor-
+
+ <body>
+    <script>
+      function mobile (model_no)
+      {
+          this["model"]=model_no ;
+
+          this["price"]=function(){document.write ("price:20000" + this["model"] );}
+      }
+      var samsung = new mobile("yamaha") ;
+      samsung["price"]() ;
+      
+     
+    </script>
+</body>
+
+49)how to check property exists-
+
+ 1)syntax - if (typeof object_name.key !=="undefined")
+ 2)syntax - if ("key" in object_name)
+ 3)syntax- if (object_name.hasOwnProperty("key"))
+
+ <body>
+    <script>
+        function car ()
+        {
+            this.model="yamaha" ;
+            this.price=20000 ;
+        }
+        var swift = new car () ;
+       var atul= new car () ;
+
+       // 1 
+
+       /* if (typeof swift.price !=="undifined")
+        {
+            document.write ("avaliable") ;
+        }
+        else{
+            document.write ("not allowed") ;
+        } */
+
+        //2
+
+    /* if ("price" in swift)
+        {
+            document.write ("avaliable") ;
+        }
+        else{
+            document.write ("not allowed") ;
+        }
+
+        */
+        
+
+        //3
+
+        if (swift.hasOwnProperty ("price"))
+        {
+            document.write ( "avalible") ;
+        }
+        else
+        {
+            document.write ( " not -avalible") ;
+        }
+
+
+    </script>
+</body>
+
+50)for in loop object-
+
+ syntax-for (var variable_name in object_name)
+                   { block of the statement ; }
+
+ 
+ <body>
+    <script>
+        function mobile(model_no) {
+            this.model = model_no;
+            this.color = "white";
+            this.ram = "4GB";
+            this.price = function () {
+                document.write("price:2000");
+            };
+        }
+
+        var nokia = new mobile("1232");
+        var sam = new mobile("yamaha");
+
+        for (var news in nokia) {
+            if (typeof nokia[news] !== "function") {
+                document.write( news + " = "+ nokia[news] + "<br>");
+            }
+        }
+
+         // only keys show 
+        document.write (Object.keys(nokia)) ;
+
+    </script>
+</body>
+
+51)access privat properties from outside- 
+
+ <body>
+    <script>
+        function car() {
+            this.modle = "budhesh";
+            var price = 20000;
+            this.fun = function () { document.write(price); }
+        }
+        var swift = new car();
+        document.write(swift.fun());
+    </script>
+</body>
+
+52)prototype- 
+
+ syntax- class_name .prototype.keys="value" ;
+
+  <body>
+    <script>
+        function mobile() {
+
+            //INSTANCE MEMBER
+
+            this.modle = "yamaha";
+            this.price = 23000;
+        }
+        var sam = new mobile();
+        var nokia = new mobile();
+        document.write(sam.modle + "<br>");
+        //  sam.color="white" ;
+        //  document.write(sam.color) ;
+
+        //PROTOTYPE MEMBER
+
+        mobile.prototype.color = "green";
+        document.write(sam.color + "<br>");
+        document.write(nokia.color+ "<br>");
+
+         //ADD A FUNCTION 
+
+      mobile.prototype.fun=function (){return ("my name is budhesh") ;} ;
+      document.write(sam.fun());
+
+    </script>
+</body>
+
+53)how to iterate instance and prototypes member using for in loop -
+
+  <body>
+    <script>
+        function mobile ()
+        {
+            this.color="grey" ;
+            this.price=20000 ;
+            this.ram="4 gb" ;
+        }
+        var nokia = new mobile () ;
+        var samsung =new mobile () ;
+         document.write (nokia.color) ;
+
+         mobile.prototype.use="2 year" ;
+
+          // document.write(Object.keys(nokia)) ;
+
+          for ( var keys in nokia)
+          {
+              document.write (keys + "<br>") ;
+          }
+    </script>
+</body>
+
+54)how prototype use-
+
+ syntax- mobile.prototype.a === mobile__proto__a
+
+ <body>
+    <script>
+        function mobile()
+        {
+        //this.name="budhesh" ;
+        }
+
+        //NOT ADD ANY OBJECT
+
+        var x =new mobile() ;
+        document.write(x.name + "<br>") ;
+
+        // ADD PROTOTYPE MEMBER
+
+        mobile.prototype.name="budhesh" ;
+        document.write(x.name + "<br>") ;
+
+        //ADD __PROTO__ OBJECT
+
+        mobile__proto__news="yamaha"  ;
+        document.write(x.news);
+
+    </script>
+</body>
+
+55)prototype inheritance-
+
+ <body>
+    <script>
+        function nokia()
+        {
+            this.a =20 ;
+        }
+        nokia.prototype.x=40 ;
+
+        function samsung ()
+        {
+            nokia.call(this);
+            this.b=60 ;
+        }
+
+        var s =new samsung () ;
+       
+        //access instance member
+
+        document.write (s.a + "<br>") ;
+
+        //accesss prototype member
+       
+        samsung.prototype = Object.create(nokia.prototype) ;
+        document.write (s.x) ;
+    </script>
+</body>
+
+56)one super and two subclass-
+
+ <body>
+    <script>
+        //super class
+
+        function mobile (){
+
+        }
+        //prototype method
+
+        mobile.prototype.model = function (){document.write(this.model);};
+
+        samsung.prototype.price =function (){document.write(this.price) ;} ;
+
+        //sub class
+
+        function samsung (model,price)
+        {
+            this.model=model ;
+            this.price=price ;
+        }
+
+        //sub class
+
+        function nokia (model)
+        {
+            this.model=model ;
+        }
+
+        //prototype inheritance
+
+
+
+        samsung.prototype = Object.create(mobile.prototype) ;
+
+        nokia.prototype = Object.create(mobile.prototype) ;
+
+        var x = new samsung ("galaxy",30000) ;
+        var y = new nokia ("yamaha") ;
+
+        document.write (x.model + "<br>") ;
+        document.write(y.model + "<br>") ;
+        document.write(x.price) ;
+
+
+
+
+       //inheritance 
+
+         /*function extend (child,perent){
+             child.prototype = Object.create(perent.prototype) ;
+         }
+
+         extend (child,perent) ; */
+
+
+    </script>
+</body>
+
+57)method overriding-
+
+ 
+ <body>
+    <script>
+
+        //inheritance function
+
+        function extend (child,perent)
+        {
+            child.prototype = Object.create(perent.prototype) ;
+        }
+
+        //super class
+
+        function mobile (){
+
+        }
+
+        mobile.prototype.shows = function (){return ("hello i am super class") ;};
+
+ 
+        //sub class
+
+        function samsung (){
+
+        }
+        extend (samsung ,mobile) ;
+
+        samsung.prototype.shows =function (){return ("hello i am sub class") ;} ;
+
+        var sam = new samsung () ;
+
+
+        function nokia (){
+
+        }
+        extend (nokia,mobile) ;
+
+        var nok = new mobile () ;
+
+        document.write(sam.shows()) ;
+        document.write(nok.shows()) ;
+
+
+    </script>
+</body>
+
+58)multilevel inheritance-
+
+ <body>
+    <script>
+
+        function extend (child,perent){
+            child.prototype =Object.create(perent) ;
+        }
+        //super class
+
+        function mobile(){
+            this.a =10 ;
+        }
+
+        //prototype member
+
+        mobile.prototype.z=20 ;
+
+        //sub class 1
+
+        function samsung (){
+            mobile.call(this) ;
+            this.b = 30 ;
+        }
+
+        //sub class 2
+
+        function nokia (){
+            samsung.call(this) ;
+            this.c=40 ;
+        }
+
+        //inheritance 
+
+        extend (samsung,mobile) ;
+        extend (nokia,mobile) ;
+
+        var x1 =new mobile () ;
+        var x2 =new samsung () ;
+        var x3 =new nokia () ;
+
+        document.write ( "this is a mobile value: " + "<br>" + x1.a + "<br>" +x1.b + "<br>" + x1.c + "<br>" +x1.z ) ;
+        document.write ( "this is a samsung value: " +"<br>" + x2.a + "<br>" +x2.b + "<br>" + x2.c + "<br>" +x2.z ) ;
+        document.write ( "this is a nokia  value: " +   x3.a + "<br>" +x3.b + "<br>" + x3.c + "<br>" +x3.z ) ;
+
+
+
+
+    </script>
+</body>
+
+59)composition and mixin -
+
+ <body>
+    <script>
+        
+/*function mixin (target,...sources){
+    object.assign(target,...sources)
+}
+*/
+        //composition and mixins
+
+        var eating = {
+            eat: function () {
+                return "i can eating";
+            }
+        };
+
+        var walking = {
+            walk: function () {
+                return "i can walking";
+            }
+        };
+
+        var talking = {
+            talk: function () {
+                return "i can talking";
+            }
+        };
+
+        var rahul = Object.assign({}, eating, walking, talking);
+
+        document.write("this is rahul data " + "<br>");
+        document.write(rahul.eat() + "<br>");
+        document.write(rahul.walk() + "<br>");
+        document.write(rahul.talk() + "<br>");
+
+        var robot = Object.assign({}, walking, talking);
+        document.write("this is robot data" + "<br>");
+        document.write(robot.talk() + "<br>");
+
+    </script>
+</body>
+
+60)ES 6 class-
+
+   **two way**
+
+ 1)class declaration
+ 2)class expresition
+
+  1)class declaration-
+
+ syntax-  class class_name {
+               constructor (){
+                                  properties                              }
+                 method
+             }
+
+ <body>
+    <script>
+        //class declaration
+
+        class mobile {
+            constructor(name,no) {
+                //instance member
+
+                this.model = name;
+                this.number=no ;
+                this.price = function () { return ("price is 50000"); }
+            }
+
+            //prototype member
+
+            print() {
+                return ("i am methos of class declaration");
+            }
+        }
+        var vivo = new mobile("budhesh",1232);
+        document.write(vivo.print()+ "<br>");
+        document.write(vivo.number) ;
+
+    </script>
+</body>
+
+
+  2)class expression-
+
+ 1-named
+ 2-unnamed
+
+ syntax-
+
+  1-named
+
+  var mobile =  class {
+               constructor (){
+                                  properties
+                              }
+                 method
+             };
+
+ 2-unnamed
+ 
+ var mobile =  class class_name {
+               constructor (){
+                                  properties
+                              }
+                 method
+             };
+
+ <body>
+    <script>
+        //named
+
+        var mobile =class mobile1{
+            constructor (){
+                this.name ="oppo";
+            }
+            shows(){return "i am named" ;}
+        } ;
+
+        var vivo = new mobile ();
+
+        document.write (vivo.name + "<br>") ;
+
+        //unnamed
+
+        var mobile =class {
+            constructor (){
+                this.name ="oppo";
+            }
+            shows(){return "i am named" ;}
+        } ;
+
+        var vivo = new mobile ();
+
+        document.write (vivo.name) ;
+
+    </script>
+</body>
+
+61)default constructor -
+
+ <body>
+    <script>
+        class mobile {
+          /*  constructor (){
+                this.model="oppo" ;
+            }
+            */
+            wild(){return "i am default constructor" ;}
+        }
+        var vivo = new mobile () ;
+        document.write(vivo.wild()) ;
+    </script>
+</body>
+
+62)parameterized constructor -
+
+ <body>
+    <script>
+        class mobile {
+            constructor (model_no ,name){
+                this.model = model_no ;
+                this.name =name ;
+            }
+            show (){return "i am constructor" ;}
+        }
+        var vivo =new mobile (1232,"oppo") ;
+
+        document.write(vivo.model +"<br>" + vivo.name) ; 
+    </script>
+</body>
+
+63) class inheritance -
+
+ syntax- class class_name { 
+           method 
+          }
+
+        class class_name1 extends class_name {
+           method 
+        }
+
+ <body>
+    <script>
+        class father {
+
+            fmoney() {
+                return "i am fmoney of father";
+            }
+        }
+
+        class son extends father {
+
+            smoneys() {
+                return "i am smoney of the father";
+            }
+        }
+
+        var x = new father();
+        var y = new son();
+
+        document.write(x.fmoney() + "<br>");
+        document.write(y.fmoney() + "<br>");
+        document.write(y.smoneys());
+    </script>
+
+</body>
+
+64)static method-
+
+<body>
+    <script>
+        class mobile {
+           constructor (){
+               this.name="budhesh" ;
+           }
+            static oppo(){
+                return "i am static method " ;
+            }
+        }
+       document.write(mobile.oppo()) ;
+    </script>
+</body>
+
+65)method overriding-
+
+ <body>
+    <script>
+        class father {
+            show(){
+                return "i am super class" ;
+            }
+        }
+
+        class son extends father {
+            show (){
+                return "i am sub class" ;
+            }
+        }
+        var y =new son () ;
+        document.write(y.show()) ;
+    </script>
+</body>
+
+66)array-
+
+67)array declaration and initiallization-
+
+  1) using array leteral-
+
+ syntax- var array_name=[];
+             arrray_name[0]=value1 ;
+             arrray_name[1]=value2 ;
+             arrray_name[2]=value3 ;
+
+ syntax-var array_name =[value1,value2,value3....];
+
+ <body>
+    <script>
+        //first declaration and initialization
+        
+        var give = [];
+        give[0] = "budhesh";
+        give[1] = "ram";
+        give[2] = "raja";
+        document.write(give[2] + "<br>");
+
+        //combine declaration and initialization
+
+        var cars = ["bwm", "farari", "yamaha"];
+        document.write(cars[2]);
+
+        
+        // first variable defind and initialization
+        var x=10,b=20,c=30 ;
+        var names=[x,b,c] ;
+        document.write(names) ;
+    </script>
+</body>
+
+ 2)using array constructor-
+
+ syntax- var array_name=new Array() ;
+         
+         var array_name=new Array(value1,value2,value3...) ;
+
+ <body>
+    <script>
+        //first declare and then initialization
+
+        var cars = new Array();
+        cars[0] = "bmw";
+        cars[1] = "yamaha";
+        cars[2] = "audi";
+        cars[3] = "farari";
+        document.write(cars[0] + "<br>");
+
+        //declaration and initialization with
+
+        var stu = new Array("budhesh", "rakesh", "rahul", "ram");
+        document.write(stu[0] + "<br>" + stu[1] +"<br>");
+         
+        //single numeric value is not work constructor
+        
+        var stud =new Array(1) ;
+        document.write(stud[0]) ;
+    </script>
+</body>
+
+68)ways of the object-
+
+ <body>
+    <script>
+        // 1- object literal
+
+        var fees = {};
+        fees["budhesh"]=100 ;
+        fees["ram"]=200 ;
+        document.write(fees["budhesh"] + "<br>") ;
+
+        //2- object leteral declaration and initialization
+
+        var fees={rahul:200, ram:200} ;
+        document.write(fees["rahul"] + "<br>") ;
+
+        //3- object constructor
+
+        var fees =new Object(rahul=200 ,ram=400) ;
+        document.write(fees["ram"] + "<br>") ;
+
+        //4- factory function
+
+        function mobile (){
+            return {
+                model:"galaxy" ,
+                model_no:1232
+            } ;
+        }
+        var nokia =new mobile () ;
+        var sam =new mobile () ;
+        document.write(nokia["model"] + "<br>") ;
+        document.write(sam["model"] + "<br>") ;
+
+        //5- constructer funtion
+
+        function mobile(){
+            this.model="galaxy" ;
+            this.price=function (){return "i am price" ;}
+        }
+        var samsung =new mobile() ;
+        document.write(samsung.model + "<br>") ;
+        document.write(samsung.price()) ;
+    </script>
+</body>
+
+69)constructor as class-
+
+ <body>
+    <script>
+       function mobile (model_no,price){
+           this.model=model_no ;
+           this.price=price ;
+       }
+       var nokia =new mobile(1232,20000) ;
+       document.write(nokia.model) ;
+    </script>
+</body>
+
+70)super method-
+
+ <body>
+    <script>
+        class mobile {
+            constructor(model_no, price) {
+                this.model = model_no;
+                this.price = price;
+            }
+            show() {
+                return "i am mobile";
+            }
+        }
+
+        class cars extends mobile {
+            constructor() {
+                super();
+                this.id = 123456;
+            }
+            shows() {
+                return "i am  cars";
+            }
+        }
+
+        var s = new mobile("galaxy", 1000);
+        var z = new cars();
+        document.write(s.model);
+        document.write(s.price);
+        document.write(z.id);
+
+
+    </script>
+</body>
+
+71)accessing array elements-
+
+ <body>
+    <script>
+        var fun = ["budhesh", "ram", "raju", "rakesh"];
+        document.write(fun[0] + "<br>" + fun[1] + "<br>" + fun[2] + "<br>" + fun[3]);
+    </script>
+</body>
+
+72)modifying array-
+
+ <body>
+    <script>
+        var stu = ["budhesh", "ram", "suresh"];
+        document.write(stu + "<br>");
+        stu[0] = "raja";
+        document.write(stu + "<br>");
+
+        var stulist = stu;
+
+        document.write(stulist + "<br>");
+
+        stulist[1] = "i am jugari";
+        document.write(stulist + "<br>");
+
+        document.write(stu);
+    </script>
+</body>
+
+73)removing array element-
+
+ syntax-delete array_namme[index];
+
+ <body>
+    <script>
+        var stu=["budhesh","ram","rahul"];
+        document.write(stu + "<br>");
+
+        delete stu[0] ;
+        document.write(stu + "<br>");
+       
+    </script>
+</body>
+
+74)array length property-
+
+ <body>
+    <script>
+        var stu = ["budhesh", "ram", "suresh", "rakesh"];
+        document.write(stu.length);
+    </script>
+</body>
+
+75)iteration of array ussing for loop-
+
+ <body>
+    <script>
+         var stu = ["budhesh", "ram", "suresh", "rakesh"];
+
+         document.write(stu.length + "<br>") ;
+
+         for( var x=0; x<=3;x ++) {
+             document.write( x + "=" +stu[x] + "<br>") ;
+         }
+
+    </script>
+</body>
+
+76)forEach loop-
+
+ syntax-array.forEach (function(value,index,arr){});
+
+ <body>
+    <script>
+         var stu = ["budhesh", "ram", "suresh", "rakesh"];
+         stu.forEach(function(value,index){
+             document.write(value + " = " + index + "<br>") ;
+         });
+    </script>
+</body>
+
+77)for of loop-
+
+ syntax-for(let value of array){} 
+
+ <body>
+    <script>
+         var stu = ["budhesh", "ram", "suresh", "rakesh"];
+
+         for (let value of stu)
+         {
+            document.write(value + "<br>") ;
+         }
+    </script>
+
+78)how to get input from user in array-
+
+ <body>
+    <script>
+        //definding array
+
+        var ele = prompt("enter number of element: ");
+        var news = [];
+     
+          //input
+
+        for (let x = 0; x <= ele; x++) {
+            news[x] = prompt("name ");
+        }
+        //display value
+        
+        for (let value of news) {
+            document.write(value + "<br>");
+        }
+    </script>
+</body>
+
+79)multidimensional array-
+
+ -arrays of arrays =multidimensional array
+
+ <body>
+    <script>
+        //2D ARRAY
+
+          var data=[["budhesh" ,"dell","10000"],["rakesh","hp","20000"],["suresh","lenovo","30000"]] ;
+
+        //FULLY 2D ARRAY PRINT
+
+        /*
+
+        for (let i=0 ; i<3 ; i ++)
+        {
+           for (j=0 ;j<3 ;j++)
+            {
+                //with index number
+                document.write(i + " " + j + " ") ;
+                //only show value
+               // document.write(data[i][j]) ;
+            }
+            document.write("<br>") ;
+        }
+        */
+
+        //ONLY PROPER ONE VALUE PRINT 
+
+         document.write(data[1][1]) ;
+
+
+        /* 
+         var data=[[],[],[]] ;
+          data[0][0]="budhesh" ;
+           data[0][1]="dell" ;
+            data[0][2]="10000";
+             data[1][0]="suresh";
+              data[1][1]="hp";
+               data[1][2]="20000";
+                data[2][0]="rakesh";
+                 data[2][1]="lenovo";
+                  data[2][2]="30000";
+                  document.write(data[2][1]) ;
+                  */
+       
+                  //USE A CONSTRUCTOR ARRAY
+
+      /*  var data = new Array(["budhesh", "dell", "10000"], ["rakesh", "hp", "20000"], ["suresh", "lenovo", "30000"]);
+        document.write(data[1][1]);
+        */
+    </script>
+</body>
+
+80)creat a empty 2d array-
+
+ <body>
+    <script>
+        /*
+        //using array litteral
+
+        var data=[[],[]];
+        for(i=0; i<2; i++)
+        {
+            for(j=0; j<3; j++)
+            {
+                document.write(data[i][j] + " ") ;
+            }
+            document.write("<br>") ;
+        }
+        //array construction
+      //  var data=new Array([],[]);
+
+     
+        var rows=3 ;
+        var cols=3 ;
+        var data=[] ;
+        for (i=0; i<rows ; i++)
+        {
+            data[i]=[] ;
+        }
+        for (i=0; i<rows ;i++)
+        {
+            for(j=0; j<cols; j++)
+            {
+                document.write(data[i][j] + " " + " |") ;
+            }
+            document.write("<br>") ;
+        }
+         */
+
+        //using a constructor 
+
+        var rows=3 ;
+        var cols=3 ;
+        var data=new Array(rows);
+        for( var i=0; i<rows; i++)
+        {
+            data[i]=new Array(cols) ;
+        }
+        for (i=0; i<rows ;i++)
+        {
+            for(j=0; j<cols; j++)
+            {
+                document.write(data[i][j] + " " + " |") ;
+            }
+            document.write("<br>") ;
+        }
+
+    </script>
+</body>
+
+81)how to get input from user in 2D array-
+
+ <body>
+    <script>
+        var rows=2;
+        var cols=2;
+        var data=[] ;
+        for (var i=0 ; i<rows ;i++)
+        {
+            data[i]=[] ;
+        }
+
+        for(var i=0 ; i<rows ; i++)
+        {
+            for(var j=0 ;j<cols; j++)
+            {
+                data[i][j]=prompt("enter your good name: ") ;
+            }
+        }
+
+        for(var i=0; i<rows; i++)
+        {
+            for(var j=0;j<cols; j++)
+            {
+                document.write( i + " " + j + " " +data[i][j] + " " + " |") ;
+            }
+            document.write("<br>") ;
+        }
+    </script>
+</body>
+
+82)concat method-
+
+ syntax-var new_array=old_array.concat(value1,value2.....) ;
+
+ <body>
+    <script>
+        var user = ["yamaha", "bmw"];
+
+        //  value concat
+        var new_user_data = user.concat("budhesh", "rakesh");
+
+        document.write(new_user_data + "<br>");
+
+        //array concat
+
+        var news = [1, 2, 3];
+        var newss = [4, 5, 6, 7];
+        var new_non = news.concat(newss);
+
+        document.write(new_non + "<br>");
+
+        //more than one concat array
+
+        var news = [1, 2, 3];
+        var newss = [4, 5, 6, 7];
+        var newsss = [8, 9, 10];
+
+        var new_nons = news.concat(newss, newsss);
+
+        document.write(new_nons);
+
+    </script>
+</body>
+
+83)join method-
+
+ syntax-var new_array=old_array.join("separate") ;
+
+ <body>
+    <script>
+        var data = ["budhesh", "rakesh", "suresh"];
+        var new_user = data.join(" |");
+        document.write(data + "<br>");
+        document.write(new_user + "<br>");
+        document.write(typeof (new_user));
+    </script>
+</body>
+
+84)reverse method-
+
+ syntax-array_name.reverse() ;
+
+ <body>
+    <script>
+        var data=["budhesh","rakesh","suresh","ramesh"] ;
+        document.write(data + "<br>") ;
+
+        data.reverse() ;
+        document.write(data + "<br>") ;
+    </script>
+</body>
+
+85)slice method-
+
+ syntax-array_name.slice(begin,end);
+
+ <body>
+    <script>
+        var data = ["budhesh", "rakesh", "suresh", "ramesh", "rahul"];
+        document.write(data + "<br>");
+
+        var new_data = data.slice(0, 2);
+        document.write(new_data + "<br>");
+
+        var new_data = data.slice(-4, -1);
+        document.write(new_data + "<br>");
+
+        var new_data = data.slice(undefined, 4);
+        document.write(new_data + "<br>");
+
+        var new_data = data.slice(1, 9);
+        document.write(new_data);
+    </script>
+</body>
+
+86)to string method-
+
+ syntax-array_name.toString();
+
+ <body>
+    <script>
+        var data=["budhesh","rakesh","suresh"] ;
+        data.toString() ;
+        document.write(data) ;
+    </script>
+</body>
+
+87)Array.isArray method-
+
+ syntax-Array.isArray(value) ;
+
+ <body>
+    <script>
+        //this method only check over data is array or not
+        
+        var data=["budhesh","rakesh","suresh"] ;
+        var result=Array.isArray(data) ;
+        document.write(result) ;
+    </script>
+</body>
+
+88)splice method-
+
+ syntax-array_name.splice(start,deletcount,replacevalue) ;
+
+ <body>
+    <script>
+
+        //this method will use of data insert and data delete
+
+        //syntax-array_name.splice(start,deletecount,insert) ;
+
+         var data=["budhesh","rakesh","suresh","ramesh","mayur"] ;
+
+         //data delet
+         data.splice(2) ;
+         document.write(data + "<br>") ;
+
+         //data insert
+         var data1=["budhesh","rakesh","suresh","ramesh","mayur"] ;
+         data1.splice(2,0,"hp","dell") ;
+         document.write(data1 + "<br>") ;
+
+         //data delete andd data insert
+
+         var data2=["budhesh","rakesh","suresh","ramesh","mayur"] ;
+         data2.splice(2,3,"dell","lenovo","yamaha") ;
+         document.write(data2 + "<br>") ;
+
+         
+    </script>
+
+89)index of method-
+
+ syntax-var position=array_name.indexOf(item,start) ;
+
+ <body>
+    <script>
+        //this method will use of find array index
+
+        var data=["budhesh","ram","rahul","shyam"] ;
+
+        //item is not found then out put is -1
+
+        var position=data.indexOf("ramesvar") ;
+        document.write(position + "<br>")  ;
+
+        //array item inddex number
+        var data1=["budhesh","ram","rahul","shyam"] ;
+        var position1=data1.indexOf("rahul") ;
+        document.write(position1 + "<br>") ;
+
+        //index count start with over argument
+
+        var data2=["budhesh","ram","rajesh","rahul","rakesh"] ;
+        var position3=data2.indexOf("rahul",2) ;
+        document.write(position3) ;
+
+
+    </script>
+</body>
+
+90)fill method-
+
+ syntax-array_name.fill(value,start,end);
+
+ <body>
+    <script>
+        //not give a length
+        
+        var data=["budhesh","rahul","ram","ramesh"] ;
+        data.fill("i_am") ;
+        document.write(data + "<br>") ;
+
+        //give length then 
+
+        var data1=["budhesh","rahul","ram","ramesh","raja"] ;
+        data1.fill("i_am",1,4) ;
+        document.write(data1 + "<br>") ;
+
+        //empty array with object
+
+        var data3=new Array(3) ;
+        data3.fill("ram") ;
+        document.write(data3 + "<br>") ;
+    </script>
+</body>
+
+91)unshift method-
+
+ syntax-array_name.unshift(value1,value2...) ;
+
+ <body>
+    <script>
+
+        //this method use of add element of start/begning i  array
+
+        var data=["hp","lenovo","dell"] ;
+        var new_length=data.unshift("budhesh","rahul") ;
+        document.write(data + "<br>") ;
+        document.write(new_length + "<br>") ;
+        document.write(data.length) ;
+       
+    </script>
+</body>
+
+92)push method-
+
+ syntax-array_name.push(value1,value2....);
+
+ <body>
+    <script>
+        //this method will use of insert element of last in array
+
+        var data=["budhesh","rakesh","suresh","ram"] ;
+        data.push("hp","dell") ;
+        document.write(data + "<br>") ;
+        document.write(data.length) ;
+    </script>
+</body>
+
+93)shift method-
+
+ syntax-array_name.shift() ;
+
+<body>
+    <script>
+        //this method use of remove over array first element
+
+        var data=["budhesh","rakesh","hp","dell","lenovo"] ;
+         var data2=data.shift() ;
+        document.write(data + "<br>") ;
+        document.write(data2 + "<br>") ;
+
+        var data1=data.shift();
+        document.write(data + "<br>") ;
+        document.write(data1) ;
+    </script>
+</body>
+94)pop method -
+
+ syntax-array_name.pop();
+
+ <body>
+    <script>
+        //this method will use of remove the elemnt of last in array
+
+        var data=["budhesh","ram","rahul","raja","lenovo","dell"] ;
+         var data1= data.pop() ;
+        document.write(data + "<br>") ;
+        document.write(data1 + "<br>") ;
+    </script>
+</body>
+
+95)boolean- 
+
+  syntax- document.write(Boolean(value)) ;
+
+  <body>
+    <script>
+        
+        //this case all value are false
+
+        var data=Boolean(0) ;
+        document.write(data + "<br>") ;
+
+        var data1=Boolean(-0) ;
+        document.write(data1 + "<br>") ;
+
+        var data2=Boolean(NaN) ;
+        document.write(data2 + "<br>") ;
+
+        var data3=Boolean(null) ;
+        document.write(data3 + "<br>") ;
+
+        var data4=Boolean(false);
+        document.write(data4 + "<br>" ) ;
+
+        var data8=Boolean() ;
+        document.write(data8 + "<br>"+ "<br>") ;
+
+        //this case all value are true
+
+        var data5=Boolean("hello") ;
+        document.write(data5 + "<br>") ;
+
+        var data6=Boolean(10) ;
+        document.write(data6 + "<br>") ;
+
+        var data7=Boolean(true) ;
+        document.write(data7 + "<br>") ;
+
+        
+          //constructor
+
+         //var data=new Boolean(value) ;
+
+    </script>
+</body>
+
+96)string-
+
+ <body>
+    <script>
+
+        //primitive type
+
+        var str="budhesh" ;
+        document.write(str + "<br>") ;
+        document.write(typeof(str)+ "<br>") ;
+
+        //constructor type
+
+        var str=new String("i am budhesh") ;
+        document.write(str + "<br>") ;
+        document.write(typeof(str)) ;
+
+    </script>
+</body>
+
+97)string concatenation-
+
+ <body>
+    <script>
+
+        //concatenation string 
+
+        var one = "budhesh";
+        var two = "katariya";
+        var three = one.concat(" " + two);
+        document.write(three + "<br>");
+        document.write(typeof (three) + "<br>");
+
+        // + concat operator
+
+        var one = "budhesh";
+        var two = "katariya";
+        document.write(one + " " + two + "<br>");
+
+        var one="budhesh" ;
+        var two=" katariya" ;
+        var three=one + two ;
+        document.write(three + "<br>") ;
+
+    </script>
+</body>
+
+98)Escape notations-
+
+ \0 - null character
+ \' - single quate
+ \" - double quate
+ \\ - backslash
+ \n - new line
+ \r - carriage return
+ \v - vertical tab
+ \t - tab
+ \b - backspace
+ \f - form feed
+
+ <body>
+    <script>
+        console.log("i am \n budhesh") + "<br>";
+        console.log("i am \'' budhesh") + "<br>";
+        console.log("i am \" budhesh") + "<br>";
+        console.log("i am \t budhesh") + "<br>";
+        console.log("i am \v budhesh") + "<br>";
+        console.log("i am \\ budhesh") + "<br>";
+        console.log("i am \b budhesh") + "<br>";
+        console.log("i am \f budhesh") + "<br>";
+        console.log("i am \0 budhesh") + "<br>";
+    </script>
+</body>
+
+99)string length-
+ 
+ <body>
+    <script>
+        var str="hello my name is budhesh" ;
+        //including a space
+        document.write(str.length) ;
+    </script>
+</body>
+
+100)charAt(position) method-
+
+ <body>
+    <script>
+
+        //this method will use of find a position of the string
+        var str="hello i am budhesh katariya" ;
+
+        document.write(str.charAt(12)) ;
+    </script>
+</body>
+
+101)charCodeAt method-
+
+ <body>
+    <script>
+        //this method will return of unicode of the charachter
+
+        var str="helllo ia ma budhesh katariya" ;
+        document.write(str.charCodeAt(5)) ;
+    </script>
+</body>
+
+102)touppercase or to lowercase-
+
+ <body>
+    <script>
+        var str="i am budhesh" ;
+        document.write(str.toUpperCase() + "<br>") ;
+
+        var str="I AM BUDHESH" ;
+        document.write(str.toLowerCase()) ;
+    </script>
+</body>
+
+103)trim method-
+
+ <body>
+    <script>
+        //this method was remove the white space in start and end
+
+        var str="   i ma budhesh   " ;
+        console.log(str.trim()) ;
+    </script>
+</body>
+
+104)replace method-
+
+ syntax-replace(old,new) ;
+
+ <body>
+    <script>
+        //replace(old,new)
+
+        var str="hello my name is budhesh" ;
+        document.write(str.replace("budhesh","rakesh") + "<br>") ;
+         document.write(str.replace("llo","mang")) ;
+
+    </script>
+
+105)split method-
+
+ <body>
+    <script>
+        //this method was break the over string with over argument
+        //and return a array
+        //syntax-split(argument) ;
+
+        var str="hello my name is budhesh katariya " ;
+        document.write(str.split(" ") + "<br>" ) ;
+
+    </script>
+</body>
+
+106)indexOf method-
+
+ <body>
+    <script>
+        //this method is find of the index number
+
+        var str="hello i am budhesh katariya" ;
+        document.write(str.indexOf("budhesh") + "<br>") ;
+
+        //find the only one charachter number
+
+        var str="hello i am budhesh katariya" ;
+        document.write(str.indexOf("i") + "<br>") ;
+
+        //find the index start with over argument
+
+        var str="hello i am budhesh katariya" ;
+        document.write(str.indexOf("b",5)) ;
+        
+    </script>
+</body>
+
+107)search method-
+
+ <body>
+    <script>
+        //this method was findd the index of the string
+        //similar of the indexof
+
+        //search a only one character
+
+        var str="i ma budhesh katariya" ;
+        document.write(str.search("u") + "<br>") ;
+
+        //search a full word of the string
+
+        var str="i ma budhesh katariya" ;
+        document.write(str.search("katariya")) ;
+    </script>
+</body>
+
+108)slice method-
+
+  <body>
+    <script>
+        //this method was print the over string part with over argument
+        //last number of the argumentwas not inclue
+
+        var str="hello i am budhesh katariya" ;
+        document.write(str.slice(5,15)+"<br>") ;
+
+        //nagative number with argument
+
+        var str="hello i am budhesh katariya" ;
+        document.write(str.slice(-15,-5)) ;
+
+    </script>
+</body>
+
+109)substring method-
+
+ <body>
+    <script>
+        //this method same of slice method
+        //this method was not a print nagative number argument
+        //last number of the argumentwas not inclue
+
+        var str="i am budhesh katariya " ;
+        document.write(str.substring(10,20)) ;
+    </script>
+</body>
+
+110)substr method-
+
+ <body>
+    <script>
+        /*this method was use of print the number of the character 
+        in string in over argument
+        the argument is a number of the   character start and print the element
+        */
+
+        var str="i ma budhesh katariya" ;
+        document.write(str.substr(5,8)) ;
+          
+    </script>
+
+111)numbers -
+
+ <body>
+    <script>
+
+        //primitive 
+
+        var a = 10; //whole number
+        var b = 10.20;  //decimal number
+        var c = 5e3;   //exponent number
+        var f="200" ; //string not a number
+
+        //access number
+
+        document.write(a + " "+typeof(a)+ "<br>");
+        document.write(b +" "+ typeof(b) +"<br>");
+        document.write(c +" "+ typeof(c) +"<br>");
+        document.write(f +" "+ typeof(f) +"<br>");
+
+        //constructor 
+
+        var d = new Number(10);
+        document.write(d +" "+typeof(d) + "<br>");
+        document.write(typeof (d));
+
+    </script>
+</body>
+
+112)number with string-
+
+ <body>
+    <script>
+
+        //number with string 
+        //not addition (+) string and number 
+        //only adition number + number
+        //substact,multiplication,division work in this method
+        //string + number = output (string)
+        //number  + string= output (number)
+
+        var a=10 ;   //number
+        var b="50" ; //string
+        var c=20 ;   //number
+        var d="40" ; //string
+        var e="hello" ; //string
+
+        document.write(a + b + " " + typeof(a + b)+ "<br>") ; //output value is 1050 not a 60
+        document.write(a + b + c +" " + typeof(a + b + c) +"<br>") ; //output value is 105020 not a 80
+        document.write(b + d + " " + typeof(b + d) +"<br>") ; //string + string not a adition 
+        document.write(c + a + d + b + " " + typeof(c + a + d + b) +"<br>") ;
+        document.write(a-c + " " + typeof(a-c)+ "<br>") ; //substaction 
+        document.write(a-e + " " +typeof(a-e) +"<br>") ;  //not a number out put
+
+    </script>
+</body>
+
+113)NaN -
+ 
+ <body>
+    <script>
+        //NaN not a number
+        //NaN output is  unligel number
+
+        var a = 10;
+        var b = "hello";
+        var c = "20";
+        document.write(a + c + "<br>"); //ligel number
+        document.write(a * b + "<br>");  //unligel number then output is NaN 
+    </script>
+</body>
+
+114)NaN is not a equal to anything-
+ 
+ <body>
+    <script>
+        var a="hello" ;
+        var b=10 ;
+        document.write(isNaN(a) + "<br>") ;
+        document.write(isNaN(b) + "<br>") ;
+
+        //check NaN if statement 
+        //NaN is not a equale to any and also output is false
+        var c=10 ;
+        if (c == NaN)
+        {
+          document.write("true" + "<br>") ;
+        }
+        else
+         {
+             document.write("false" + "<br>") ;
+         }
+    </script>
+</body>
+
+115)isNaN method-
+
+ <body>
+    <script>
+        //isNaN method
+
+        var a=10 ;
+        var b="20" ;
+        var c="hello" ;
+        document.write(isNaN(a) + "<br>") ;  //false
+        document.write(isNaN(b) + "<br>") ;  //false
+        document.write(isNaN(c) + "<br>") ;  //true
+
+        //if statement with NaN
+
+        if (isNaN(a))
+        {
+            document.write("true" + "<br>") ;
+        }
+        else
+        {
+            document.write("false" + "<br>") ;
+        }
+
+    </script>
+</body>
+
+116)infinity and nagative(-) infinitive-
+
+ <body>
+    <script>
+        var a=10 ;
+        var b=-10 ;
+        var c=0 ;
+
+        document.write(a/c + "<br>") ;  //infinity
+        document.write(b/c + "<br>") ; //nagative infinity
+    </script>
+</body>
+
+117)number method-
+
+ 1-toString()
+ 2-toExponential()
+ 3-toFixed()
+ 4-toPrecision()
+ 5-valueOf()
+ 6-isFinite()
+ 7-isInteger()
+ 8-isNaN()
+ 9-isSafeInteger()
+
+  1-toString() method-
+ 
+ syntax-toString() ;
+
+ <body>
+    <script>
+        //this method will use of convert number to string
+        //binary value -2
+        //octal value -8
+        //hex value-16
+
+        var a=10 ;  //number
+
+        document.write(typeof(a) + "<br>") ; //number
+        document.write(a.toString() + "<br>")
+        document.write(typeof(a.toString()) + "<br>") ; //string
+        document.write(a.toString(2) + "<br>")  //binary number
+        document.write(a.toString(8) + "<br>") ; //octal number
+        document.write(a.toString(16)) ; //hex number
+
+    </script>
+</body>
+
+  2-toExponential() method-
+
+ <body>
+    <script>
+        //syntax- .toExponential(what digit will you print)
+        //this method was return the exponential value
+        var a=1020.2554 ;
+        document.write(a.toExponential() + "<br>") ;
+        document.write(a.toExponential(4) + "<br>") ;
+
+    </script>
+</body>
+
+  3-toFixed() method-
+
+ <body>
+    <script>
+        //syntax- a.toFixed(what digit will you print) ;
+        //this method was print the  decimal value of the over number
+
+        var a= 1000 ;
+        document.write(a.toFixed() + "<br>") ;
+        document.write(a.toFixed(2) + "<br>") ;
+        document.write(a.toFixed(4) + "<br>") ;
+    </script>
+</body>
+
+  4-toPrecision() method-
+
+ <body>
+    <script>
+        //this method was use of what digit we print in output
+
+        var x=1020.552 ;
+        document.write(x.toPrecision() + "<br>") ;
+        document.write(x.toPrecision(2) + "<br>") ;
+        document.write(x.toPrecision(6) + "<br>") ;
+    </script>
+</body>
+
+ 7-Number.isInteger() method-
+
+ <body>
+    <script>
+        //this method was use the only check the integer number 
+        //output value is true or false
+        
+        document.write(Number.isInteger() + "<br>") ;    //empaty
+        document.write(Number.isInteger(100) + "<br>") ;  //number
+        document.write(Number.isInteger("110") + "<br>") ; //string
+        document.write(Number.isInteger("hello") + "<br>") ;  //string
+        ddocument.write(Number.isInteger(10.20)) ;  //decimal
+    </script>
+</body>
+
+ 9-isSafeInteger() method-
+
+ <body>
+    <script>
+        //this method was use of check the over inetger value is true or false
+        //this safe integer value is (2^53 + 1) to (2^53 - 1)
+
+        document.write(Number.isSafeInteger() + "<br>") ;
+        document.write(Number.isSafeInteger(100) + "<br>") ;
+        document.write(Number.isSafeInteger(-100) + "<br>") ;
+        document.write(Number.isSafeInteger("100") + "<br>") ;
+        document.write(Number.isSafeInteger("hello") + "<br>") ;
+        document.write(Number.isSafeInteger(120000000000000000000000000000000000000000000000000002222222222222222222) + "<br>") ;
+    </script>
+</body>
+
+118)globle js method-
+
+ 1-Number()
+ 2-parseFloat()
+ 3-parseInt()
+
+ 1-Number() method-
+
+ <body>
+    <script>
+
+        //this method was return the  number and true/false value is 1/0
+        var a=101 ;
+        var b="200" ;
+        var c="hello" ;
+        var d=true ;
+        var e=false ;
+        var f= new Date() ;
+
+        document.write(Number(a) + "<br>") ;
+        document.write(Number(b) + "<br>") ;
+        document.write(Number(c) + "<br>") ;
+        document.write(Number(d) + "<br>") ;
+        document.write(Number(e) + "<br>") ;
+        document.write(Number(f) + "<br>") ;
+    </script>
+</body>
+
+  2-parseFloat() method-
+ 
+  <body>
+    <script>
+        //this method was also same for parseInt 
+        //parseFloat method print the full float value 
+        
+        document.write(parseFloat(10) + "<br>")   //number
+        document.write(parseFloat("10") + "<br>") //string
+        document.write(parseFloat(10.20) + "<br>") //float
+        document.write(parseFloat("hello") + "<br>")  //string
+        document.write(parseFloat("10 year") + "<br>") //string but number
+        document.write(parseFloat("year 10") + "<br>") //string
+        document.write(parseFloat(" 10 ") + "<br>")   //space
+        document.write(parseFloat("10 20 30") + "<br>") //number 
+      
+    </script>
+</body>
+ 
+
+ 
+  3-parseInt() method-
+
+ <body>
+    <script>
+        //this method was return the first value of over argument
+        //syntax-parseInt(string,redix) ;
+        //redix value are binary/octal/hex
+        //redix value are convert to decimale
+
+        document.write(parseInt(10) + "<br>") ;    //number
+        document.write(parseInt("1020")+ "<br>") ;  //string but number
+        document.write(parseInt("hello")+ "<br>") ;  //string
+        document.write(parseInt("50 20 30") + "<br>") ;  //string but number
+        document.write(parseInt("10.200")+ "<br>") ;  //decimal
+        document.write(parseInt("year 10")+ "<br>") ; //string
+        document.write(parseInt("10 year") + "<br>") ;   //string but  number
+        document.write(parseInt("12",8) + "<br>") ;   //octal to convert decimal
+        document.write(parseInt("12",2) + "<br>") ;  //binary to convert decimal
+        document.write(parseInt("12",16) + "<br>") ;  //hex to convert decimal
+
+    </script>
+</body>
+
+119)math-
+
+ Method	Description
+
+abs(x)	Returns the absolute value of x
+acos(x)	Returns the arccosine of x, in radians
+acosh(x)	Returns the hyperbolic arccosine of x
+asin(x)	Returns the arcsine of x, in radians
+asinh(x)	Returns the hyperbolic arcsine of x
+atan(x)	Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+atan2(y, x)	Returns the arctangent of the quotient of its arguments
+atanh(x)	Returns the hyperbolic arctangent of x
+cbrt(x)	Returns the cubic root of x
+ceil(x)	Returns x, rounded upwards to the nearest integer
+cos(x)	Returns the cosine of x (x is in radians)
+cosh(x)	Returns the hyperbolic cosine of x
+exp(x)	Returns the value of Ex
+floor(x)	Returns x, rounded downwards to the nearest integer
+log(x)	Returns the natural logarithm (base E) of x
+max(x, y, z, ..., n)	Returns the number with the highest value
+min(x, y, z, ..., n)	Returns the number with the lowest value
+pow(x, y)	Returns the value of x to the power of y
+random()	Returns a random number between 0 and 1
+round(x)	Rounds x to the nearest integer
+sign(x)	Returns if x is negative, null or positive (-1, 0, 1)
+sin(x)	Returns the sine of x (x is in radians)
+sinh(x)	Returns the hyperbolic sine of x
+sqrt(x)	Returns the square root of x
+tan(x)	Returns the tangent of an angle
+tanh(x)	Returns the hyperbolic tangent of a number
+trunc(x)	Returns the integer part of a number (x)
+
+<body>
+    <script>
+        document.write(Math.PI + "<br>") ;
+        document.write(Math.sqrt(25) + "<br>") ;
+        document.write(Math.abs(-64) + "<br>") ;   //abs=absolute value
+        document.write(Math.pow(3,3) + "<br>") ;  //power of three
+        document.write(Math.trunc(12.253) + "<br>") ;  //integer value pass 
+        document.write(Math.sin(90) + "<br>") ;
+
+        //round 
+        //this mathod was round up or round down value
+        //5> down and 5< up
+
+        document.write(Math.round(9.1) + "<br>") ; //round off value
+        document.write(Math.round(10.8) + "<br>") ;
+        document.write(Math.round(-10.6) +"<br>") ;
+        document.write(Math.round(-10.4) +"<br>") ;
+  
+        //random method
+        
+        document.write(Math.random() + "<br>") ;   //return random number
+        document.write(Math.random()*10 + 1 + "<br>") ;
+
+
+        document.write(Math.log(1) + "<br>") ;   //log of  the value
+        document.write(Math.sin(90) + "<br>") ;
+
+        //min or max method
+
+        document.write(Math.min(10,50,20,60,80) + "<br>") ;  //return the min value
+        document.write(Math.max(10,20,80,60,40) + "<br>") ;  //return the max value
+      
+        // floor mathod
+        //this methodd only down value
+
+        document.write(Math.floor(10.2) + "<br>") ;  //floor method was round up the value
+        document.write(Math.floor(-10.2) + "<br>") ; 
+    </script>
+</body>
+
+120)date -
+
+ creat a date object-
+
+ 1) new Date() ;
+ 2) new Date(milisecond); 
+ 3) new Date(year,month,day,hour,minites,second,milisecond) ;
+ 4) new Date(datestring);
+
+ 1) new Date() ;-
+
+ <body>
+    <script>
+      //this method is use the current date andd time
+        var dates=new Date() ;
+        document.write(dates) ;
+    </script>
+</body>
+
+  2) new Date(milisecond);-
+  
+  <body>
+  <script >
+      var x=new Date(1257866) ;
+      var y=new Date(6004455) ;
+      document.write(x + "<br>") ;
+      document.write(y + "<br>") ;
+  </script>
+</body>
+
+ 3) new Date(y,m,d,h,m,s,mi) ;-
+
+ <body>
+    <script>
+        //date (year,month,day,hour,minite.milisecond)
+        //month and week start with 0
+
+        var x=new Date(2011,6,4,8,40,60,0) ;
+        var y=new Date(2011,6,4,8,40,60) ;
+        var z=new Date(2011,6,4,8,40) ;
+        var a=new Date(2011,6,4,8) ;
+        var b=new Date(2011,6,4,8) ;
+        var c=new Date(2011,6,4) ;
+        var d=new Date(2011,6,) ;
+
+        document.write(x + "<br>") ;
+        document.write(y + "<br>") ;
+        document.write(z + "<br>") ;
+        document.write(a + "<br>") ;
+        document.write(b + "<br>") ;
+        document.write(c + "<br>") ;
+        document.write(d + "<br>") ;
+    </script>
+</body>
+
+  4) new Date(datestring);-
+
+ <body>
+    <script>
+        //IOS-(the internatinal standerd)- YYYY-MM-DD ="2010-10-10"
+        //SHORT DATE (MM/DD/YYYY)-"10/2/2010"
+        //LONG DATE (MMM DD YYYY)- "june 10 2010" or "10 june 2020"
+
+        var dates=new Date("may 10, 2010,10:10:10 ") ;
+        document.write(dates + "<br>") ;
+
+        //IOS-(the internatinal standerd)- YYYY-MM-DD ="2010-10-10 10:10:10"
+
+        var x=new Date("2020 10 20 10:20:20") ;
+        document.write(x + "<br>") ;
+
+         //SHORT DATE (MM/DD/YYYY)-"10/2/2010"
+
+        var y=new Date("06/06/2050 10:50:59") ;
+        document.write(y+ "<br>") ;
+
+        //LONG DATE (MMM DD YYYY)- "june 10 2010" or "10 june 2020"
+        
+        var z=new Date("june 10 2050") ;
+        document.write(z) ;
+
+    </script>
+</body>
+
+121)date method-
+
+ 1) set date method-
+
+ set.date()
+ set.day()
+ set.full year()
+ set.hour()
+ set.minite()
+ set.second()
+
+ <body>
+    <script>
+        var x=new Date() ;
+        document.write(x + "<br>") ;
+
+        x.setMonth(10) ;
+        document.write(x + "<br>") ;
+
+        x.setDate(20) ;
+        document.write(x + "<br>") ;
+
+        x.setFullYear(2015) ;
+        document.write(x + "<br>") ;
+
+        x.setFullYear(2012,2,13) ;
+        document.write(x + "<br>") ; 
+
+        x.setHours(12) ;
+        document.write(x + "<br>") ;
+
+        x.setMinutes(50) ;
+        document.write(x + "<br>") ;
+
+        x.setSeconds(20) ;
+        document.write(x + "<br>") ;
+
+        x.setMilliseconds(0) ;
+        document.write(x + "<br>") ;
+
+    </script>
+</body>
+
+ 2) get date method-
+
+ get.date()
+ get.day()
+ get.full year()
+ get.hour()
+ get.minite()
+ get.second()
+ get.Day()
+ get.Time()
+
+ <body>
+    <script>
+        var x=new Date() ;
+        document.write(x + "<br>") ;
+
+       document.write("Month:" + x.getMonth() + "<br>") ;
+       document.write("year: "+ x.getFullYear()+ "<br>") ;
+       document.write("hour: " + x.getHours() + "<br>") ;
+       document.write("second: " + x.getSeconds() + "<br>") ;
+       document.write("milisecond: " + x.getMilliseconds() + "<br>") ;
+       document.write("day: " + x.getDay() + "<br>") ;
+
+    </script>
+</body>
+
+122)retrive month name and day name-
+
+ <body>
+    <script>
+        var x = new Date();
+        document.write(x + "<br>");
+        var month = x.getMonth();
+        var day = x.getDay();
+
+        document.write("month: " + month + "<br>");
+        document.write("day:" + day + "<br>");
+
+        //get a month with function
+        function getmonthname(monthnumber) {
+
+            var months = ["jan", "feb", "mar", "april", "may", "june", "july", "aug", "sep", "oct", "nov", "dec"];
+            return months[monthnumber];
+        }
+
+        document.write("month: " + getmonthname(month) + "<br>");
+
+
+        //get a day with function
+
+        function getdayname(number) {
+            var days = ["sun", "mon", "tue", "wen", "thu", "fri", "sat"];
+
+            return days[number];
+        }
+
+        document.write("days: " + getdayname(day));
+
+    </script>
+</body>
+
+123)how to formate date and time-
+
+ <body>
+    <script>
+        var x = new Date();
+        document.write(x + "<br>");
+        var y = x.getMonth();
+        y++;
+        var z = x.getFullYear();
+        var w = x.getDay();
+
+        function all(nume) {
+            return y + "/" + w + " /" + z;
+        }
+        document.write(all(x));
+    </script>
+</body>
+
+124)how to convert date to string-
+
+ <body>
+    <script>
+        var x=new Date() ;
+        document.write(x.toString() + "<br>") ;
+        document.write(x.toUTCString() + "<br>") ;
+        document.write(x.toGMTString()) ;
+    </script>
+</body>
+
+125) type of button-
+
+ 1)confirm  return true or false value
+ 2)alert 
+ 3)prompt 
+
+ 
+ 
+
+  
+
+  
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+
+ 
+       
+ 
+  
+
+
+ 
+
+ 
+  
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+ 
+
+
+           
+
+
+            
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 

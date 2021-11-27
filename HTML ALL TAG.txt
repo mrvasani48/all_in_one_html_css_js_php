@@ -1,0 +1,885 @@
+                              HTML TAG NAME 
+1)first html page
+2)plain text
+3)pararagraph tag-(<p>)                                                           *ancore tag//type atribute and mediA ATRIBUTE
+4)braeck tag-(<br>)                                                               *sandbox
+5)heading tag-(<h>)                                                               *target (_blanck,_parent,_top,_framename,_self)
+6)subscript tag-(<sub>)                                                           *nested frame
+7)superscript tag-(<sup>)                                                         *usemap in image in coords value how to find
+8)horizontal tag-(<hr>)                                                           *SOURCE TAG IN HTML
+9)align atribute-(<align="center","left","right">)                                *what is use off thi enctype atribute in form tag
+10)body tag-(<b>)                                                                 *
+11)italic tag-(<i>)
+12)stronge and emphasis tag-(<strong>)-(<em>) - NOTE1:STOROGE TAG SAME WORK FOR BODY TAG
+                                             - NOTE2:EMPHASIS TAG SAME WORK FOR ITALIC TAG
+13)blockquote or quote tag-(<blockquote>)-(<q>)	 
+14)abbreviation and acronysm tag-(<abbr>)-(<acronysm>)
+15)address tag-(<address>)
+16)insert and dilet tag-(<ins>)-(<del>)
+17)s tag-(<s>)    
+                        META TAGp
+
+18)meta tag-(<meta>)-meta tag also write in head tag.<meta name="" content="">
+19)'DESCRIPTION' in html-use <meta name="description" content="my name is budhesh">
+20)'KEYWORDS'for search engine-USE <meta name="keywords" content="HTML,C,JAVA,JS">
+21)'AUTHER' of web page-use <meta name="auther" content="N.K.EDIT">
+22)'AUTO REFRESH'in web page-use <meta http-equiv="refresh" content="5"s>
+23)pre tag in html-(<pre>)[as it is wtite]
+                     UN-ORDER LIST AND ORDER LIST AND DEFINITION LIST
+24)unorder list-(<ul>) - <ul type=1-disc,2-circle,3-square >
+25)order list-(<ol>)-<ol type=1-1,2-i,3-I,4-A,5-a,6-start,7-reversed>
+26)definition list-(<dl>)- <dt>-difine term</dt>,<dd>-term's definition </dd>
+27)unorder nested list-(<ul>)-list ni andar  list lakhavu hoy to
+28)order nested list -(<ol>) -list ni andar list lakhavu hoy to
+29)table tag-(<table>)-<th>-table heading,<tr>-table row,<td>-table data
+30)border in table tag-<table border=2>
+31)align atribute-<table align="left,right,center">
+32)align atribute use in content-<th align="left,center,right">/<td align="left,right,center">
+33)width -<table width="80%-text related program /8px-grafics related program >"
+34)width in columb-<td width="value">
+35)background coler in table-<table bgcolor="value">
+36)background color in table content and cell-<tr/td/th bgcolor="value">
+37)cellpadding in table-<table cellpadding="value px">
+38)cellspacing in table-<table cellspacing="value px">
+39)rowspaning in table-<td/th rowspan="value">
+40)columbspanning-<td/th colspan="value">
+41)nested list in table-<table ni andra table crear karvu hoy to> 
+42)anchor tag -(<a href="http:www.budheshshows.com">visit budheshshow </a>-(href=hypertext refrance)
+43)anchor tag atribute-
+
+* atribute *     * value *
+
+1)href         1)urlreference
+2)download     2)filename
+3)media        3)media_query, width,height,device-width,device-height,orientation,aspect-ratio,device-aspect-ratio,color,color-index,resolution,scan,grid
+4)hreflang     4)language_code
+5)type         5)media_type
+6)target       6)_blanck,_parent,_top,_framename,_self
+7)relation     7)alternate,auther,bookmark,help,license,next,nofollow,noreferrer,prefetch,prev,search,tag
+
+44)href atribute-<a href="URL">
+  EX-<href="http://www.geekyshows.com">geekyshows</a>
+     <href="page1.html">page1</a>
+     <"mailto:content@gmail.com">mail me</a>
+     <href="#bottom">
+     protocol-https://,ftp://,mailto://,file:// etc.
+     a script-<href="javascript:alert('HELLO')">budhesh</a>
+45)download atribute-<a href="/image/example.jpg" download="budheshshow">download </a>
+46)media atribute-<a href="http://budhesh.com" media="all"> click here </a>
+47)hreflang atribute-<a hreflang="en"> (gujarati-gu,hindi-hi,sanskrut-sa,)
+48)type atribute-<a hreflang="en" href="budhesh.html" type="text/html">click here</a>
+49)rel atribute-<a rel="help" href="help.html">click here</a>
+50)id atribute-<a href="imp">important </a>,<p id="#imp">
+51)target atribute-<a href="budhesh.html" target="_blank">click here</a>
+52)link coler-unvisited link color-blue,visited link(vlink)-purple,active link(alink)-red(by difault all color)-<body link="color name" alink="",vlink="">
+53)iframe-<iframe src="URL/WEB">
+54)iframe height or width-<iframe src="http://www.google.com" width="" height=""></iframe>
+55)sandbox atribute-<iframe sandbox> value </iframe>
+     *VALUE SANDBOX*
+      1)no value
+      2)allow form
+      3)allow-pointer-lock
+      4)allow-popups
+      5)allow-same-origin
+      6)allow-scripts
+      7)allow-top-navigation
+56)allow-same-origin=post name ,port name and uniform resource identifier(URI) same then it is allow-same-origin-<iframe src="URL/html file" sandbox="allow-same-origin"></iframe>
+57)allow-top-navigation-<iframe src="URL/html file" sandbox="allow-same-origin allow-top-navigation"></iframe>
+
+58)image tag-<img>
+     *ATRIBUTE IMAGE*     *VALUE
+      1)SRC(source)      1)URL
+      2)ALT(AlterNet)    2)TEXT
+      3)WIDTH            3)PIXEL
+      4)HEIGHT           4)PIXEL
+      5)ISMAP            5)ISMAP
+      6)USEMAP           6)#MAPNAME
+59)src atribute-<img src="URL">
+60)alt atribute-<img src="budhesh.jpg" alt="budhesh">
+61)ismap atribute-   <a href="#"
+                         <img src="budhesh.jpg" ismap="ismap">
+                     </a>
+62)usemap-[use image map genrater in coords value]
+    
+ <img src="budhesh.jpg" usemap="#imap">
+    <map name="imp" id="#map">
+        <area shape="rect" coords="" href="PRACITCAL 2.html" target="_blank">
+    </map>
+
+63)map tag-<map name="mapname" id="#mapname">...</map>-
+64)area tag-<area> [also write in map tag]
+                                            <map> 
+                                             <area shape="">
+                                            </map>
+   *atribute*     *value*
+  1)alt            1)text
+  2)coords         2)coordinates
+  3)downloads      3)filename
+  4)href           4)URL
+  5)hreflang       5)language_code
+  6)media          6)media query
+  7)shape          7)default,rect(rectengle),circle,poly
+  8)target         8)(_blanck,_parent,_top,_framename,_self)
+  9)type           9)media_type
+ 10)rel           10)
+
+65)coords(cordinate atribute)-[use image map genrater in coords value]
+66)atach link in image-
+           <a href="URL" target=_blank>
+             <img src=".jpg">
+           </a>
+67)how to set background image-<body background=".jpg">
+68)comment-[comment is not show on web page]
+      1)simple text comment-
+             <!--comment-->
+      2)code inside comment-
+             <!--
+              <p>
+              <h3>
+              </p>
+              </h3>
+              -->
+      3)conditionalcomment-
+           <!--[if IE 8]>
+               comment
+           <![endif]-->
+69)audio tag-[MP3/OGG/WEBM]<audio controls="controls" src="URL"></audio>            [note-"internet explorer is not supported audio tag"]
+     *ATRIBUTE*      *VALUE*
+     1)AUTOPLAY      1)AUTOPLAY
+     2)CONTROLS      2)CONTROLS
+     3)LOOP          3)LOOP
+     4)MUTED         4)MUTED
+     5)PRELOAD       5)AUTO,METADATA,NONE
+     6)SRC           6)URL
+70)autoplay atribute-<audio controls="controls" autoplay="autoplay" src="URL"></audio>
+71)controls ataribute-<audio controls="controls" src="URL"></audio>
+72)muted atribute-<audio controls="controls" muted="muted" src="URL"></audio>
+73)loop atribute(continue play song.)-<audio controls="controls" muted="muted" loop="loop" src="URL"></audio>
+74)preload atribute-<audio controls="controls" preload="auto/metadata/none" src="MERELIYEKAFIHO.mp3"></audio>
+
+75)video tag-[mp4,ogg,webM]-<video controls="controls" src="URL"></video>
+     *ATRIBUTE*         *VALUE*
+     1)AUTOPLAY      1)AUTOPLAY
+     2)CONTROLS      2)CONTROLS
+     3)LOOP          3)LOOP
+     4)MUTED         4)MUTED
+     5)PRELOAD       5)AUTO,METADATA,NONE
+     6)SRC           6)URL
+     7)HIGHT         7)PIXEL
+     8)WIDTH         7)PIXEL
+     9)POSTER        7)URL
+76)poster atribute-<video controls="controls" poster="image.jpg/png" src="URL"></video>
+77)source tag-[use vidio and audio tag]-
+     *ATRIBUTE*  *VALUE*                                                          MIDIA TYPE      AUDIO         VIDIO
+      1)SRC      1)URL                                                            1)MP3          audio/mp3    vidio/mp4 
+      2)TYPE     2)MEDIA TYPE                                                     2)ogg          audio/ogg    vidio/ogg               
+      3)MEDIA    3)MEDIA QUERY                                                    3)Wav          audio/wav    vidio/wav
+78)embed <embed src="URL" type="" hight="" width="">     
+     *ATRIBUTE*  *VALUE*                                                         
+      1)SRC      1)URL                                                        
+      2)TYPE     2)MEDIA TYPE 
+      3)HIGHT    3)PX
+      4)WIDTH    4)PX
+79)noembeeeed tag-<noembed> your browser doesn't support </noembed>
+80)object tag-<object data="URL" type="" hight="" width="" ></object>
+    *ATRIBUTE*    *VALUE*
+    1)DATA         1)URL
+    2)TYPE         2)MEDIA TYPE
+    3)NAME         3)NAME
+    4)HEIGHT       4)HEIGHT
+    5)WIDTH        5)WIDTH
+    6)USEMAP       6)USEMAP
+    7)FORM         7)FORM_ID
+81)param tag(parameter)-<param name="hight" value="200"></param>[also use in object tag ]
+       *ATRIBUTE*   *VALUE*
+       1)NAME       1)NAME-AUTOPLAY/WIDTH/HIGHT/SRC/
+       2)VALUE      2)VALUE-TRUE/FALSE/400/200/URL
+82)form tag-[INPUT/TEXTAREA/BUTTON/SELECT/OPTION/OPTGROUP/FIELSET/LABEL = all form tag element]
+           
+       *ATRIBUTE*     *VALUE*
+     1)ACCEPT-CHARSET 1)UTF-8
+     2)ACTION         2)URL
+     3)ENCTYPE        3)value__multipart/form-data / text/plain / application/x-www-form-data
+     4)AUTOCOMPLATE   4)ON(DEFAULTS)/OFF
+     5)METHOD         5)GET(DEFAULT)/POST
+     6)NAME           6)NAME
+     7)NOVALIDATE     7)TRUE/FALSE
+     8)TARGET         8)_SELF/_BLANK/_PARENT/_TOP
+ *accept-charset atribute-<form accept charset="UTF-8">
+
+ *action atribute-<form action="URL/.html/.php">
+ 
+ *enctype atribute-<form enctype="value__multipart/form-data / text/plain / application/x-www-form-data"
+
+ *autocomplete-<form autocomplete="on/off">                            [by default autocomplete on hi raheta he]
+                    <input type="" autocomplete="on/off">
+               </form>
+
+ *method-<form method="GET/POST">
+ 
+ *name atribute-<form name="xyz">
+                   firstname: <input type="text" name="fname">
+                    lastname: <input type="text" name="lname">
+                 </form>
+
+ *novalidate-<form novalidate="true/false">                      [remove required conditions ]
+
+ *target atribute-<form action="URL/.HTML/.PHP" target=_blank>
+                    firstname: <input type="text" name="fname">
+                    lastname: <input type="text" name="lname">
+                     <input type="submit" name="submit">
+                 </form>
+
+ *value atribute-<form>
+                    NAME: <input type="text" value="budhesh">
+                 </form>
+ *
+83)input tag-<form> 
+                    <input type="value">
+               </form>
+    --INPUT ATRIBUTE--
+     *ATRIBUTE*        *VALUE*
+      1)TYPE           1)BUTTON/CHECKBOX/COLOR/DATE/DATETIME/DATETIME-LOCAL/EMAIL/FILE/HIDDEN/IMAGE/MONTH/PASSWORD/RADIO/RANGE/RESET/SEARCH/SUBMIT/TEL/TEXT/TIME/URL/]
+      2)CHECKED        2)CHECHED
+      3)REQUIRED       3)REQUIRED
+      4)MAX            4)NUMBER/DATE
+      5)MIN            5)NUMBER/DATE
+      6)SIZE           6)NUMBER
+      7)PATTERN        7)REGEXP
+      8)MULTIPLE       8)MULTIPLE
+      9)NAME           9)TEXT
+     10)READONLY       10)READONLY
+     11)PLACEHOLDER    11)PLACEHOLDER 
+     12)MAXLENGTH      12)NUMBER
+     13)FORMNOVALIDATE 13)
+     14)ACCEPT         14)AUDIO/*,VIDEO/*,IMAGE/*,.JPG ETC
+     15)AUTOFOCUS      15)AUTOFOCUS
+     16)DIRNAME        16)LTR/RTL/AUTO  [DIR=DIRECTION ...LTR=LEFT TO RIGHT]
+     17)DISABLED       17)DISABLED 
+     18)FORM           18)FORM_ID
+     19)FORMACTION     19)URL/.HTML/.PHP
+     20)FORMENCTYPE    20)value__multipart/form-data / text/plain / application/x-www-form-data
+     21)FORMMETHOD     21)GET/POST
+     22)FORMTARGET     22)_SELF/_BLANK/_PARENT/_TOP
+     23)HEIGHT         23)PX
+     24)LIST           24)ID OF A DATA LIST
+     25)STEP           25)NUMBER
+     26)SRC            26)URL
+     27)TITLE 
+     
+2)cheched atribute-<form>                                                     [also use in radio button and checkbox]
+                       male:<input type="radio" checked="checked">
+                       female:<input type="radio>
+                   </form>
+
+3)required atribute-<form>
+                            NAME: <input type="text" name="name" required="required">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+
+4)max or min atribute-<form>
+                            NUMBER: <input type="number" name="number" max="10" min="2">
+                            range:  <input type="range" name="range" max="10" min="2">
+                            date:   <input type="range" name="range" max="2021-10-10" min="2021-02-10">
+                     </form>
+6)size atribute-<form> 
+                      NAME: <input type="text" name="name" size="20">
+                       submit: <input type="submit">
+               </form>
+
+7)pattern atribte=<form>
+                      name: <input type="text" pattern="^[a-z]+$">
+                      submit: <input type="submit"> 
+                  </form>
+                      
+
+8)multiple atribute-<form> 
+                       upload file: <input type="file" multiple="multiple">
+                       submit: <input type="submit">
+               </form>
+
+10)readonly atribute-<form>
+                         name: <input type="text" name="name" value="budhesh" readonly="readonly">
+                         submit: <input type="submite">
+                    </form>
+                     
+
+11)placeholder  atribute-<form> 
+                         name: <input type="text" name="name" placeholder="enter yout name">
+                        </form> 
+
+12)min or maxlenght-<form>
+                            NAME: <input type="text" name="name" maxlenght="10">
+                            PASSWORD: <input type="password" name="pass" minlength="5" maxlength="15">
+                           <input type="submit">
+                           </form>
+
+13)formnovalidate-<form>
+
+                        NAME: <input type="text" name="name" required="required">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+                            <input type="submit" value="submit">
+                            <input type="submit" value="save" formnovalidate>
+                     </form>
+
+14)accept atribute-<form>
+                        NAME: <input type="text" name="name" required="required">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+                            unload file: <input type="file" name="file" accept="AUDIO/*,VIDEO/*,IMAGE/*,.JPG ">
+                            <input type="submit" value="submit">
+                     </form>
+
+15)autofocus atribute-<form>
+                        NAME: <input type="text" name="name" autofocus="autofocus">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+                            <input type="submit" value="submit">
+                     </form>
+
+16)dirname atribute-  <form>
+                        NAME: <input type="text" name="name" autofocus="autofocus">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass" dirname="pass.dir">
+                            <input type="submit" value="submit">
+                     </form>
+
+17)disabled atribute- <form>
+                        NAME: <input type="text" name="name" disabled="disabled" >
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass" >
+                            <input type="submit" value="submit">
+                     </form>
+
+18)form atribute-<form id="form1">
+                        NAME: <input type="text" name="name">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+                            <input type="submit" value="submit">
+                     </form>
+                     sirname: <input type="text" name="sirname" form="form1"> 
+
+19)formaction atribute-<form action=".html">
+                            NAME: <input type="text" name="name">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+                            <input type="submit" value="submit">
+                            <input type="submit" value="admin" formaction=".html">
+                        </form>
+
+21)formmethod atribute-   <form method="GET">
+                            NAME: <input type="text" name="name">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+                            <input type="submit" value="submit">
+                            <input type="submit" value="admin" formmethod="POST">
+                        </form>
+
+22)formtarget atribute-<form action="URL/.HTML/.PHP" target="_blank">
+                            NAME: <input type="text" name="name">
+                            CITY: <input type="text" name="city">
+                            PASSWORD: <input type="password" name="pass">
+                            <input type="submit" value="submit">
+                            <input type="submit" value="admin" formtarget="_self">
+                        </form>
+
+25)step atribute-<form>
+                     <input type="number" step="4">
+                  </form>
+
+26)title atribute-<form>
+                      name: <input type="text" pattern="^[a-z]+$" title="example: abcde">
+                      submit: <input type="submit"> 
+                  </form>
+
+                         
+    1)type atribute-<form>                           
+                       <input type="text">
+                   </form>
+1-text -<form> 
+                   NAME: <input type="text">
+               </form>
+2-password-<form> 
+                   PASSWORD: <input type="password">
+               </form>
+3)button-<form> 
+                 <input type="button">                                 * button with value-<form> 
+           </form>                                                                               <input type="button" value="button name">
+                                                                                        </form>
+4)email-<form>
+             <input type="email">
+        </form>
+5)checkbox-<form>
+             <input type="checkbox">
+        </form>
+6)radio button--<form>
+             male:<input type="radio" name="">
+             female: <input type="radio"name="">
+        </form>
+7)url-<form>
+             your are web page id: <input type="url">
+        </form>
+8)searchbox-<form>
+             <input type="search" name="search">
+        </form>
+9)tel-<form>         [tel=teliphone]
+         <input type="tel" name="phone">
+      </form>
+10)range-<form>            [range-min or max ]
+           <input type="range">
+          </form>
+11)number field-<form>
+                   <input type="number">
+                </form>
+12)file field-<form>
+                  <input type="file">
+              </form>
+13)image button-<form>
+                     <input type="image" src=".jpg">
+               </form>
+14)hidden data-<form>
+                  NAME: <input type="text">
+                  COUNTRY: <input type="hidden" value="india">
+              </form>
+15)date-<form>
+           <input type="date">
+       </form>
+16)time-<form>
+           <input type="time"name=""time>
+       </form>
+17)datetime-local-<form>
+           <input type="datetime-local">
+       </form>
+18)month-<form>
+          <input type="month">
+        </form>
+19)week-<form>
+         <input type="week">  
+       </form>
+20)submit button-<form action=example.php>
+                  name: <input type="text">
+                  password: <input type="password">
+                  <input type="submit">
+                </form>
+21)reset button-<form action=example.php>
+                  name: <input type="text">
+                  password: <input type="password">
+                  <input type="submit">
+                  <input type="reset">
+                </form>
+22)color picker-<form>
+                <input type="color">
+               </form>
+
+84)textarea tag-<textarea>....</textarea>
+          
+      *ATRIBUTE*              *VALUE*
+    1)AUTOFOCUS            1)AUTOFOCUS
+    2)DIRNAME              2)TEXTAREANAME.DIR
+    3)DISABLED             3)DISABLED
+    4)MAXLENGTH            4)NUMBER
+    5)NAME                 5)NUMBER
+    6)PLACEHOLDER          6)TEXT
+    7)READONLY             7)READONLY
+    8)REQUIRED             8)REQUIRED    9)COLS                 9)NUMBER
+   10)ROWS                10)NUMBER
+   11)WRAP                11)SOFT(DEFAULT) , HARD
+ 
+9/10)cols/rows atribute-<texarea rows="" cols="">  </textarea>
+
+11)wrap atribute-<texarea wrap="soft/hard" rows="" cols="">  </textarea>
+
+85)label tag-    <label> male:<input type="radio" name="name"></label>
+                 <label> female:<input type="radio" name="name"></label>
+ 
+     *ATRIBUTE*              *VALUE*
+    1)FOR                   1)ELEMENT_ID
+    2)FORM                  2)FORM_ID
+ 1)for atribute- <label for="male"> my name is budhesh </label>
+                       male:<input type="radio" name="name" id="male">
+                 <label for="male"> my name is budhesh </label>
+                       female:<input type="radio" name="name" id="male">
+ 
+
+86)fieldset tag-
+    
+   *ATRIBUTE*    *VALUE*
+  1)DISABLED     1)DISABLED
+  2)FORM         2)FORM_ID
+  3)NAME         3)TEXT
+ 
+  1)disabled atribute-<form>
+                    <fieldset disabled="">
+                     NAME: <input type="text"  name="name">
+                     pass: <input type="password"name="passs">
+                     city: <input type="text" name="city">
+                    </fieldset>
+                    </form>
+
+87)legend tag-<form>
+                    <legent>personal ditail</legend>
+                    <fieldset >
+                     NAME: <input type="text"  name="name">
+                     pass: <input type="text"name="passs">
+                     city: <input type="text" name="city">
+                    </fieldset>
+                    </form>
+
+88)select tag-<select>....</select>
+
+       *ATRIBUTE*    *VALUE*
+      1)AUTOFOCUS    1)AUTOFOCUS
+      2)DISABLED     2)DISABLED
+      3)FORM         3)FORM_ID
+      4)MULTIPLE     4)MULTIPLE
+      5)NAME         5)NAME
+      6)REQUIRED     6)REQUIRED
+      7)SIZE         7)NUMBER
+  
+  1)autofocus atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select autofocus>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+ 2)disabled atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select disabled>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+ 3)multiple atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select multiple >
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+ 4)required atriibute-<form>
+                          name: <input type="text" name="name">
+                          city: <select required >
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+ 5)size atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select size="value">
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+ 6)name atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select name="name">
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+
+
+
+
+
+89)option tag-<option>....</option>    [WRITE IN SELECT TAG]
+           
+    *ATRIBUTE*    *VALUE*            
+    1)DISABLED    1)DISABLED
+    2)LABEL       2)TEXT
+    3)SELECTED    3)SELECTED
+    4)VALUE       4)TEXT
+ 1)disabled atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="" disabled="disabled">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+ 2)label atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select>
+                                   <option label="HTML">hyper  text markup languages </option>
+                                  
+                                </select>
+                       </form>
+
+ 3)silected atribute-<form>
+                          name: <input type="text"name="name">
+                          city: <select>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="" selected="selected">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+
+ 4)value atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                </select>
+                       </form>
+
+90)optgroup tag-<select> 
+                          <optgroup> 
+                                     <option>...</option>
+                          </option>
+                          <optgroup> 
+                                     <option>...</option>
+                          </option>
+                </select>
+   
+    *ATTRIBUTE*     *VALUE*
+   1)DISABLED      1)DISABLED
+   2)LABEL         2)TEXT
+
+ 1)disabled atribute-<form>
+                          name: <input type="text" name="name">
+                          city: <select>
+                                   <otpgroup label="city" disabled="disabled">
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   </otpgroup>
+                                   <otpgroup>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   </otpgroup>
+                                </select>
+                       </form>
+
+ 2) label atribute-  <form>
+                          name: <input type="text" name="name">
+                          city: <select>
+                                   <otpgroup label="city" >
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   </otpgroup>
+                                   <otpgroup label="country">
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   <option value="">xyz</option>
+                                   </otpgroup>
+                                </select>
+                       </form>
+
+91)button tag-<button>....</button>
+         
+    *ATTRIBUTE*          *VALUE*
+ 1)AUTOFOCUS             1)AUTOFOCUS
+ 2)DISABLED              2)DISABLED
+ 3)FORMACTION            3)URL
+ 4)FORMENCTYPE           4)APLICATION/FORM-DATA-TEXT/PLAIN
+ 5)FORMMETHOD            5)GET/POST
+ 6)FORMNOVALIDATE        6)FORMNOVALIDATE
+ 7)FORMTARGET            7)_BLANK/_SELF/_TOP/_PARENT/FRAMENAME
+ 8)NAME                  8)NAME
+ 9)TYPE                  9)BUTTON/RESET/SUBMIT
+ 10)VALUE               10)TEXT
+ 
+ 1)autofocus atribute-<button autofocus type="submit name="xyz"> submit </button>
+ 
+ 2)disabled atribute-<button disabled type="submit name="xyz"> submit </button>
+
+ 3)formaction atribute-<button formaction="url" type="submit name="xyz"> submit </button>
+
+ 5)formmethod atribute-<button formmethod="GET/POST" type="submit name="xyz" value="java"> submit </button>
+
+ 6)formnovalidate atribute-<button formnovalidate type="submit name="xyz"> submit </button>
+ 
+ 7)formtarget atribute-<button formtarget="_blank" type="submit name="xyz"> submit </button>
+
+ 8)name atribute-<button type="submit name="xyz"> submit </button>
+
+ 9)type atribute-<button type="submit/reset/button"> </button>
+
+ 10)value atribute-<button type="submit" value="text"> submit</button>
+
+92)datalist tag-<form>
+      <input type="text" list="city name">
+      <datalist id="city name">
+          <option value="RAJULA"></option>
+          <option value="AMRELI"></option>
+          <option value="RAJKOT"></option>
+          <option value="RAJSTHAN"></option>
+          <option value="GOA"></option>
+          <option value="GANGA"></option>
+          <option value="AHEMDABAD"></option>
+      </datalist>
+    </form>
+
+93)link tag-<link rel="" href="url">                                                        [WRITE IN HEAD TAG]
+ 
+  *ATTRIBUTE*      *VALUE*
+ 1)CROSSORIGIN     1)ANONYMOUS/USE-CREDENTIALS
+ 2)HREF            2)URL
+ 3)HREFLANG        3)LANGUAGE_CODE
+ 4)MEDIA           4)MEDIA_QUERY      
+ 5)REL             5)HELP/AUTHOR....ETC
+ 6)SIZES           6)HEIGHT/WIDTH
+ 7)TYPE            7)MEDIA_TYPE
+ 
+  2)href atribute-<head>
+                        <link href="url">
+                  </head>
+  
+  3)hreflang atribute-<head>
+                        <link hreflang="en" href="url">
+                      </head>
+
+ 4)media atribute-<head>
+                        <link hreflang="en" media="all" href="url">
+                 </head>
+ 
+ 5)rel atribute-<head>
+                        <link rel="auther" href="url">
+                 </head>
+
+ 7)type atribute-<head>
+                        <link type="TEXT/css / html" href="url">
+                 </head>
+
+94)style tag-<head>
+                <style>...</style>
+             </head>
+        
+  *ATTRIBUTE*   *VALUE*
+ 1)MEDIA        1)MEDIA_QUERY
+ 2)TYPE         2)TEXT/CSS
+
+95)div tag-<div>....</div>
+   
+      (1)   <head>
+              <style>
+                    <div>
+                         {color:red}
+                    </div>
+              </style>
+         </head>
+         <body>
+               <h3>budhesh katariya</h3>
+               <div>budhesh katariya</div>
+         </body>
+     2)<body>
+           <div style=color:red>
+               <h2>budhesh<h2>
+               <p>budhesh katariya</p>
+           </div>
+       </body>
+
+96)style atribute-
+        <body>
+               <h2 style="color:value">budhesh<h2>
+               <p style="color:value font-size:value">budhesh katariya</p>
+       </body>
+
+97)class atribute-<head>
+                       <style>
+                               .name{color:#FFOOOO; font-size:60px;}
+                               .x-man{color:#FFOOOO; font-size:60px}
+                       </style>
+                  </head>
+                  <body>
+                        <p class="name">budhesh</p>
+                        <p class="x-man">katariya</p>
+                  </body>
+
+98)details tag-<details>.....</details>
+              *ATTRIBUTE*    *VALUE*
+              1)OPEN          1)OPEN
+
+99)footer tag-<footer>.....</footer>
+
+100)artical tag-<artical>...</artical>
+
+101)meter tag-<meter value="" max="" min="">range</meter>
+
+    *ATTRIBUTE*   *VALUE*
+   1)VALUE        1)NUMBER
+   2)FORM         2)FORM_ID
+   3)HIGH         3)NUMBER
+   4)LOW          4)LOW
+   5)MAX          5)NUMBER   6)MIN          6)NUMBER
+   7)OPTIMUM      7)NUMBER
+
+ 1)value atribute-<meter value=""></meter>
+  
+ 5/6)max/min atribute-<meter value="" max="" min=""></meter>
+
+ 3/4)low/high atribute-<meter value=""  low="" high="" max=""></meter>
+
+102)mark tag-<mark>budhesh</mark>
+
+103)diolog tag-<dialog open="open">budhesh is student </dialog>          [DIALOG TAG ATRIBUTE-OPEN  , VALUE="OPEN"]
+
+104)main tag-<main>
+                   <section>
+                   my name is budhesh 
+                   </section>
+             </main>
+
+105)wbr tag-<p>my anme dkkkkkkkkkkkkddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddbudhesh<wbr>shows</wbr></p>                           [wrb-word breack/line breack]
+  
+106)figure and figcaption tag-<figure>
+                                      <img src=".jpg" width="" hight="">
+                              <figcaption> image </figcaption>
+                             </figure>
+
+107)progress tag-<progress value="50" max="100"> </progress> 
+
+108)semantic tag-
+
+  <header></header>
+  <nav></nav>
+  <section></section>
+  <article></article> 
+  <footer></footer>
+
+                   
+ 
+
+  
+
+  
+  
+
+          
+
+
+
+   
+
+         
+
+    
+
+
