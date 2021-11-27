@@ -82,7 +82,8 @@
   1)arithmetic operator
   2)comparison (relational) operation
   3)logical operation
-  4)bitwise operator  5)assignment operator
+  4)bitwise operator
+  5)assignment operator
 
   1)arithmetic operator-
 
@@ -1905,7 +1906,8 @@
 
  syntax-  class class_name {
                constructor (){
-                                  properties                              }
+                                  properties
+                              }
                  method
              }
 
